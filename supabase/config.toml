@@ -1,0 +1,5 @@
+# Minimale Supabase-CLI-Konfiguration (supabase init erzeugt bei Bedarf mehr)
+project_id = "koerper-kompass"
+
+[functions.delete-account]
+verify_jwt = true

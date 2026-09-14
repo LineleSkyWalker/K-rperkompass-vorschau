@@ -1,0 +1,7 @@
+{
+  "status": "not_generated",
+  "note": "Wird durch `npm run recipes:map` aus der BLS-4.0-Datei erzeugt. Solange leer, zeigt die App 'Nährwerte noch nicht berechnet'.",
+  "source": null,
+  "generatedAt": null,
+  "ingredients": {}
+}
