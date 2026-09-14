@@ -17,3 +17,7 @@ coverage/
 data/bls/*.xlsx
 data/bls/*.zip
 .DS_Store
+data/bls/bls-4.0.json
+data/bls/BLS_4_0_2025_DE/
+data/bls/**/*.xlsx
+data/bls/**/*.pdf

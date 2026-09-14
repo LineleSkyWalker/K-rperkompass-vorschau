@@ -20,7 +20,7 @@ export const ALL_BLS_CODES = [
   'FASAT','F4:0','F6:0','F8:0','F10:0','F12:0','F14:0','F15:0','F16:0','F17:0','F18:0','F20:0','F22:0','F24:0',
   'FAMS','F14:1CN5','F16:1CN7','F18:1CN7','F18:1CN9','F20:1CN9','F22:1CN9',
   'FAPU','FAPUN3','FAPUN6','F18:2CN6','F18:2C9T11','F18:3CN3','F18:3CN6','F18:4CN3','F20:2CN6','F20:3CN6','F20:4CN6','F20:5CN3','F22:5CN3','F22:6CN3','FAX',
-  'AAE9','ILE','LEU','LYS','MET','PHE','THR','TRP','VAL','HIS','ALA','ARG','ASP','CYS','GLU','GLY','PRO','SER','TYR',
+  'AAE9','ILE','LEU','LYS','MET','PHE','THR','TRP','VAL','HIS','ALA','ARG','ASP','GLU','GLY','PRO','SER','TYR','CYSTE',
   'VITA','VITAA','RETOL','CARTB','CAROTPAXB','VITD','ERGCAL','CHOCAL',
   'VITE','TOCPHA','TOCPHB','TOCPHG','TOCPHD','TOCTRA','VITK','VITK1','VITK2',
   'THIA','RIBF','NIA','NIAEQ','PANTAC','VITB6','BIOT','FOL','FOLFD','FOLAC','VITB12','VITC',
@@ -55,13 +55,17 @@ export function parseNutrientCell(raw: unknown): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
+/**
+ * Erkennt die WERT-Spalte eines Nährstoffs. Header in der BLS-4.0-Datei lauten z. B.
+ * "ENERCC Energie (Kilokalorien) [kcal/100g]", "ENERCC Datenherkunft", "ENERCC Referenz".
+ * Nur die erste Form liefert den Code zurück; Herkunft/Referenz-Spalten werden ignoriert.
+ */
 function normalizeHeader(h: unknown): string {
-  return String(h ?? '')
-    .trim()
-    .replace(/\s*\[.*?\]\s*$/, '') // "ENERCC [kcal]" → "ENERCC"
-    .replace(/\s*\(.*?\)\s*$/, '')
-    .trim()
-    .toUpperCase();
+  const raw = String(h ?? '').trim();
+  if (!raw) return '';
+  if (/(datenherkunft|referenz|data origin|reference)\s*$/i.test(raw)) return '';
+  const first = raw.split(/\s+/)[0] ?? '';
+  return first.toUpperCase();
 }
 
 export function parseBlsWorkbook(buffer: Buffer | ArrayBuffer): ParseResult {
@@ -109,7 +113,7 @@ export function parseBlsWorkbook(buffer: Buffer | ArrayBuffer): ParseResult {
     const row = best.rows[i];
     if (!row) continue;
     const code = String(row[cCode] ?? '').trim();
-    if (!/^[A-Z]\d{6}$/.test(code)) continue; // Leerzeilen / Fußnoten überspringen
+    if (!/^[A-Z][A-Z0-9]{6}$/.test(code)) continue; // Leerzeilen / Fußnoten überspringen (Codes wie C131000 oder X1A0000)
     const nutrients: Record<string, number> = {};
     for (const [idx, nutrientCode] of headerMap) {
       const v = parseNutrientCell(row[idx]);

@@ -47,6 +47,7 @@ export function toIngredientModel(c: CatalogIngredient) {
     blsCode: null,
     mappingStatus: 'unmapped' as const,
     allergens: c.allergens ?? [],
+    nutritionNegligible: c.nutritionNegligible,
   };
 }
 

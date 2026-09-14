@@ -1,0 +1,3161 @@
+[
+  {
+    "ingredientId": "apfel",
+    "ingredientName": "Apfel",
+    "blsHint": "Apfel roh",
+    "blsCode": "F110100",
+    "blsName": "Apfel roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F110100",
+        "name": "Apfel roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "banane",
+    "ingredientName": "Banane",
+    "blsHint": "Banane roh",
+    "blsCode": "F503100",
+    "blsName": "Banane roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F503100",
+        "name": "Banane roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "beeren-gemischt",
+    "ingredientName": "Beeren, gemischt (TK oder frisch)",
+    "blsHint": "Beerenobst gemischt",
+    "blsCode": "F092100",
+    "blsName": "Beerenmischung mit Sauerkirschen, ungesüßt, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F092100",
+        "name": "Beerenmischung mit Sauerkirschen, ungesüßt, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Beerenmischung mit Sauerkirschen, ungesüßt, roh – Näherung für gemischte Beeren"
+  },
+  {
+    "ingredientId": "blaubeeren",
+    "ingredientName": "Blaubeeren",
+    "blsHint": "Heidelbeere roh",
+    "blsCode": "F304100",
+    "blsName": "Heidelbeere roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F304100",
+        "name": "Heidelbeere roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "himbeeren",
+    "ingredientName": "Himbeeren",
+    "blsHint": "Himbeere roh",
+    "blsCode": "F302100",
+    "blsName": "Himbeere roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F302100",
+        "name": "Himbeere roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "erdbeeren",
+    "ingredientName": "Erdbeeren",
+    "blsHint": "Erdbeere roh",
+    "blsCode": "F301100",
+    "blsName": "Erdbeere roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F301100",
+        "name": "Erdbeere roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "birne",
+    "ingredientName": "Birne",
+    "blsHint": "Birne roh",
+    "blsCode": "F130100",
+    "blsName": "Birne roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F130100",
+        "name": "Birne roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mango",
+    "ingredientName": "Mango",
+    "blsHint": "Mango roh",
+    "blsCode": "F516100",
+    "blsName": "Mango roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F516100",
+        "name": "Mango roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zitrone",
+    "ingredientName": "Zitrone",
+    "blsHint": "Zitrone roh",
+    "blsCode": "F601100",
+    "blsName": "Zitrone roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F601100",
+        "name": "Zitrone roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zitronensaft",
+    "ingredientName": "Zitronensaft",
+    "blsHint": "Zitronensaft",
+    "blsCode": "F601600",
+    "blsName": "Zitronensaft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F601600",
+        "name": "Zitronensaft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "limette",
+    "ingredientName": "Limette",
+    "blsHint": "Limette roh",
+    "blsCode": "F602100",
+    "blsName": "Limette roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F602100",
+        "name": "Limette roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "orange",
+    "ingredientName": "Orange",
+    "blsHint": "Orange roh",
+    "blsCode": "F603100",
+    "blsName": "Orange roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F603100",
+        "name": "Orange roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "avocado",
+    "ingredientName": "Avocado",
+    "blsHint": "Avocado roh",
+    "blsCode": "F502100",
+    "blsName": "Avocado roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F502100",
+        "name": "Avocado roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "tomate",
+    "ingredientName": "Tomate, frisch",
+    "blsHint": "Tomate roh",
+    "blsCode": "G561100",
+    "blsName": "Tomate roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G561100",
+        "name": "Tomate roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "cherrytomaten",
+    "ingredientName": "Cherrytomaten",
+    "blsHint": "Tomate roh",
+    "blsCode": "G561100",
+    "blsName": "Tomate roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G561100",
+        "name": "Tomate roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Tomate roh – Näherung für Cherrytomaten"
+  },
+  {
+    "ingredientId": "gurke",
+    "ingredientName": "Salatgurke",
+    "blsHint": "Gurke roh",
+    "blsCode": "G520100",
+    "blsName": "Gurke roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G520100",
+        "name": "Gurke roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "paprika",
+    "ingredientName": "Paprika, rot",
+    "blsHint": "Paprika rot roh",
+    "blsCode": "G543100",
+    "blsName": "Gemüsepaprika rot, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G543100",
+        "name": "Gemüsepaprika rot, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zucchini",
+    "ingredientName": "Zucchini",
+    "blsHint": "Zucchini roh",
+    "blsCode": "G582100",
+    "blsName": "Zucchini roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G582100",
+        "name": "Zucchini roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "aubergine",
+    "ingredientName": "Aubergine",
+    "blsHint": "Aubergine roh",
+    "blsCode": "G510100",
+    "blsName": "Aubergine roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G510100",
+        "name": "Aubergine roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "karotte",
+    "ingredientName": "Karotte",
+    "blsHint": "Möhre roh",
+    "blsCode": "G620100",
+    "blsName": "Karotte/Möhre, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G620100",
+        "name": "Karotte/Möhre, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kartoffel",
+    "ingredientName": "Kartoffel, festkochend",
+    "blsHint": "Kartoffel roh",
+    "blsCode": "K110100",
+    "blsName": "Kartoffel geschält, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "K110100",
+        "name": "Kartoffel geschält, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "suesskartoffel",
+    "ingredientName": "Süßkartoffel",
+    "blsHint": "Süßkartoffel roh",
+    "blsCode": "K420100",
+    "blsName": "Batate/Süßkartoffel, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "K420100",
+        "name": "Batate/Süßkartoffel, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zwiebel",
+    "ingredientName": "Zwiebel",
+    "blsHint": "Zwiebel roh",
+    "blsCode": "G480100",
+    "blsName": "Speisezwiebel roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G480100",
+        "name": "Speisezwiebel roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "rote-zwiebel",
+    "ingredientName": "Zwiebel, rot",
+    "blsHint": "Zwiebel roh",
+    "blsCode": "G480100",
+    "blsName": "Speisezwiebel roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G480100",
+        "name": "Speisezwiebel roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Speisezwiebel roh – keine eigene rote Zwiebel im BLS"
+  },
+  {
+    "ingredientId": "fruehlingszwiebel",
+    "ingredientName": "Frühlingszwiebel",
+    "blsHint": "Lauchzwiebel roh",
+    "blsCode": "G482100",
+    "blsName": "Frühlingszwiebel/Lauchzwiebel, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G482100",
+        "name": "Frühlingszwiebel/Lauchzwiebel, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "knoblauch",
+    "ingredientName": "Knoblauch",
+    "blsHint": "Knoblauch roh",
+    "blsCode": "G490100",
+    "blsName": "Knoblauch roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G490100",
+        "name": "Knoblauch roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "ingwer",
+    "ingredientName": "Ingwer, frisch",
+    "blsHint": "Ingwer roh",
+    "blsCode": "R211200",
+    "blsName": "Ingwer/Ingwerwurzel, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R211200",
+        "name": "Ingwer/Ingwerwurzel, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "lauch",
+    "ingredientName": "Lauch",
+    "blsHint": "Porree roh",
+    "blsCode": "G470100",
+    "blsName": "Porree/Lauch, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G470100",
+        "name": "Porree/Lauch, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "brokkoli",
+    "ingredientName": "Brokkoli",
+    "blsHint": "Brokkoli roh",
+    "blsCode": "G312100",
+    "blsName": "Broccoli roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G312100",
+        "name": "Broccoli roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "blumenkohl",
+    "ingredientName": "Blumenkohl",
+    "blsHint": "Blumenkohl roh",
+    "blsCode": "G311100",
+    "blsName": "Blumenkohl roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G311100",
+        "name": "Blumenkohl roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "spinat",
+    "ingredientName": "Spinat, frisch",
+    "blsHint": "Spinat roh",
+    "blsCode": "G211100",
+    "blsName": "Spinat roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G211100",
+        "name": "Spinat roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "spinat-tk",
+    "ingredientName": "Spinat, TK (Blattspinat)",
+    "blsHint": "Spinat tiefgefroren",
+    "blsCode": "G211200",
+    "blsName": "Spinat tiefgefroren",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G211200",
+        "name": "Spinat tiefgefroren",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "gruenkohl",
+    "ingredientName": "Grünkohl",
+    "blsHint": "Grünkohl roh",
+    "blsCode": "G322100",
+    "blsName": "Grünkohl roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G322100",
+        "name": "Grünkohl roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "champignons",
+    "ingredientName": "Champignons",
+    "blsHint": "Champignon roh",
+    "blsCode": "K701100",
+    "blsName": "Champignon roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "K701100",
+        "name": "Champignon roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kuerbis",
+    "ingredientName": "Hokkaido-Kürbis",
+    "blsHint": "Kürbis roh",
+    "blsCode": "G581000",
+    "blsName": "Kürbis Hokkaido (C. maxima) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G581000",
+        "name": "Kürbis Hokkaido (C. maxima) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "rote-bete",
+    "ingredientName": "Rote Bete, gekocht",
+    "blsHint": "Rote Bete gegart",
+    "blsCode": "G613132",
+    "blsName": "Rote Rübe/Rote Bete, gekocht",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G613132",
+        "name": "Rote Rübe/Rote Bete, gekocht",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sellerie",
+    "ingredientName": "Staudensellerie",
+    "blsHint": "Sellerie Stangen roh",
+    "blsCode": "G220100",
+    "blsName": "Bleichsellerie roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G220100",
+        "name": "Bleichsellerie roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "feldsalat",
+    "ingredientName": "Feldsalat",
+    "blsHint": "Feldsalat roh",
+    "blsCode": "G104100",
+    "blsName": "Feldsalat/Rapunzel, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G104100",
+        "name": "Feldsalat/Rapunzel, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "rucola",
+    "ingredientName": "Rucola",
+    "blsHint": "Rucola roh",
+    "blsCode": "G130100",
+    "blsName": "Rucola roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G130100",
+        "name": "Rucola roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "salat-mix",
+    "ingredientName": "Blattsalat, gemischt",
+    "blsHint": "Kopfsalat roh",
+    "blsCode": "G105100",
+    "blsName": "Kopfsalat roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G105100",
+        "name": "Kopfsalat roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Kopfsalat roh – Näherung für gemischten Blattsalat"
+  },
+  {
+    "ingredientId": "eisbergsalat",
+    "ingredientName": "Eisbergsalat",
+    "blsHint": "Eisbergsalat roh",
+    "blsCode": "G103100",
+    "blsName": "Eisbergsalat roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G103100",
+        "name": "Eisbergsalat roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "basilikum",
+    "ingredientName": "Basilikum, frisch",
+    "blsHint": "Basilikum frisch",
+    "blsCode": "G061000",
+    "blsName": "Basilikum roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G061000",
+        "name": "Basilikum roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "petersilie",
+    "ingredientName": "Petersilie, frisch",
+    "blsHint": "Petersilie frisch",
+    "blsCode": "G250100",
+    "blsName": "Petersilienblatt roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G250100",
+        "name": "Petersilienblatt roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "koriander",
+    "ingredientName": "Koriander, frisch",
+    "blsHint": "Koriander Blätter frisch",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "dill",
+    "ingredientName": "Dill, frisch",
+    "blsHint": "Dill frisch",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "schnittlauch",
+    "ingredientName": "Schnittlauch",
+    "blsHint": "Schnittlauch frisch",
+    "blsCode": "G081100",
+    "blsName": "Schnittlauch roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G081100",
+        "name": "Schnittlauch roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "minze",
+    "ingredientName": "Minze, frisch",
+    "blsHint": "Pfefferminze frisch",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "chili",
+    "ingredientName": "Chilischote, frisch",
+    "blsHint": "Chili roh",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "erbsen-tk",
+    "ingredientName": "Erbsen, TK",
+    "blsHint": "Erbsen grün tiefgefroren",
+    "blsCode": "G760200",
+    "blsName": "Erbse grün, tiefgefroren",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G760200",
+        "name": "Erbse grün, tiefgefroren",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "edamame-tk",
+    "ingredientName": "Edamame, TK",
+    "blsHint": "Sojabohnen grün",
+    "blsCode": "G750100",
+    "blsName": "Sojabohne unreif (Edamame) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G750100",
+        "name": "Sojabohne unreif (Edamame) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mais-dose",
+    "ingredientName": "Mais, Dose",
+    "blsHint": "Mais Konserve",
+    "blsCode": "G570902",
+    "blsName": "Zuckermais Konserve, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G570902",
+        "name": "Zuckermais Konserve, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kichererbsen-dose",
+    "ingredientName": "Kichererbsen, Dose (Abtropfgewicht)",
+    "blsHint": "Kichererbsen Konserve",
+    "blsCode": "H720902",
+    "blsName": "Kichererbse reif, Konserve, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H720902",
+        "name": "Kichererbse reif, Konserve, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kidneybohnen-dose",
+    "ingredientName": "Kidneybohnen, Dose (Abtropfgewicht)",
+    "blsHint": "Kidneybohnen Konserve",
+    "blsCode": "H742902",
+    "blsName": "Kidneybohne reif, Konserve, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H742902",
+        "name": "Kidneybohne reif, Konserve, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "schwarze-bohnen-dose",
+    "ingredientName": "Schwarze Bohnen, Dose (Abtropfgewicht)",
+    "blsHint": "Bohnen schwarz Konserve",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Keine schwarzen Bohnen im BLS 4.0 (Kidneybohne wäre eine Näherung – bewusst nicht automatisch gesetzt)"
+  },
+  {
+    "ingredientId": "weisse-bohnen-dose",
+    "ingredientName": "Weiße Bohnen, Dose (Abtropfgewicht)",
+    "blsHint": "Bohnen weiß Konserve",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Nur \"Bohnen weiß in Tomatensoße\" im BLS 4.0 – nicht passend"
+  },
+  {
+    "ingredientId": "tomaten-dose",
+    "ingredientName": "Tomaten, gehackt (Dose)",
+    "blsHint": "Tomaten Konserve",
+    "blsCode": "G568900",
+    "blsName": "Tomate geschält, Konserve",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G568900",
+        "name": "Tomate geschält, Konserve",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Tomate geschält, Konserve – Näherung für gehackte Tomaten"
+  },
+  {
+    "ingredientId": "tomaten-passiert",
+    "ingredientName": "Tomaten, passiert",
+    "blsHint": "Tomaten passiert",
+    "blsCode": "R161200",
+    "blsName": "Tomaten passiert/Tomatenpüree",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R161200",
+        "name": "Tomaten passiert/Tomatenpüree",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "tomatenmark",
+    "ingredientName": "Tomatenmark",
+    "blsHint": "Tomatenmark",
+    "blsCode": "R160000",
+    "blsName": "Tomatenmark",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R160000",
+        "name": "Tomatenmark",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kokosmilch",
+    "ingredientName": "Kokosmilch",
+    "blsHint": "Kokosmilch",
+    "blsCode": "H154000",
+    "blsName": "Kokosmilch/Kokosnussmilch",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H154000",
+        "name": "Kokosmilch/Kokosnussmilch",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "oliven",
+    "ingredientName": "Oliven, schwarz",
+    "blsHint": "Oliven schwarz",
+    "blsCode": "H520800",
+    "blsName": "Oliven geschwärzt, in Salzlake, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H520800",
+        "name": "Oliven geschwärzt, in Salzlake, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "thunfisch-dose",
+    "ingredientName": "Thunfisch, Dose (im eigenen Saft, Abtropfgewicht)",
+    "blsHint": "Thunfisch Konserve",
+    "blsCode": "T121902",
+    "blsName": "Thunfisch im eigenen Saft, Konserve, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T121902",
+        "name": "Thunfisch im eigenen Saft, Konserve, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "vollkornbrot",
+    "ingredientName": "Vollkornbrot",
+    "blsHint": "Vollkornbrot",
+    "blsCode": "B121000",
+    "blsName": "Roggenvollkornbrot",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B121000",
+        "name": "Roggenvollkornbrot",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Roggenvollkornbrot – Standardannahme für Vollkornbrot"
+  },
+  {
+    "ingredientId": "toast-vollkorn",
+    "ingredientName": "Vollkorntoast",
+    "blsHint": "Toastbrot Vollkorn",
+    "blsCode": "B111200",
+    "blsName": "Weizenvollkorntoastbrot",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B111200",
+        "name": "Weizenvollkorntoastbrot",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "baguette",
+    "ingredientName": "Baguette",
+    "blsHint": "Baguette",
+    "blsCode": "B781200",
+    "blsName": "Weizenbaguette",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B781200",
+        "name": "Weizenbaguette",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "burger-bun",
+    "ingredientName": "Burgerbrötchen",
+    "blsHint": "Brötchen Weizen",
+    "blsCode": "B511000",
+    "blsName": "Weizenbrötchen",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B511000",
+        "name": "Weizenbrötchen",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Weizenbrötchen – Näherung für Burgerbrötchen"
+  },
+  {
+    "ingredientId": "tortilla",
+    "ingredientName": "Weizentortilla (Wrap)",
+    "blsHint": "Tortilla Weizen",
+    "blsCode": "B783012",
+    "blsName": "Weizentortilla",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B783012",
+        "name": "Weizentortilla",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "pita",
+    "ingredientName": "Pitabrot",
+    "blsHint": "Fladenbrot",
+    "blsCode": "B782100",
+    "blsName": "Weizenfladenbrot",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B782100",
+        "name": "Weizenfladenbrot",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "ei",
+    "ingredientName": "Ei (Größe M)",
+    "blsHint": "Hühnerei roh",
+    "blsCode": "E111100",
+    "blsName": "Hühnerei roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "E111100",
+        "name": "Hühnerei roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "milch",
+    "ingredientName": "Milch, 3,5 %",
+    "blsHint": "Kuhmilch 3,5 %",
+    "blsCode": "M111300",
+    "blsName": "Vollmilch frisch, 3,5 % Fett, pasteurisiert",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M111300",
+        "name": "Vollmilch frisch, 3,5 % Fett, pasteurisiert",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "hafermilch",
+    "ingredientName": "Haferdrink",
+    "blsHint": "Haferdrink",
+    "blsCode": "C660000",
+    "blsName": "Haferdrink ungesüßt",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C660000",
+        "name": "Haferdrink ungesüßt",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "butter",
+    "ingredientName": "Butter",
+    "blsHint": "Butter",
+    "blsCode": "Q611000",
+    "blsName": "Butter mild gesäuert",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q611000",
+        "name": "Butter mild gesäuert",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sahne",
+    "ingredientName": "Sahne, 30 %",
+    "blsHint": "Schlagsahne 30 %",
+    "blsCode": "M173800",
+    "blsName": "Schlagsahne mind. 30 % Fett",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M173800",
+        "name": "Schlagsahne mind. 30 % Fett",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "schmand",
+    "ingredientName": "Schmand",
+    "blsHint": "Schmand",
+    "blsCode": "M172700",
+    "blsName": "Sauerrahm/Schmand, mind. 20 % Fett",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M172700",
+        "name": "Sauerrahm/Schmand, mind. 20 % Fett",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "creme-fraiche",
+    "ingredientName": "Crème fraîche",
+    "blsHint": "Creme fraiche",
+    "blsCode": "M176800",
+    "blsName": "Sauerrahm/Creme fraiche, 30 % Fett",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M176800",
+        "name": "Sauerrahm/Creme fraiche, 30 % Fett",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "joghurt",
+    "ingredientName": "Joghurt, 3,5 %",
+    "blsHint": "Joghurt 3,5 %",
+    "blsCode": "M141300",
+    "blsName": "Joghurt mild, mind. 3,5 % Fett",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M141300",
+        "name": "Joghurt mild, mind. 3,5 % Fett",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "griechischer-joghurt",
+    "ingredientName": "Joghurt, griechische Art (10 %)",
+    "blsHint": "Joghurt 10 % Fett",
+    "blsCode": "M141500",
+    "blsName": "Sahnejoghurt mind. 10 % Fett",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M141500",
+        "name": "Sahnejoghurt mind. 10 % Fett",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "skyr",
+    "ingredientName": "Skyr",
+    "blsHint": "Skyr",
+    "blsCode": "M710100",
+    "blsName": "Skyr, Frischkäse < 10 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M710100",
+        "name": "Skyr, Frischkäse < 10 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "quark",
+    "ingredientName": "Magerquark",
+    "blsHint": "Speisequark mager",
+    "blsCode": "M713100",
+    "blsName": "Speisequark Magerstufe, Magerquark < 10 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M713100",
+        "name": "Speisequark Magerstufe, Magerquark < 10 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "huettenkaese",
+    "ingredientName": "Hüttenkäse",
+    "blsHint": "Hüttenkäse",
+    "blsCode": "M711300",
+    "blsName": "Körniger Frischkäse mind. 20 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M711300",
+        "name": "Körniger Frischkäse mind. 20 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "frischkaese",
+    "ingredientName": "Frischkäse",
+    "blsHint": "Frischkäse Doppelrahm",
+    "blsCode": "M710800",
+    "blsName": "Frischkäsezubereitung Natur, mind. 60 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M710800",
+        "name": "Frischkäsezubereitung Natur, mind. 60 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "feta",
+    "ingredientName": "Feta",
+    "blsHint": "Feta Schafskäse",
+    "blsCode": "M012200",
+    "blsName": "Feta mind. 45 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M012200",
+        "name": "Feta mind. 45 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mozzarella",
+    "ingredientName": "Mozzarella",
+    "blsHint": "Mozzarella",
+    "blsCode": "M032100",
+    "blsName": "Mozzarella mind. 45 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M032100",
+        "name": "Mozzarella mind. 45 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "parmesan",
+    "ingredientName": "Parmesan",
+    "blsHint": "Parmesan",
+    "blsCode": "M306400",
+    "blsName": "Parmesan mind. 30 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M306400",
+        "name": "Parmesan mind. 30 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "gouda",
+    "ingredientName": "Gouda, gerieben",
+    "blsHint": "Gouda 48 %",
+    "blsCode": "M402600",
+    "blsName": "Gouda 48 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M402600",
+        "name": "Gouda 48 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "cheddar",
+    "ingredientName": "Cheddar",
+    "blsHint": "Cheddar",
+    "blsCode": "M303700",
+    "blsName": "Chester (Cheddar) mind. 50 % Fett i. Tr.",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M303700",
+        "name": "Chester (Cheddar) mind. 50 % Fett i. Tr.",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "halloumi",
+    "ingredientName": "Halloumi",
+    "blsHint": "Halloumi",
+    "blsCode": "M524500",
+    "blsName": "Halloumi Grillkäse",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "M524500",
+        "name": "Halloumi Grillkäse",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "tofu",
+    "ingredientName": "Tofu, natur",
+    "blsHint": "Tofu",
+    "blsCode": "H861000",
+    "blsName": "Tofu",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H861000",
+        "name": "Tofu",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "raeuchertofu",
+    "ingredientName": "Räuchertofu",
+    "blsHint": "Tofu geräuchert",
+    "blsCode": "H861000",
+    "blsName": "Tofu",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H861000",
+        "name": "Tofu",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Tofu – kein Räuchertofu im BLS"
+  },
+  {
+    "ingredientId": "hummus",
+    "ingredientName": "Hummus",
+    "blsHint": "Hummus",
+    "blsCode": "H960000",
+    "blsName": "Hummus/Kichererbsenmus",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H960000",
+        "name": "Hummus/Kichererbsenmus",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "pizzateig",
+    "ingredientName": "Pizzateig, frisch (Kühlregal)",
+    "blsHint": "Pizzateig",
+    "blsCode": "D079000",
+    "blsName": "Pizzateig (mit Hefe) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "D079000",
+        "name": "Pizzateig (mit Hefe) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "blaetterteig",
+    "ingredientName": "Blätterteig, frisch",
+    "blsHint": "Blätterteig",
+    "blsCode": "X9A6020",
+    "blsName": "Blätterteig (mit Butter) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "X9A6020",
+        "name": "Blätterteig (mit Butter) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "haehnchenbrust",
+    "ingredientName": "Hähnchenbrustfilet",
+    "blsHint": "Hähnchen Brust ohne Haut roh",
+    "blsCode": "V416100",
+    "blsName": "Hähnchen Brustfilet, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "V416100",
+        "name": "Hähnchen Brustfilet, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "haehnchenschenkel",
+    "ingredientName": "Hähnchenschenkel",
+    "blsHint": "Hähnchen Schenkel roh",
+    "blsCode": "V4A5100",
+    "blsName": "Hähnchen Oberschenkel, mit Haut, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "V4A5100",
+        "name": "Hähnchen Oberschenkel, mit Haut, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Hähnchen Oberschenkel mit Haut, roh"
+  },
+  {
+    "ingredientId": "hackfleisch-rind",
+    "ingredientName": "Rinderhackfleisch",
+    "blsHint": "Rind Hackfleisch roh",
+    "blsCode": "U010100",
+    "blsName": "Rind Hackfleisch, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "U010100",
+        "name": "Rind Hackfleisch, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "hackfleisch-gemischt",
+    "ingredientName": "Hackfleisch, gemischt",
+    "blsHint": "Hackfleisch gemischt roh",
+    "blsCode": "U050100",
+    "blsName": "Rind/Schwein, Hackfleisch gemischt, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "U050100",
+        "name": "Rind/Schwein, Hackfleisch gemischt, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "lachsfilet",
+    "ingredientName": "Lachsfilet",
+    "blsHint": "Lachs roh",
+    "blsCode": "T410100",
+    "blsName": "Lachs roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T410100",
+        "name": "Lachs roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "raeucherlachs",
+    "ingredientName": "Räucherlachs",
+    "blsHint": "Lachs geräuchert",
+    "blsCode": "T410600",
+    "blsName": "Lachs geräuchert (Räucherlachs)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T410600",
+        "name": "Lachs geräuchert (Räucherlachs)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "forelle",
+    "ingredientName": "Forellenfilet",
+    "blsHint": "Forelle roh",
+    "blsCode": "T422100",
+    "blsName": "Forelle roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T422100",
+        "name": "Forelle roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "garnelen",
+    "ingredientName": "Garnelen, geschält (TK)",
+    "blsHint": "Garnele roh",
+    "blsCode": "T753200",
+    "blsName": "Garnele/Granat/Krabbe, tiefgefroren",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T753200",
+        "name": "Garnele/Granat/Krabbe, tiefgefroren",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "hering-matjes",
+    "ingredientName": "Matjesfilet",
+    "blsHint": "Matjes",
+    "blsCode": "T811100",
+    "blsName": "Matjesfilet (Heringsfilet) nordische Art",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T811100",
+        "name": "Matjesfilet (Heringsfilet) nordische Art",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "makrele-geraeuchert",
+    "ingredientName": "Makrele, geräuchert",
+    "blsHint": "Makrele geräuchert",
+    "blsCode": "T107600",
+    "blsName": "Makrele geräuchert",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "T107600",
+        "name": "Makrele geräuchert",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "haferflocken",
+    "ingredientName": "Haferflocken",
+    "blsHint": "Haferflocken",
+    "blsCode": "C133000",
+    "blsName": "Hafer Flocken",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C133000",
+        "name": "Hafer Flocken",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "spaghetti",
+    "ingredientName": "Spaghetti",
+    "blsHint": "Teigwaren Weizen roh",
+    "blsCode": "E401000",
+    "blsName": "Teigwaren eifrei, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "E401000",
+        "name": "Teigwaren eifrei, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "pasta-kurz",
+    "ingredientName": "Pasta, kurz (Penne/Fusilli)",
+    "blsHint": "Teigwaren Weizen roh",
+    "blsCode": "E401000",
+    "blsName": "Teigwaren eifrei, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "E401000",
+        "name": "Teigwaren eifrei, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "vollkornpasta",
+    "ingredientName": "Vollkornpasta",
+    "blsHint": "Teigwaren Vollkorn roh",
+    "blsCode": "E510000",
+    "blsName": "Vollkornteigwaren eifrei, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "E510000",
+        "name": "Vollkornteigwaren eifrei, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "lasagneplatten",
+    "ingredientName": "Lasagneplatten",
+    "blsHint": "Teigwaren Weizen roh",
+    "blsCode": "E401000",
+    "blsName": "Teigwaren eifrei, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "E401000",
+        "name": "Teigwaren eifrei, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "gnocchi",
+    "ingredientName": "Gnocchi (Kühlregal)",
+    "blsHint": "Gnocchi",
+    "blsCode": "K270000",
+    "blsName": "Gnocchi roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "K270000",
+        "name": "Gnocchi roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "reis-basmati",
+    "ingredientName": "Basmatireis",
+    "blsHint": "Reis Basmati roh",
+    "blsCode": "C352000",
+    "blsName": "Reis poliert, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C352000",
+        "name": "Reis poliert, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Reis poliert, roh"
+  },
+  {
+    "ingredientId": "reis-vollkorn",
+    "ingredientName": "Vollkornreis",
+    "blsHint": "Reis Vollkorn roh",
+    "blsCode": "C351000",
+    "blsName": "Reis unpoliert, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C351000",
+        "name": "Reis unpoliert, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "reis-risotto",
+    "ingredientName": "Risottoreis",
+    "blsHint": "Reis Rundkorn roh",
+    "blsCode": "C352000",
+    "blsName": "Reis poliert, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C352000",
+        "name": "Reis poliert, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Reis poliert, roh – Näherung für Risottoreis"
+  },
+  {
+    "ingredientId": "quinoa",
+    "ingredientName": "Quinoa",
+    "blsHint": "Quinoa roh",
+    "blsCode": "C118000",
+    "blsName": "Quinoa weiß, roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C118000",
+        "name": "Quinoa weiß, roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "couscous",
+    "ingredientName": "Couscous",
+    "blsHint": "Couscous roh",
+    "blsCode": "C119200",
+    "blsName": "Couscous (Hartweizen) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C119200",
+        "name": "Couscous (Hartweizen) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "bulgur",
+    "ingredientName": "Bulgur",
+    "blsHint": "Bulgur roh",
+    "blsCode": "C119100",
+    "blsName": "Bulgur (Hartweizen) roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C119100",
+        "name": "Bulgur (Hartweizen) roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "rote-linsen",
+    "ingredientName": "Rote Linsen",
+    "blsHint": "Linsen rot roh",
+    "blsCode": "H730000",
+    "blsName": "Linse rot reif",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H730000",
+        "name": "Linse rot reif",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "linsen-braun",
+    "ingredientName": "Linsen, braun (getrocknet)",
+    "blsHint": "Linsen roh",
+    "blsCode": "H725100",
+    "blsName": "Linse reif",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H725100",
+        "name": "Linse reif",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mehl",
+    "ingredientName": "Weizenmehl, Type 405",
+    "blsHint": "Weizenmehl Type 405",
+    "blsCode": "C214100",
+    "blsName": "Weizen Mehl, Type 405",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C214100",
+        "name": "Weizen Mehl, Type 405",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "dinkelmehl",
+    "ingredientName": "Dinkelvollkornmehl",
+    "blsHint": "Dinkelmehl Vollkorn",
+    "blsCode": "C235000",
+    "blsName": "Dinkel Vollkornmehl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C235000",
+        "name": "Dinkel Vollkornmehl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "speisestaerke",
+    "ingredientName": "Speisestärke",
+    "blsHint": "Speisestärke",
+    "blsCode": "C446000",
+    "blsName": "Mais Stärke",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C446000",
+        "name": "Mais Stärke",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "backpulver",
+    "ingredientName": "Backpulver",
+    "blsHint": "Backpulver",
+    "blsCode": "R421100",
+    "blsName": "Backpulver",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R421100",
+        "name": "Backpulver",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "natron",
+    "ingredientName": "Natron",
+    "blsHint": "Natriumhydrogencarbonat",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "hefe-trocken",
+    "ingredientName": "Trockenhefe",
+    "blsHint": "Backhefe",
+    "blsCode": "R458000",
+    "blsName": "Backhefe getrocknet (Trockenbackhefe)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R458000",
+        "name": "Backhefe getrocknet (Trockenbackhefe)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zucker",
+    "ingredientName": "Zucker",
+    "blsHint": "Zucker Saccharose",
+    "blsCode": "S111000",
+    "blsName": "Zucker weiß (Raffinadezucker/Weißzucker)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S111000",
+        "name": "Zucker weiß (Raffinadezucker/Weißzucker)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "brauner-zucker",
+    "ingredientName": "Brauner Zucker",
+    "blsHint": "Zucker braun",
+    "blsCode": "S112000",
+    "blsName": "Zucker braun (Kandisfarin/Rohzucker)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S112000",
+        "name": "Zucker braun (Kandisfarin/Rohzucker)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "puderzucker",
+    "ingredientName": "Puderzucker",
+    "blsHint": "Puderzucker",
+    "blsCode": "S111100",
+    "blsName": "Puderzucker",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S111100",
+        "name": "Puderzucker",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "honig",
+    "ingredientName": "Honig",
+    "blsHint": "Honig",
+    "blsCode": "S120000",
+    "blsName": "Honig",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S120000",
+        "name": "Honig",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "ahornsirup",
+    "ingredientName": "Ahornsirup",
+    "blsHint": "Ahornsirup",
+    "blsCode": "S151100",
+    "blsName": "Ahornsirup",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S151100",
+        "name": "Ahornsirup",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "vanillezucker",
+    "ingredientName": "Vanillezucker",
+    "blsHint": "Vanillezucker",
+    "blsCode": "S114000",
+    "blsName": "Vanillezucker",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S114000",
+        "name": "Vanillezucker",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kakao",
+    "ingredientName": "Kakaopulver, ungesüßt",
+    "blsHint": "Kakaopulver schwach entölt",
+    "blsCode": "S711000",
+    "blsName": "Kakaopulver schwach entölt",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S711000",
+        "name": "Kakaopulver schwach entölt",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zartbitterschokolade",
+    "ingredientName": "Zartbitterschokolade (70 %)",
+    "blsHint": "Schokolade Zartbitter",
+    "blsCode": "S570000",
+    "blsName": "Bitterschokolade",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S570000",
+        "name": "Bitterschokolade",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "schokodrops",
+    "ingredientName": "Schokoladentropfen",
+    "blsHint": "Schokolade Vollmilch",
+    "blsCode": "S539900",
+    "blsName": "Vollmilchschokolade",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S539900",
+        "name": "Vollmilchschokolade",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Vollmilchschokolade"
+  },
+  {
+    "ingredientId": "erdnussbutter",
+    "ingredientName": "Erdnussbutter",
+    "blsHint": "Erdnussbutter",
+    "blsCode": "H880200",
+    "blsName": "Erdnussbutter/Erdnusscreme",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H880200",
+        "name": "Erdnussbutter/Erdnusscreme",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mandelmus",
+    "ingredientName": "Mandelmus",
+    "blsHint": "Mandelmus",
+    "blsCode": "H212800",
+    "blsName": "Mandelmus",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H212800",
+        "name": "Mandelmus",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "tahini",
+    "ingredientName": "Tahini (Sesammus)",
+    "blsHint": "Sesammus Tahin",
+    "blsCode": "Q901000",
+    "blsName": "Tahin (Sesammus)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q901000",
+        "name": "Tahin (Sesammus)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "walnuesse",
+    "ingredientName": "Walnüsse",
+    "blsHint": "Walnuss",
+    "blsCode": "H120100",
+    "blsName": "Walnuss",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H120100",
+        "name": "Walnuss",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mandeln",
+    "ingredientName": "Mandeln",
+    "blsHint": "Mandel süß",
+    "blsCode": "H210100",
+    "blsName": "Mandel süß",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H210100",
+        "name": "Mandel süß",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mandeln-gemahlen",
+    "ingredientName": "Mandeln, gemahlen",
+    "blsHint": "Mandel süß",
+    "blsCode": "H210400",
+    "blsName": "Mandel süß, gemahlen",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H210400",
+        "name": "Mandel süß, gemahlen",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "haselnuesse",
+    "ingredientName": "Haselnüsse",
+    "blsHint": "Haselnuss",
+    "blsCode": "H130100",
+    "blsName": "Haselnuss",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H130100",
+        "name": "Haselnuss",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "cashews",
+    "ingredientName": "Cashewkerne",
+    "blsHint": "Cashewnuss",
+    "blsCode": "H170100",
+    "blsName": "Cashewkern",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H170100",
+        "name": "Cashewkern",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "erdnuesse",
+    "ingredientName": "Erdnüsse, geröstet",
+    "blsHint": "Erdnuss geröstet",
+    "blsCode": "H110600",
+    "blsName": "Erdnuss geröstet",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H110600",
+        "name": "Erdnuss geröstet",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "pinienkerne",
+    "ingredientName": "Pinienkerne",
+    "blsHint": "Pinienkerne",
+    "blsCode": "H320100",
+    "blsName": "Pinienkern",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H320100",
+        "name": "Pinienkern",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kuerbiskerne",
+    "ingredientName": "Kürbiskerne",
+    "blsHint": "Kürbiskerne",
+    "blsCode": "H310100",
+    "blsName": "Kürbiskern",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H310100",
+        "name": "Kürbiskern",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sonnenblumenkerne",
+    "ingredientName": "Sonnenblumenkerne",
+    "blsHint": "Sonnenblumenkerne",
+    "blsCode": "H430100",
+    "blsName": "Sonnenblumenkern",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H430100",
+        "name": "Sonnenblumenkern",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sesam",
+    "ingredientName": "Sesam",
+    "blsHint": "Sesamsamen",
+    "blsCode": "H420100",
+    "blsName": "Sesam",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H420100",
+        "name": "Sesam",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "leinsamen",
+    "ingredientName": "Leinsamen, geschrotet",
+    "blsHint": "Leinsamen",
+    "blsCode": "H410400",
+    "blsName": "Leinsamen geschrotet",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H410400",
+        "name": "Leinsamen geschrotet",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "chiasamen",
+    "ingredientName": "Chiasamen",
+    "blsHint": "Chiasamen",
+    "blsCode": "H480100",
+    "blsName": "Chia-Samen",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H480100",
+        "name": "Chia-Samen",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "hanfsamen",
+    "ingredientName": "Hanfsamen, geschält",
+    "blsHint": "Hanfsamen",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Kein Eintrag für Hanfsamen im BLS 4.0"
+  },
+  {
+    "ingredientId": "rosinen",
+    "ingredientName": "Rosinen",
+    "blsHint": "Rosinen",
+    "blsCode": "F840100",
+    "blsName": "Rosine/Sultanine (Weinbeere getrocknet)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F840100",
+        "name": "Rosine/Sultanine (Weinbeere getrocknet)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "datteln",
+    "ingredientName": "Datteln, getrocknet",
+    "blsHint": "Dattel getrocknet",
+    "blsCode": "F504400",
+    "blsName": "Dattel getrocknet",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "F504400",
+        "name": "Dattel getrocknet",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kokosraspel",
+    "ingredientName": "Kokosraspel",
+    "blsHint": "Kokosraspel",
+    "blsCode": "H150400",
+    "blsName": "Kokos Fruchtfleisch, geraspelt, getrocknet",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "H150400",
+        "name": "Kokos Fruchtfleisch, geraspelt, getrocknet",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "semmelbroesel",
+    "ingredientName": "Semmelbrösel",
+    "blsHint": "Paniermehl",
+    "blsCode": "B821000",
+    "blsName": "Paniermehl/Semmelbrösel/Semmelmehl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B821000",
+        "name": "Paniermehl/Semmelbrösel/Semmelmehl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "gemuesebruehe",
+    "ingredientName": "Gemüsebrühe (zubereitet)",
+    "blsHint": "Gemüsebrühe zubereitet",
+    "blsCode": "X416243",
+    "blsName": "Gemüsebrühe",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "X416243",
+        "name": "Gemüsebrühe",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sojasauce",
+    "ingredientName": "Sojasauce",
+    "blsHint": "Sojasoße",
+    "blsCode": "R143000",
+    "blsName": "Sojasauce/Sojasoße",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R143000",
+        "name": "Sojasauce/Sojasoße",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "currypaste",
+    "ingredientName": "Currypaste, rot",
+    "blsHint": "Currypaste",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Keine Currypaste im BLS 4.0"
+  },
+  {
+    "ingredientId": "senf",
+    "ingredientName": "Senf, mittelscharf",
+    "blsHint": "Senf",
+    "blsCode": "R132000",
+    "blsName": "Senf mittelscharf",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R132000",
+        "name": "Senf mittelscharf",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "ketchup",
+    "ingredientName": "Ketchup",
+    "blsHint": "Tomatenketchup",
+    "blsCode": "R141100",
+    "blsName": "Tomatenketchup",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R141100",
+        "name": "Tomatenketchup",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mayonnaise",
+    "ingredientName": "Mayonnaise",
+    "blsHint": "Mayonnaise 80 %",
+    "blsCode": "Q991000",
+    "blsName": "Mayonnaise (Fertigprodukt)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q991000",
+        "name": "Mayonnaise (Fertigprodukt)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "gewuerzgurken",
+    "ingredientName": "Gewürzgurken",
+    "blsHint": "Gewürzgurke",
+    "blsCode": "G520802",
+    "blsName": "Gurke gesäuert (Gewürzgurke) abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G520802",
+        "name": "Gurke gesäuert (Gewürzgurke) abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kapern",
+    "ingredientName": "Kapern",
+    "blsHint": "Kapern",
+    "blsCode": "G012902",
+    "blsName": "Kapern gesäuert, abgetropft",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G012902",
+        "name": "Kapern gesäuert, abgetropft",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "nudeln-reis",
+    "ingredientName": "Reisnudeln",
+    "blsHint": "Reisnudeln roh",
+    "blsCode": "C559000",
+    "blsName": "Reisnudeln roh",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C559000",
+        "name": "Reisnudeln roh",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "mie-nudeln",
+    "ingredientName": "Mie-Nudeln",
+    "blsHint": "Mie Nudeln",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Keine Mie-Nudeln im BLS 4.0 (Eierteigwaren wären eine Näherung)"
+  },
+  {
+    "ingredientId": "polenta",
+    "ingredientName": "Polenta (Maisgrieß)",
+    "blsHint": "Maisgrieß",
+    "blsCode": "C346000",
+    "blsName": "Mais Grieß",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C346000",
+        "name": "Mais Grieß",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "knaeckebrot",
+    "ingredientName": "Knäckebrot",
+    "blsHint": "Knäckebrot",
+    "blsCode": "B6A2100",
+    "blsName": "Roggenvollkornknäckebrot",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "B6A2100",
+        "name": "Roggenvollkornknäckebrot",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "reiswaffeln",
+    "ingredientName": "Reiswaffeln",
+    "blsHint": "Reiswaffel",
+    "blsCode": "C532700",
+    "blsName": "Reiswaffeln ungesalzen",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C532700",
+        "name": "Reiswaffeln ungesalzen",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "popcorn-mais",
+    "ingredientName": "Popcornmais",
+    "blsHint": "Mais Körner Popcorn",
+    "blsCode": "C533000",
+    "blsName": "Popcorn ungesüßt",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "C533000",
+        "name": "Popcorn ungesüßt",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet – BLS: Popcorn ungesüßt (gepoppt) – Näherung für Popcornmais"
+  },
+  {
+    "ingredientId": "dunkle-schoko-drops",
+    "ingredientName": "Zartbitter-Schokodrops",
+    "blsHint": "Schokolade Zartbitter",
+    "blsCode": "S560000",
+    "blsName": "Zartbitter-/Halbbitterschokolade",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "S560000",
+        "name": "Zartbitter-/Halbbitterschokolade",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kaffee",
+    "ingredientName": "Espresso",
+    "blsHint": "Kaffee Getränk",
+    "blsCode": "N411100",
+    "blsName": "Espresso (Getränk)",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "N411100",
+        "name": "Espresso (Getränk)",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "olivenoel",
+    "ingredientName": "Olivenöl",
+    "blsHint": "Olivenöl",
+    "blsCode": "Q120000",
+    "blsName": "Olivenöl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q120000",
+        "name": "Olivenöl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "rapsoel",
+    "ingredientName": "Rapsöl",
+    "blsHint": "Rapsöl",
+    "blsCode": "Q180000",
+    "blsName": "Rapsöl/Rüböl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q180000",
+        "name": "Rapsöl/Rüböl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "leinoel",
+    "ingredientName": "Leinöl",
+    "blsHint": "Leinöl",
+    "blsCode": "Q160000",
+    "blsName": "Leinöl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q160000",
+        "name": "Leinöl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "kokosoel",
+    "ingredientName": "Kokosöl",
+    "blsHint": "Kokosfett",
+    "blsCode": "Q550000",
+    "blsName": "Kokosöl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q550000",
+        "name": "Kokosöl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "sesamoel",
+    "ingredientName": "Sesamöl",
+    "blsHint": "Sesamöl",
+    "blsCode": "Q230000",
+    "blsName": "Sesamöl",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "Q230000",
+        "name": "Sesamöl",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "essig-balsamico",
+    "ingredientName": "Balsamico-Essig",
+    "blsHint": "Balsamessig",
+    "blsCode": "R125000",
+    "blsName": "Balsamicoessig",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R125000",
+        "name": "Balsamicoessig",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "essig-apfel",
+    "ingredientName": "Apfelessig",
+    "blsHint": "Apfelessig",
+    "blsCode": "R123100",
+    "blsName": "Apfelessig",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R123100",
+        "name": "Apfelessig",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "essig-reis",
+    "ingredientName": "Reisessig",
+    "blsHint": "Essig",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Kein Reisessig im BLS 4.0"
+  },
+  {
+    "ingredientId": "salz",
+    "ingredientName": "Salz",
+    "blsHint": "Speisesalz",
+    "blsCode": "R111000",
+    "blsName": "Speisesalz/Siedesalz/Tafelsalz",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R111000",
+        "name": "Speisesalz/Siedesalz/Tafelsalz",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "pfeffer",
+    "ingredientName": "Pfeffer, schwarz",
+    "blsHint": "Pfeffer schwarz",
+    "blsCode": "R258100",
+    "blsName": "Pfeffer schwarz, getrocknet",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "R258100",
+        "name": "Pfeffer schwarz, getrocknet",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "paprikapulver",
+    "ingredientName": "Paprikapulver, edelsüß",
+    "blsHint": "Paprika Gewürz",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "paprikapulver-geraeuchert",
+    "ingredientName": "Paprikapulver, geräuchert",
+    "blsHint": "Paprika Gewürz",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "kreuzkuemmel",
+    "ingredientName": "Kreuzkümmel, gemahlen",
+    "blsHint": "Kreuzkümmel",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "koriander-gemahlen",
+    "ingredientName": "Koriander, gemahlen",
+    "blsHint": "Koriander Gewürz",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "kurkuma",
+    "ingredientName": "Kurkuma, gemahlen",
+    "blsHint": "Kurkuma",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "currypulver",
+    "ingredientName": "Currypulver",
+    "blsHint": "Curry Gewürz",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "garam-masala",
+    "ingredientName": "Garam Masala",
+    "blsHint": "Curry Gewürz",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "zimt",
+    "ingredientName": "Zimt, gemahlen",
+    "blsHint": "Zimt",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "muskat",
+    "ingredientName": "Muskatnuss, gerieben",
+    "blsHint": "Muskatnuss",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "oregano",
+    "ingredientName": "Oregano, getrocknet",
+    "blsHint": "Oregano getrocknet",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "thymian",
+    "ingredientName": "Thymian, getrocknet",
+    "blsHint": "Thymian getrocknet",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "rosmarin",
+    "ingredientName": "Rosmarin, frisch",
+    "blsHint": "Rosmarin",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "chiliflocken",
+    "ingredientName": "Chiliflocken",
+    "blsHint": "Chili getrocknet",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "lorbeer",
+    "ingredientName": "Lorbeerblatt",
+    "blsHint": "Lorbeerblatt",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "vanille",
+    "ingredientName": "Vanilleextrakt",
+    "blsHint": "Vanille",
+    "blsCode": null,
+    "blsName": null,
+    "score": 0,
+    "status": "unmapped",
+    "candidates": [],
+    "note": "Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert"
+  },
+  {
+    "ingredientId": "knoblauchpulver",
+    "ingredientName": "Knoblauchpulver",
+    "blsHint": "Knoblauch Pulver",
+    "blsCode": "G490500",
+    "blsName": "Knoblauch Pulver",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G490500",
+        "name": "Knoblauch Pulver",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "zwiebelpulver",
+    "ingredientName": "Zwiebelpulver",
+    "blsHint": "Zwiebel Pulver",
+    "blsCode": "G480500",
+    "blsName": "Speisezwiebel Pulver",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "G480500",
+        "name": "Speisezwiebel Pulver",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "hefeflocken",
+    "ingredientName": "Hefeflocken",
+    "blsHint": "Hefeflocken",
+    "blsCode": "K762400",
+    "blsName": "Hefe Flocken/Nährhefe",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "K762400",
+        "name": "Hefe Flocken/Nährhefe",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  },
+  {
+    "ingredientId": "wasser",
+    "ingredientName": "Wasser",
+    "blsHint": "Trinkwasser",
+    "blsCode": "N110000",
+    "blsName": "Trinkwasser",
+    "score": 1,
+    "status": "suggested",
+    "candidates": [
+      {
+        "blsCode": "N110000",
+        "name": "Trinkwasser",
+        "score": 1
+      }
+    ],
+    "note": "Manuell zugeordnet, bitte fachlich bestätigen"
+  }
+]

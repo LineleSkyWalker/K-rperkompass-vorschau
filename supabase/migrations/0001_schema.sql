@@ -61,6 +61,7 @@ create table ingredient (
   grams_per_teaspoon    numeric(8,2),
   density_g_per_ml      numeric(6,3),
   allergens             text[] not null default '{}',
+  nutrition_negligible  boolean not null default false,   -- Gewürz in Kleinstmenge ohne BLS-Eintrag: bei Nährwerten ignorieren
   bls_code              text references bls_food(bls_code) on delete set null,
   mapping_status        mapping_status not null default 'unmapped',
   mapping_note          text,

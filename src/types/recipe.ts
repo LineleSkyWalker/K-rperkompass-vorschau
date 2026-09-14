@@ -130,6 +130,8 @@ export interface Ingredient {
   allergens: Allergen[];
   /** Nährwerte pro 100 g – nur gefüllt, wenn BLS-Zuordnung verifiziert oder vorgeschlagen und BLS importiert */
   nutritionPer100g?: NutrientValues;
+  /** Gewürz in Kleinstmenge ohne BLS-Eintrag – wird bei Nährwerten ignoriert, ohne Warnung */
+  nutritionNegligible?: boolean;
 }
 
 export interface RecipeIngredient {

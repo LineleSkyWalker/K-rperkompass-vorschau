@@ -57,6 +57,7 @@ async function main() {
         grams_per_teaspoon: i.gramsPerTeaspoon ?? null,
         density_g_per_ml: i.densityGPerMl ?? null,
         allergens: i.allergens ?? [],
+        nutrition_negligible: i.nutritionNegligible ?? false,
         bls_code: code,
         mapping_status: code ? (m!.status === 'verified' ? 'verified' : 'suggested') : 'unmapped',
         mapping_note: code ? null : (m?.note ?? 'Mapping erforderlich'),

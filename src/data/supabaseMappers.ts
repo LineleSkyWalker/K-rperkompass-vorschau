@@ -13,6 +13,7 @@ export interface DbIngredientRow {
   grams_per_teaspoon: number | null;
   density_g_per_ml: number | null;
   allergens: string[];
+  nutrition_negligible: boolean;
   bls_code: string | null;
   mapping_status: MappingStatus;
   bls_food: { bls_code: string; nutrients: Record<string, number> } | null;
@@ -87,6 +88,7 @@ export function mapDbIngredient(row: DbIngredientRow): Ingredient {
     blsCode: row.bls_code,
     mappingStatus: row.mapping_status,
     allergens: row.allergens as Allergen[],
+    nutritionNegligible: row.nutrition_negligible ?? false,
     nutritionPer100g: useNutrition ? pickNutrients(row.bls_food?.nutrients) : undefined,
   };
 }

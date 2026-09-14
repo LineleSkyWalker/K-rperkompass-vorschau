@@ -82,10 +82,13 @@ export function scaleTotals(t: NutrientTotals, factor: number): NutrientTotals {
 /** Nährwerte für das gesamte Rezept bei default_servings. */
 export function recipeTotals(recipe: Recipe): NutrientTotals {
   return sumNutrition(
-    recipe.ingredients.map((ri) => ({
-      grams: ri.quantityInGrams,
-      nutritionPer100g: ri.ingredient?.nutritionPer100g,
-    })),
+    recipe.ingredients
+      // Gewürze in Kleinstmengen ohne BLS-Eintrag werden nicht mitgezählt (keine Warnung)
+      .filter((ri) => !(ri.ingredient?.nutritionNegligible && !ri.ingredient.nutritionPer100g))
+      .map((ri) => ({
+        grams: ri.quantityInGrams,
+        nutritionPer100g: ri.ingredient?.nutritionPer100g,
+      })),
   );
 }
 

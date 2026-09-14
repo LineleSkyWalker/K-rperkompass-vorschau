@@ -56,7 +56,8 @@
     "bls:import": "tsx scripts/import-bls.ts",
     "recipes:validate": "tsx scripts/validate-recipes.ts",
     "recipes:seed": "tsx scripts/seed-recipes.ts",
-    "recipes:map": "tsx scripts/suggest-bls-mapping.ts"
+    "recipes:map": "tsx scripts/suggest-bls-mapping.ts",
+    "nutrition:report": "tsx scripts/report-nutrition.ts"
   },
   "private": true,
   "jest": {

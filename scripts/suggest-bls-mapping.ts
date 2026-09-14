@@ -17,6 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { INGREDIENTS } from '../data/ingredients';
 import { NUTRIENT_CODES } from '../src/types/nutrition';
+import { CURATED_BLS_MAPPING, NOT_IN_BLS } from '../data/bls-mapping-curated';
 
 interface BlsCache {
   source: string;
@@ -84,6 +85,7 @@ function main() {
 
   const result: MappingEntry[] = [];
   const unresolved: string[] = [];
+  const byCodeAll = new Map(cache.foods.map((f) => [f.blsCode, f]));
 
   for (const ing of INGREDIENTS) {
     const prev = existing[ing.id];
@@ -91,6 +93,41 @@ function main() {
       result.push(prev);
       continue;
     }
+    // 1) Kuratierte Zuordnung (manuell gegen die BLS-Liste geprüft)
+    const curated = CURATED_BLS_MAPPING[ing.id];
+    if (curated) {
+      const food = byCodeAll.get(curated.code);
+      if (!food) throw new Error(`Kuratierter BLS-Code ${curated.code} für "${ing.id}" existiert nicht in der BLS-Datei.`);
+      result.push({
+        ingredientId: ing.id,
+        ingredientName: ing.name,
+        blsHint: ing.blsHint,
+        blsCode: food.blsCode,
+        blsName: food.nameDe,
+        score: 1,
+        status: 'suggested',
+        candidates: [{ blsCode: food.blsCode, name: food.nameDe, score: 1 }],
+        note: curated.note ? `Manuell zugeordnet – ${curated.note}` : 'Manuell zugeordnet, bitte fachlich bestätigen',
+      });
+      continue;
+    }
+    // 2) Bekanntermaßen nicht im BLS
+    if (NOT_IN_BLS[ing.id] || ing.nutritionNegligible) {
+      result.push({
+        ingredientId: ing.id,
+        ingredientName: ing.name,
+        blsHint: ing.blsHint,
+        blsCode: null,
+        blsName: null,
+        score: 0,
+        status: 'unmapped',
+        candidates: [],
+        note: NOT_IN_BLS[ing.id] ?? 'Gewürz/Kraut in Kleinstmenge – im BLS 4.0 nicht enthalten, wird bei Nährwerten ignoriert',
+      });
+      if (!ing.nutritionNegligible) unresolved.push(`${ing.id} – ${NOT_IN_BLS[ing.id]}`);
+      continue;
+    }
+    // 3) Heuristischer Vorschlag (nur für neue Zutaten ohne kuratierten Eintrag)
     const scored = cache.foods
       .map((f) => ({ f, s: score(ing.blsHint, f) }))
       .sort((a, b) => b.s - a.s)

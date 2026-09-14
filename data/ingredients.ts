@@ -22,6 +22,11 @@ export interface CatalogIngredient {
   densityGPerMl?: number;
   allergens?: Allergen[];
   blsHint: string;
+  /**
+   * Gewürze/Kräuter in Kleinstmengen ohne BLS-Eintrag: fließen nicht in die
+   * Nährwertberechnung ein und lösen keine "unvollständig"-Warnung aus.
+   */
+  nutritionNegligible?: boolean;
 }
 
 const TL_SPICE = 2;
@@ -72,11 +77,11 @@ export const INGREDIENTS: CatalogIngredient[] = [
   { id: 'eisbergsalat', name: 'Eisbergsalat', category: 'produce', gramsPerPiece: 500, blsHint: 'Eisbergsalat roh' },
   { id: 'basilikum', name: 'Basilikum, frisch', category: 'produce', gramsPerPiece: 20, blsHint: 'Basilikum frisch' },
   { id: 'petersilie', name: 'Petersilie, frisch', category: 'produce', gramsPerPiece: 25, gramsPerTablespoon: 4, blsHint: 'Petersilie frisch' },
-  { id: 'koriander', name: 'Koriander, frisch', category: 'produce', gramsPerPiece: 20, blsHint: 'Koriander Blätter frisch' },
-  { id: 'dill', name: 'Dill, frisch', category: 'produce', gramsPerPiece: 15, gramsPerTablespoon: 3, blsHint: 'Dill frisch' },
+  { id: 'koriander', name: 'Koriander, frisch', category: 'produce', gramsPerPiece: 20, nutritionNegligible: true, blsHint: 'Koriander Blätter frisch' },
+  { id: 'dill', name: 'Dill, frisch', category: 'produce', gramsPerPiece: 15, gramsPerTablespoon: 3, nutritionNegligible: true, blsHint: 'Dill frisch' },
   { id: 'schnittlauch', name: 'Schnittlauch', category: 'produce', gramsPerPiece: 15, gramsPerTablespoon: 3, blsHint: 'Schnittlauch frisch' },
-  { id: 'minze', name: 'Minze, frisch', category: 'produce', gramsPerPiece: 15, blsHint: 'Pfefferminze frisch' },
-  { id: 'chili', name: 'Chilischote, frisch', category: 'produce', gramsPerPiece: 8, blsHint: 'Chili roh' },
+  { id: 'minze', name: 'Minze, frisch', category: 'produce', gramsPerPiece: 15, nutritionNegligible: true, blsHint: 'Pfefferminze frisch' },
+  { id: 'chili', name: 'Chilischote, frisch', category: 'produce', gramsPerPiece: 8, nutritionNegligible: true, blsHint: 'Chili roh' },
   { id: 'erbsen-tk', name: 'Erbsen, TK', category: 'frozen', blsHint: 'Erbsen grün tiefgefroren' },
   { id: 'edamame-tk', name: 'Edamame, TK', category: 'frozen', allergens: ['soy'], blsHint: 'Sojabohnen grün' },
   { id: 'mais-dose', name: 'Mais, Dose', category: 'canned', gramsPerPiece: 285, blsHint: 'Mais Konserve' },
@@ -156,7 +161,7 @@ export const INGREDIENTS: CatalogIngredient[] = [
   { id: 'dinkelmehl', name: 'Dinkelvollkornmehl', category: 'dry_goods', gramsPerTablespoon: 10, allergens: ['gluten'], blsHint: 'Dinkelmehl Vollkorn' },
   { id: 'speisestaerke', name: 'Speisestärke', category: 'dry_goods', gramsPerTablespoon: 10, gramsPerTeaspoon: 3, blsHint: 'Speisestärke' },
   { id: 'backpulver', name: 'Backpulver', category: 'dry_goods', gramsPerTeaspoon: 3, gramsPerPiece: 15, blsHint: 'Backpulver' },
-  { id: 'natron', name: 'Natron', category: 'dry_goods', gramsPerTeaspoon: 5, blsHint: 'Natriumhydrogencarbonat' },
+  { id: 'natron', name: 'Natron', category: 'dry_goods', gramsPerTeaspoon: 5, nutritionNegligible: true, blsHint: 'Natriumhydrogencarbonat' },
   { id: 'hefe-trocken', name: 'Trockenhefe', category: 'dry_goods', gramsPerPiece: 7, gramsPerTeaspoon: 3, blsHint: 'Backhefe' },
   { id: 'zucker', name: 'Zucker', category: 'dry_goods', gramsPerTablespoon: 12, gramsPerTeaspoon: 4, blsHint: 'Zucker Saccharose' },
   { id: 'brauner-zucker', name: 'Brauner Zucker', category: 'dry_goods', gramsPerTablespoon: 12, gramsPerTeaspoon: 4, blsHint: 'Zucker braun' },
@@ -215,21 +220,21 @@ export const INGREDIENTS: CatalogIngredient[] = [
   { id: 'essig-reis', name: 'Reisessig', category: 'spices', gramsPerTablespoon: 15, gramsPerTeaspoon: 5, blsHint: 'Essig' },
   { id: 'salz', name: 'Salz', category: 'spices', gramsPerTeaspoon: 6, blsHint: 'Speisesalz' },
   { id: 'pfeffer', name: 'Pfeffer, schwarz', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Pfeffer schwarz' },
-  { id: 'paprikapulver', name: 'Paprikapulver, edelsüß', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Paprika Gewürz' },
-  { id: 'paprikapulver-geraeuchert', name: 'Paprikapulver, geräuchert', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Paprika Gewürz' },
-  { id: 'kreuzkuemmel', name: 'Kreuzkümmel, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Kreuzkümmel' },
-  { id: 'koriander-gemahlen', name: 'Koriander, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Koriander Gewürz' },
-  { id: 'kurkuma', name: 'Kurkuma, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Kurkuma' },
-  { id: 'currypulver', name: 'Currypulver', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Curry Gewürz' },
-  { id: 'garam-masala', name: 'Garam Masala', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Curry Gewürz' },
-  { id: 'zimt', name: 'Zimt, gemahlen', category: 'spices', gramsPerTeaspoon: 2.5, blsHint: 'Zimt' },
-  { id: 'muskat', name: 'Muskatnuss, gerieben', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Muskatnuss' },
-  { id: 'oregano', name: 'Oregano, getrocknet', category: 'spices', gramsPerTeaspoon: 1, blsHint: 'Oregano getrocknet' },
-  { id: 'thymian', name: 'Thymian, getrocknet', category: 'spices', gramsPerTeaspoon: 1, blsHint: 'Thymian getrocknet' },
-  { id: 'rosmarin', name: 'Rosmarin, frisch', category: 'produce', gramsPerPiece: 3, gramsPerTeaspoon: 1, blsHint: 'Rosmarin' },
-  { id: 'chiliflocken', name: 'Chiliflocken', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Chili getrocknet' },
-  { id: 'lorbeer', name: 'Lorbeerblatt', plural: 'Lorbeerblätter', category: 'spices', gramsPerPiece: 0.5, blsHint: 'Lorbeerblatt' },
-  { id: 'vanille', name: 'Vanilleextrakt', category: 'spices', gramsPerTeaspoon: 4, blsHint: 'Vanille' },
+  { id: 'paprikapulver', name: 'Paprikapulver, edelsüß', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Paprika Gewürz' },
+  { id: 'paprikapulver-geraeuchert', name: 'Paprikapulver, geräuchert', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Paprika Gewürz' },
+  { id: 'kreuzkuemmel', name: 'Kreuzkümmel, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Kreuzkümmel' },
+  { id: 'koriander-gemahlen', name: 'Koriander, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Koriander Gewürz' },
+  { id: 'kurkuma', name: 'Kurkuma, gemahlen', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Kurkuma' },
+  { id: 'currypulver', name: 'Currypulver', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Curry Gewürz' },
+  { id: 'garam-masala', name: 'Garam Masala', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Curry Gewürz' },
+  { id: 'zimt', name: 'Zimt, gemahlen', category: 'spices', gramsPerTeaspoon: 2.5, nutritionNegligible: true, blsHint: 'Zimt' },
+  { id: 'muskat', name: 'Muskatnuss, gerieben', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Muskatnuss' },
+  { id: 'oregano', name: 'Oregano, getrocknet', category: 'spices', gramsPerTeaspoon: 1, nutritionNegligible: true, blsHint: 'Oregano getrocknet' },
+  { id: 'thymian', name: 'Thymian, getrocknet', category: 'spices', gramsPerTeaspoon: 1, nutritionNegligible: true, blsHint: 'Thymian getrocknet' },
+  { id: 'rosmarin', name: 'Rosmarin, frisch', category: 'produce', gramsPerPiece: 3, gramsPerTeaspoon: 1, nutritionNegligible: true, blsHint: 'Rosmarin' },
+  { id: 'chiliflocken', name: 'Chiliflocken', category: 'spices', gramsPerTeaspoon: TL_SPICE, nutritionNegligible: true, blsHint: 'Chili getrocknet' },
+  { id: 'lorbeer', name: 'Lorbeerblatt', plural: 'Lorbeerblätter', category: 'spices', gramsPerPiece: 0.5, nutritionNegligible: true, blsHint: 'Lorbeerblatt' },
+  { id: 'vanille', name: 'Vanilleextrakt', category: 'spices', gramsPerTeaspoon: 4, nutritionNegligible: true, blsHint: 'Vanille' },
   { id: 'knoblauchpulver', name: 'Knoblauchpulver', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Knoblauch Pulver' },
   { id: 'zwiebelpulver', name: 'Zwiebelpulver', category: 'spices', gramsPerTeaspoon: TL_SPICE, blsHint: 'Zwiebel Pulver' },
   { id: 'hefeflocken', name: 'Hefeflocken', category: 'spices', gramsPerTablespoon: 5, blsHint: 'Hefeflocken' },
