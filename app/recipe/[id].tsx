@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Linking, ScrollView, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -55,6 +55,17 @@ export default function RecipeDetailScreen() {
         </View>
 
         <View style={styles.content}>
+          {recipe.image?.url && recipe.image.attribution ? (
+            <Text
+              variant="caption"
+              tone="muted"
+              style={{ marginBottom: spacing.sm }}
+              onPress={recipe.image.sourceUrl ? () => Linking.openURL(recipe.image!.sourceUrl!) : undefined}
+              accessibilityRole={recipe.image.sourceUrl ? 'link' : undefined}
+            >
+              {recipe.image.attribution}
+            </Text>
+          ) : null}
           <Text variant="h1">{recipe.title}</Text>
           <Text variant="body" tone="secondary" style={{ marginTop: spacing.xs }}>
             {recipe.shortDescription}
@@ -188,7 +199,7 @@ function groupIngredients<T extends { group?: string }>(items: T[]): { name: str
 }
 
 const styles = StyleSheet.create({
-  hero: { height: 300, backgroundColor: semantic.surfaceMuted },
+  hero: { height: 320, backgroundColor: semantic.surfaceMuted },
   heroBar: { position: 'absolute', left: spacing.lg, right: spacing.lg, flexDirection: 'row', justifyContent: 'space-between' },
   content: {
     marginTop: -radius.xl,

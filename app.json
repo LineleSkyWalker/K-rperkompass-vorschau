@@ -23,7 +23,7 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
-      "output": "static"
+      "output": "single"
     },
     "scheme": "koerperkompass",
     "plugins": [
@@ -39,7 +39,8 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "baseUrl": "/K-rperkompass-vorschau"
     },
     "newArchEnabled": true
   }

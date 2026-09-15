@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
-import { Button, EmptyState, IconButton, LoadingState, Row, Screen, Text } from '@/design-system/components';
+import { Button, EmptyState, IconButton, LoadingState, Row, Screen } from '@/design-system/components';
 import { colors, semantic, spacing } from '@/design-system/tokens';
 import { useApp } from '@/state/AppProvider';
 import { applyFilter, EMPTY_FILTER, isFilterActive, type RecipeFilter } from '@/domain/filters';
@@ -11,6 +11,7 @@ import { rankRecipes } from '@/domain/ranking';
 import { SwipeDeck, type SwipeDeckHandle } from '@/components/SwipeDeck';
 import { FilterBar, ActiveFilterSummary } from '@/components/FilterBar';
 import { MoodSheet } from '@/components/MoodSheet';
+import { BrandHeader } from '@/components/BrandHeader';
 import { track } from '@/lib/analytics';
 import type { Recipe } from '@/types/recipe';
 
@@ -75,12 +76,7 @@ export default function DiscoverScreen() {
 
   return (
     <Screen style={{ paddingTop: insets.top }}>
-      <View style={styles.header}>
-        <Text variant="h1">Entdecken</Text>
-        <Text variant="bodySmall" tone="secondary">
-          Was könnte heute zu dir passen?
-        </Text>
-      </View>
+      <BrandHeader title="Entdecken" subtitle="Nach rechts wischen = mag ich · nach links = weiter" />
 
       <FilterBar filter={filter} onChange={changeFilter} onOpenMood={() => setMoodOpen(true)} />
       <ActiveFilterSummary filter={filter} onClear={() => changeFilter(EMPTY_FILTER)} />
@@ -119,20 +115,20 @@ export default function DiscoverScreen() {
 
       {ready && deck.length > 0 && !exhausted ? (
         <Row style={[styles.actions, { paddingBottom: spacing.md }]} gap={spacing.lg}>
-          <IconButton icon="arrow-forward" accessibilityLabel="Weiter" size={56} background={colors.neutral.beige} onPress={() => deckRef.current?.swipe('left')} />
+          <IconButton icon="close" accessibilityLabel="Weiter" size={64} color={colors.brand.petrol} background={colors.neutral.beige} onPress={() => deckRef.current?.swipe('left')} />
           <IconButton
             icon="book-outline"
             accessibilityLabel="Rezept ansehen"
-            size={56}
+            size={48}
             onPress={() => current && onTap(current)}
           />
           <IconButton
             icon="calendar-outline"
             accessibilityLabel="Zum Wochenplan hinzufügen"
-            size={56}
+            size={48}
             onPress={() => current && router.push({ pathname: '/add-to-plan', params: { recipeId: current.id } })}
           />
-          <IconButton icon="heart" accessibilityLabel="Favorit" size={56} color={semantic.textOnAccent} background={colors.brand.turquoise} onPress={() => deckRef.current?.swipe('right')} />
+          <IconButton icon="heart" accessibilityLabel="Mag ich" size={64} color={semantic.textOnAccent} background={colors.brand.turquoise} onPress={() => deckRef.current?.swipe('right')} />
         </Row>
       ) : null}
 
@@ -142,7 +138,6 @@ export default function DiscoverScreen() {
 }
 
 const styles = StyleSheet.create({
-  header: { paddingHorizontal: spacing.lg, paddingTop: spacing.md, paddingBottom: spacing.md },
-  deckArea: { flex: 1, marginHorizontal: spacing.lg, marginTop: spacing.md, marginBottom: spacing.md },
-  actions: { justifyContent: 'center', paddingHorizontal: spacing.lg },
+  deckArea: { flex: 1, marginHorizontal: spacing.md, marginTop: spacing.sm, marginBottom: spacing.md },
+  actions: { justifyContent: 'center', alignItems: 'center', paddingHorizontal: spacing.lg },
 });

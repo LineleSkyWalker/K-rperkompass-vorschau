@@ -7,8 +7,9 @@ import { Button, Chip, Divider, EmptyState, IconButton, Row, Screen, Text } from
 import { colors, radius, semantic, shadows, spacing } from '@/design-system/tokens';
 import { useApp } from '@/state/AppProvider';
 import { addDays, formatDayShort, isToday, startOfWeek, weekDates, WEEKDAY_LABELS } from '@/lib/dates';
-import { dayTotals, formatNutrient, weekTotals } from '@/domain/nutrition';
+import { dayTotals, entryTotals, formatNutrient, weekTotals } from '@/domain/nutrition';
 import { NutritionPanel } from '@/components/NutritionPanel';
+import { BrandHeader } from '@/components/BrandHeader';
 import { SERVING_OPTIONS } from '@/domain/servings';
 import type { MealPlanEntry, MealType } from '@/types/recipe';
 
@@ -26,6 +27,7 @@ export default function PlannerScreen() {
   const [weekOffset, setWeekOffset] = useState(0);
   const [editing, setEditing] = useState<MealPlanEntry | null>(null);
   const [showWeekNutrition, setShowWeekNutrition] = useState(false);
+  const [nutritionDay, setNutritionDay] = useState<string | null>(null);
 
   const anchor = addDays(startOfWeek(new Date()), weekOffset * 7);
   const dates = useMemo(() => weekDates(anchor), [anchor]);
@@ -45,19 +47,16 @@ export default function PlannerScreen() {
 
   return (
     <Screen style={{ paddingTop: insets.top }}>
-      <View style={styles.header}>
-        <Row style={{ justifyContent: 'space-between' }}>
-          <Text variant="h1">Wochenplan</Text>
+      <BrandHeader
+        title="Wochenplan"
+        subtitle={`${formatDayShort(dates[0]!)} – ${formatDayShort(dates[6]!)}${weekOffset === 0 ? ' · diese Woche' : weekOffset === 1 ? ' · nächste Woche' : ''}`}
+        right={
           <Row gap={spacing.xs}>
             <IconButton icon="chevron-back" size={36} accessibilityLabel="Vorherige Woche" onPress={() => setWeekOffset((w) => w - 1)} />
             <IconButton icon="chevron-forward" size={36} accessibilityLabel="Nächste Woche" onPress={() => setWeekOffset((w) => w + 1)} />
           </Row>
-        </Row>
-        <Text variant="bodySmall" tone="secondary">
-          {formatDayShort(dates[0]!)} – {formatDayShort(dates[6]!)}
-          {weekOffset === 0 ? ' · diese Woche' : weekOffset === 1 ? ' · nächste Woche' : ''}
-        </Text>
-      </View>
+        }
+      />
 
       {isEmpty ? (
         <EmptyState
@@ -99,11 +98,23 @@ export default function PlannerScreen() {
                     {WEEKDAY_LABELS[i]} <Text variant="bodySmall" tone="muted">{formatDayShort(date)}</Text>
                   </Text>
                   {data.profile.showNutrition && dayEntries.length > 0 && totals.totalGrams > 0 ? (
-                    <Text variant="caption" tone="muted">
-                      {formatNutrient(totals.values.ENERCC, 'kcal')} · {formatNutrient(totals.values.PROT625, 'g')} Protein
-                    </Text>
+                    <Pressable onPress={() => setNutritionDay(date)} style={styles.dayNutritionChip} accessibilityRole="button" accessibilityLabel={`Nährwerte für ${WEEKDAY_LABELS[i]} anzeigen`}>
+                      <Ionicons name="pie-chart-outline" size={14} color={semantic.accentStrong} />
+                      <Text variant="caption" style={{ color: semantic.accentStrong }}>
+                        {formatNutrient(totals.values.ENERCC, 'kcal')} · {formatNutrient(totals.values.PROT625, 'g')} Protein
+                      </Text>
+                      <Ionicons name="chevron-forward" size={14} color={semantic.accentStrong} />
+                    </Pressable>
                   ) : null}
                 </Row>
+                {data.profile.showNutrition && dayEntries.length > 0 && totals.totalGrams > 0 ? (
+                  <Row gap={spacing.lg} style={{ flexWrap: 'wrap' }}>
+                    <Mini label="KH" value={formatNutrient(totals.values.CHO, 'g')} />
+                    <Mini label="Fett" value={formatNutrient(totals.values.FAT, 'g')} />
+                    <Mini label="Ballastst." value={formatNutrient(totals.values.FIBT, 'g')} />
+                    <Mini label="Omega-3" value={formatNutrient(totals.values.FAPUN3, 'g')} />
+                  </Row>
+                ) : null}
                 {SLOTS.map((slot) => {
                   const slotEntries = dayEntries.filter((e) => e.mealSlot === slot.id);
                   return (
@@ -190,6 +201,19 @@ export default function PlannerScreen() {
         }}
       />
 
+      <Modal visible={nutritionDay !== null} animationType="slide" onRequestClose={() => setNutritionDay(null)}>
+        {nutritionDay ? (
+          <DayNutrition
+            date={nutritionDay}
+            label={WEEKDAY_LABELS[dates.indexOf(nutritionDay)] ?? ''}
+            entries={entries.filter((e) => e.date === nutritionDay)}
+            showReferenceValues={data.profile.showReferenceValues}
+            paddingTop={insets.top}
+            onClose={() => setNutritionDay(null)}
+          />
+        ) : null}
+      </Modal>
+
       <Modal visible={showWeekNutrition} animationType="slide" onRequestClose={() => setShowWeekNutrition(false)}>
         <Screen style={{ paddingTop: insets.top }}>
           <Row style={[styles.header, { justifyContent: 'space-between' }]}>
@@ -205,6 +229,71 @@ export default function PlannerScreen() {
           </ScrollView>
         </Screen>
       </Modal>
+    </Screen>
+  );
+}
+
+/** Nährwerte eines Tages: Summe aller gegessenen Portionen + Aufschlüsselung je Gericht. */
+function DayNutrition({
+  date,
+  label,
+  entries,
+  showReferenceValues,
+  paddingTop,
+  onClose,
+}: {
+  date: string;
+  label: string;
+  entries: MealPlanEntry[];
+  showReferenceValues: boolean;
+  paddingTop: number;
+  onClose: () => void;
+}) {
+  const totals = dayTotals(entries);
+  return (
+    <Screen style={{ paddingTop }}>
+      <Row style={[styles.header, { justifyContent: 'space-between' }]}>
+        <View>
+          <Text variant="h2">Nährwerte · {label}</Text>
+          <Text variant="caption" tone="muted">
+            {formatDayShort(date)} · {entries.length} {entries.length === 1 ? 'Gericht' : 'Gerichte'}
+          </Text>
+        </View>
+        <IconButton icon="close" accessibilityLabel="Schließen" onPress={onClose} />
+      </Row>
+      <ScrollView contentContainerStyle={{ padding: spacing.lg, gap: spacing.lg, paddingBottom: spacing.xxxl }}>
+        <Text variant="bodySmall" tone="secondary">
+          Summe der Portionen, die du an diesem Tag isst. Eine Orientierung – kein Ziel und keine Bewertung.
+        </Text>
+        <NutritionPanel totals={totals} title="Gesamt für diesen Tag" showReferenceValues={showReferenceValues} defaultExpanded />
+        <Text variant="title">Je Gericht</Text>
+        {SLOTS.map((slot) =>
+          entries
+            .filter((e) => e.mealSlot === slot.id)
+            .map((e) => {
+              const t = entryTotals(e);
+              return (
+                <View key={e.id} style={styles.dishRow}>
+                  <View style={{ flex: 1 }}>
+                    <Text variant="caption" tone="muted">
+                      {slot.label}
+                      {e.leftoverOfEntryId ? ' · Reste' : ''}
+                    </Text>
+                    <Text variant="subtitle" numberOfLines={2}>
+                      {e.recipe?.title ?? 'Rezept nicht verfügbar'}
+                    </Text>
+                    <Text variant="caption" tone="secondary">
+                      {e.servingsEaten} {e.servingsEaten === 1 ? 'Portion' : 'Portionen'}
+                      {t.totalGrams > 0
+                        ? ` · ${formatNutrient(t.values.ENERCC, 'kcal')} · ${formatNutrient(t.values.PROT625, 'g')} Protein · ${formatNutrient(t.values.CHO, 'g')} KH · ${formatNutrient(t.values.FAT, 'g')} Fett`
+                        : ' · Nährwerte noch nicht verfügbar'}
+                    </Text>
+                  </View>
+                </View>
+              );
+            }),
+        )}
+      </ScrollView>
     </Screen>
   );
 }
@@ -288,6 +377,8 @@ const styles = StyleSheet.create({
   slot: { flexDirection: 'row', alignItems: 'flex-start', gap: spacing.sm },
   emptySlot: { paddingVertical: 6, paddingHorizontal: spacing.md, borderRadius: radius.sm, borderWidth: 1, borderColor: semantic.border, borderStyle: 'dashed', alignSelf: 'flex-start' },
   entry: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, paddingVertical: 8, paddingHorizontal: spacing.md, borderRadius: radius.sm, backgroundColor: semantic.surfaceAccent },
+  dayNutritionChip: { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: semantic.surfaceAccent, borderRadius: radius.pill, paddingHorizontal: 10, paddingVertical: 4 },
+  dishRow: { backgroundColor: semantic.surface, borderRadius: radius.lg, padding: spacing.lg, ...shadows.soft },
   backdrop: { flex: 1, backgroundColor: 'rgba(28,28,28,0.35)' },
   sheet: { backgroundColor: semantic.surface, borderTopLeftRadius: radius.xl, borderTopRightRadius: radius.xl, padding: spacing.xl, paddingBottom: spacing.xxl },
 });

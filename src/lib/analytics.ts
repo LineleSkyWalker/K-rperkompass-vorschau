@@ -9,7 +9,7 @@ import { getSupabase } from '@/lib/supabase';
 import { newId } from '@/lib/ids';
 
 const sessionHash = newId().slice(0, 8);
-let enabled = true;
+let enabled = false; // Opt-in: wird vom AppProvider anhand der Einwilligung gesetzt
 
 export function setAnalyticsEnabled(on: boolean) {
   enabled = on;

@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Button, EmptyState, IconButton, Notice, Row, Screen, Text } from '@/design-system/components';
 import { colors, fonts, radius, semantic, shadows, spacing } from '@/design-system/tokens';
 import { useApp } from '@/state/AppProvider';
+import { BrandHeader } from '@/components/BrandHeader';
 import { formatItemQuantity, groupByCategory } from '@/domain/shoppingList';
 import { SHOPPING_CATEGORY_LABELS } from '@/types/recipe';
 import { startOfWeek, weekDates } from '@/lib/dates';
@@ -33,15 +34,11 @@ export default function ShoppingListScreen() {
 
   return (
     <Screen style={{ paddingTop: insets.top }}>
-      <View style={styles.header}>
-        <Row style={{ justifyContent: 'space-between' }}>
-          <Text variant="h1">Einkaufsliste</Text>
-          <IconButton icon="refresh" size={36} accessibilityLabel="Aus Wochenplan aktualisieren" onPress={() => regenerateShoppingList(thisWeek)} />
-        </Row>
-        <Text variant="bodySmall" tone="secondary">
-          {data.shoppingItems.length === 0 ? 'noch leer' : `${visible.length} Produkte · ${checkedCount} abgehakt${haveCount ? ` · ${haveCount} vorrätig` : ''}`}
-        </Text>
-      </View>
+      <BrandHeader
+        title="Einkaufsliste"
+        subtitle={data.shoppingItems.length === 0 ? 'noch leer' : `${visible.length} Produkte · ${checkedCount} abgehakt${haveCount ? ` · ${haveCount} vorrätig` : ''}`}
+        right={<IconButton icon="refresh" size={36} accessibilityLabel="Aus Wochenplan aktualisieren" onPress={() => regenerateShoppingList(thisWeek)} />}
+      />
 
       {data.shoppingItems.length === 0 ? (
         <EmptyState

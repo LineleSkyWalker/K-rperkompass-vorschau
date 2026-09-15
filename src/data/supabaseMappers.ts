@@ -42,6 +42,7 @@ export interface DbRecipeRow {
   image_source_name: string | null;
   image_license: string | null;
   image_attribution: string | null;
+  image_source_url: string | null;
   meal_types: MealType[];
   cuisine: string | null;
   prep_time_minutes: number;
@@ -120,6 +121,7 @@ export function mapDbRecipe(row: DbRecipeRow): Recipe {
           sourceName: row.image_source_name ?? undefined,
           license: row.image_license ?? undefined,
           attribution: row.image_attribution ?? undefined,
+          sourceUrl: row.image_source_url ?? undefined,
         }
       : null,
     mealTypes: row.meal_types,

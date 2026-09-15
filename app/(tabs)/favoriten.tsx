@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Chip, EmptyState, Screen, Text } from '@/design-system/components';
 import { colors, radius, semantic, shadows, spacing } from '@/design-system/tokens';
 import { useApp } from '@/state/AppProvider';
+import { BrandHeader } from '@/components/BrandHeader';
 import { RecipeImage } from '@/components/RecipeImage';
 import type { Recipe } from '@/types/recipe';
 
@@ -61,12 +62,7 @@ export default function FavoritesScreen() {
 
   return (
     <Screen style={{ paddingTop: insets.top }}>
-      <View style={styles.header}>
-        <Text variant="h1">Favoriten</Text>
-        <Text variant="bodySmall" tone="secondary">
-          {data.favorites.length} gespeichert
-        </Text>
-      </View>
+      <BrandHeader title="Favoriten" subtitle={`${data.favorites.length} gespeichert`} />
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.filters}>
         {FILTERS.map((f) => (
           <Chip key={f.id} label={f.label} small selected={filter === f.id} onPress={() => setFilter(f.id)} />

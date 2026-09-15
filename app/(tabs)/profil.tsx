@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Alert, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
+import { Alert, Pressable, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { OPERATOR } from '@/data/legal';
+import { BrandHeader } from '@/components/BrandHeader';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button, Card, Chip, Divider, Notice, Row, Screen, Text } from '@/design-system/components';
@@ -43,12 +46,9 @@ export default function ProfileScreen() {
 
   return (
     <Screen style={{ paddingTop: insets.top }}>
-      <ScrollView contentContainerStyle={{ padding: spacing.lg, gap: spacing.md, paddingBottom: spacing.xxxl }}>
-        <View style={{ paddingVertical: spacing.sm }}>
-          <Text variant="h1">Profil</Text>
-          <Text variant="bodySmall" tone="secondary">
-            Verstehen. Fühlen. Verändern.
-          </Text>
+      <ScrollView contentContainerStyle={{ paddingHorizontal: spacing.lg, gap: spacing.md, paddingBottom: spacing.xxxl }}>
+        <View style={{ marginHorizontal: -spacing.lg }}>
+          <BrandHeader title="Profil" subtitle="Verstehen. Fühlen. Verändern." />
         </View>
 
         <Card>
@@ -127,8 +127,14 @@ export default function ProfileScreen() {
         <Card>
           <Text variant="title">Datenschutz</Text>
           <Text variant="bodySmall" tone="secondary" style={{ marginTop: spacing.xs }}>
-            Wir speichern nur, was die App braucht: Präferenzen, Favoriten, Wochenplan, Einkaufsliste. Kein Gewicht, kein Kalorienziel, kein Tracking über Drittanbieter. Nutzungsstatistiken sind anonym.
+            Wir speichern nur, was die App braucht: Präferenzen, Favoriten, Wochenplan, Einkaufsliste. Kein Gewicht, kein Kalorienziel, kein Tracking über Drittanbieter.
           </Text>
+          <ToggleRow
+            label="Anonyme Nutzungsstatistik"
+            sub="Hilft uns zu sehen, welche Funktionen genutzt werden – ohne Konto-, Geräte- oder Personenbezug. Freiwillig."
+            value={p.analyticsConsent}
+            onChange={(v) => updateProfile({ analyticsConsent: v })}
+          />
           <Button label="Alle meine Daten löschen" variant="secondary" onPress={confirmDeleteData} style={{ marginTop: spacing.md }} />
           <Button label={session ? 'Konto löschen' : 'App zurücksetzen'} variant="ghost" onPress={confirmDeleteAccount} />
           <Button label="Onboarding erneut anzeigen" variant="ghost" onPress={() => router.push('/onboarding')} />
@@ -146,8 +152,30 @@ export default function ProfileScreen() {
             KÖRPER.KOMPASS ist keine Diät-App und ersetzt keine medizinische oder ernährungstherapeutische Beratung.
           </Text>
         </Card>
+
+        <Card>
+          <Text variant="title">Rechtliches</Text>
+          <LinkRow label="Impressum" onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'impressum' } })} />
+          <LinkRow label="Datenschutzerklärung" onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'datenschutz' } })} />
+          <LinkRow label="Nutzungshinweise" onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'nutzung' } })} />
+          <LinkRow label="Bildnachweise & Quellen" onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'bildnachweise' } })} />
+          <Text variant="caption" tone="muted" style={{ marginTop: spacing.sm }}>
+            {OPERATOR.name} · {OPERATOR.owners} · {OPERATOR.city} · Version 1.0.0
+          </Text>
+        </Card>
       </ScrollView>
     </Screen>
+  );
+}
+
+function LinkRow({ label, onPress }: { label: string; onPress: () => void }) {
+  return (
+    <Pressable onPress={onPress} accessibilityRole="link" style={({ pressed }) => [styles.linkRow, pressed && { opacity: 0.6 }]}>
+      <Text variant="subtitle" style={{ flex: 1 }}>
+        {label}
+      </Text>
+      <Ionicons name="chevron-forward" size={18} color={semantic.textMuted} />
+    </Pressable>
   );
 }
 
@@ -168,6 +196,7 @@ function ToggleRow({ label, sub, value, onChange, disabled }: { label: string; s
 }
 
 const styles = StyleSheet.create({
+  linkRow: { flexDirection: 'row', alignItems: 'center', paddingVertical: spacing.md, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: semantic.border },
   input: {
     marginTop: spacing.md,
     backgroundColor: semantic.background,

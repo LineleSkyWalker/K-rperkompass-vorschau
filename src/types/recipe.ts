@@ -163,7 +163,10 @@ export interface RecipeImage {
   sourceType: ImageSourceType;
   sourceName?: string;
   license?: string;
+  /** Urheber-Nennung, z. B. „Foto: Jane Doe“ */
   attribution?: string;
+  /** Link zur Quellseite (Lizenz-/Urhebernachweis) */
+  sourceUrl?: string;
 }
 
 export interface Recipe {
@@ -251,6 +254,10 @@ export interface UserProfile {
   showReferenceValues: boolean;
   notificationsEnabled: boolean;
   onboardingCompleted: boolean;
+  /** Einwilligung in anonyme Nutzungsstatistik (Opt-in, Standard: aus) */
+  analyticsConsent: boolean;
+  /** Version der Nutzungshinweise/Datenschutzerklärung, die bestätigt wurde */
+  legalAcceptedVersion: string | null;
 }
 
 export type SwipeAction = 'like' | 'skip';

@@ -39,6 +39,7 @@ export default function RootLayout() {
           <Stack.Screen name="recipe/[id]" options={{ presentation: 'card' }} />
           <Stack.Screen name="add-to-plan" options={{ presentation: 'modal' }} />
           <Stack.Screen name="onboarding" options={{ presentation: 'fullScreenModal' }} />
+          <Stack.Screen name="legal/[doc]" options={{ presentation: 'card' }} />
         </Stack>
       </AppProvider>
     </GestureHandlerRootView>

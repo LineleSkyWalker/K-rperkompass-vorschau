@@ -15,7 +15,7 @@ import {
 import { getSupabase, isSupabaseConfigured } from '@/lib/supabase';
 import { newId } from '@/lib/ids';
 import { buildShoppingList, mergeWithSavedState } from '@/domain/shoppingList';
-import { track } from '@/lib/analytics';
+import { setAnalyticsEnabled, track } from '@/lib/analytics';
 
 // ---------------------------------------------------------------------------
 // Reducer
@@ -176,6 +176,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setLoadError(e instanceof Error ? e.message : 'Rezepte konnten nicht geladen werden.');
     }
   }, []);
+
+  // Nutzungsstatistik nur mit Einwilligung (Opt-in)
+  useEffect(() => {
+    setAnalyticsEnabled(state.profile.analyticsConsent);
+  }, [state.profile.analyticsConsent]);
 
   // Initial: lokale Daten + Rezepte laden, Auth-Session beobachten
   useEffect(() => {

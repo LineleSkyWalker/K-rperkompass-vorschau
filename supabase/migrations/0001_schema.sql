@@ -96,6 +96,7 @@ create table recipe (
   image_source_name   text,
   image_license       text,
   image_attribution   text,
+  image_source_url    text,
   meal_types          meal_type[] not null default '{}',
   cuisine             text,
   prep_time_minutes   integer not null default 0 check (prep_time_minutes >= 0),
@@ -178,6 +179,8 @@ create table user_profile (
   show_reference_values   boolean not null default false,
   notifications_enabled   boolean not null default false,
   onboarding_completed    boolean not null default false,
+  analytics_consent       boolean not null default false,
+  legal_accepted_version  text,
   is_admin                boolean not null default false,
   created_at              timestamptz not null default now(),
   updated_at              timestamptz not null default now()

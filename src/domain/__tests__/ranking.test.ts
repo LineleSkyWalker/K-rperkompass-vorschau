@@ -65,7 +65,7 @@ describe('applyFilter', () => {
     const veg = recipe({ id: 'veg', tags: ['vegetarian'] });
     const vegan = recipe({ id: 'vegan', tags: ['vegan'] });
     const meat = recipe({ id: 'meat', tags: [] });
-    const profile = { dietaryPreferences: ['vegetarian' as const], allergens: [], intolerances: [], familyFriendly: false, preferredMaxCookTime: null, defaultServings: 2, showNutrition: true, showReferenceValues: false, notificationsEnabled: false, onboardingCompleted: true, userId: 'u' };
+    const profile = { dietaryPreferences: ['vegetarian' as const], allergens: [], intolerances: [], familyFriendly: false, preferredMaxCookTime: null, defaultServings: 2, showNutrition: true, showReferenceValues: false, notificationsEnabled: false, onboardingCompleted: true, analyticsConsent: false, legalAcceptedVersion: null, userId: 'u' };
     expect(applyFilter([veg, vegan, meat], EMPTY_FILTER, profile).map((r) => r.id)).toEqual(['veg', 'vegan']);
     expect(applyFilter([veg, vegan, meat], EMPTY_FILTER, { ...profile, dietaryPreferences: ['vegan'] }).map((r) => r.id)).toEqual(['vegan']);
   });

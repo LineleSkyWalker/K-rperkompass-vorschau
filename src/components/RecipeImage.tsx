@@ -63,5 +63,5 @@ function hash(s: string): number {
 
 const styles = StyleSheet.create({
   image: { width: '100%', height: '100%' },
-  placeholder: { alignItems: 'center', justifyContent: 'center' },
+  placeholder: { alignItems: 'center', justifyContent: 'center', paddingBottom: '30%' },
 });

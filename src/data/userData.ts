@@ -35,6 +35,8 @@ export function defaultProfile(userId: string): UserProfile {
     showReferenceValues: false,
     notificationsEnabled: false,
     onboardingCompleted: false,
+    analyticsConsent: false,
+    legalAcceptedVersion: null,
   };
 }
 
@@ -102,6 +104,8 @@ export async function pullRemoteUserData(userId: string): Promise<Partial<UserDa
         showReferenceValues: p.show_reference_values ?? false,
         notificationsEnabled: p.notifications_enabled ?? false,
         onboardingCompleted: p.onboarding_completed ?? false,
+        analyticsConsent: p.analytics_consent ?? false,
+        legalAcceptedVersion: p.legal_accepted_version ?? null,
       };
     }
     if (favorites.data) {
@@ -169,6 +173,8 @@ export async function pushRemoteUserData(userId: string, data: UserData): Promis
       show_reference_values: data.profile.showReferenceValues,
       notifications_enabled: data.profile.notificationsEnabled,
       onboarding_completed: data.profile.onboardingCompleted,
+      analytics_consent: data.profile.analyticsConsent,
+      legal_accepted_version: data.profile.legalAcceptedVersion,
     }).eq('user_id', userId);
 
     await sb.from('favorite').delete().eq('user_id', userId);

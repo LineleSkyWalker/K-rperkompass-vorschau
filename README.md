@@ -90,3 +90,12 @@ Im MVP dient das Supabase-Dashboard als Admin: Rezepte/Zutaten/Tags bearbeiten, 
 - Nährwertdaten: Max Rubner-Institut, Bundeslebensmittelschlüssel (BLS) 4.0, CC BY 4.0. Die Attribution wird in der App (Profil → „Über die Daten“) und im Nährwertpanel angezeigt.
 - Schriften: Bebas Neue, DM Sans (SIL Open Font License).
 - Rezepte: eigene KÖRPER.KOMPASS-Inhalte (`source_type = koerperkompass`).
+
+## Rezeptfotos & Rechtstexte
+
+- Fotos stammen von Wikimedia Commons (CC0 / CC BY / CC BY-SA / gemeinfrei). Auswahl in `scripts/image-picks.json`,
+  erzeugte Zuordnung in `data/recipe-images.ts` (`npx tsx scripts/build-recipe-images.ts`). Urheber + Lizenz werden auf
+  der Rezeptseite und unter Profil → Bildnachweise angezeigt. Für den Store-Release empfiehlt sich, die Fotos in Supabase
+  Storage (EU) zu kopieren, damit keine Anfragen an Wikimedia-Server gehen.
+- Impressum, Datenschutzerklärung und Nutzungshinweise liegen in `src/data/legal.ts` (Inhaberdaten dort pflegen).
+  Vor dem Release bitte anwaltlich gegenlesen lassen.
