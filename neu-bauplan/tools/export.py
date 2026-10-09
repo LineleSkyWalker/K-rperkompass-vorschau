@@ -7,6 +7,11 @@ recs, ings, bls, imgs = load(S)
 import os
 _bp = S + '/app/data/brote.json'
 if os.path.exists(_bp): recs = recs + json.load(open(_bp, encoding='utf-8'))
+_np = S + '/app/data/neue.json'
+NEU = set()
+if os.path.exists(_np):
+    _neue = json.load(open(_np, encoding='utf-8')); NEU = {r['slug'] for r in _neue}; recs = recs + _neue
+assert len({r['slug'] for r in recs}) == len(recs), 'doppelte Kennung'
 def pro(r):
     if 'unit' not in r: return 'pro Portion'
     return 'pro ' + (r['unit'][0] if r['per'] == 1 else str(r['per']) + ' ' + r['unit'][1])
@@ -62,7 +67,7 @@ def reasons(r, n, g, f, x):
     return w
 
 FORM_ORDER = ['ausgewogen','mittelmeer','nordisch','blutzucker','ballast','eiweiss']
-ALL_ORDER = ['vegetarisch','vegan','familie','schnell','mealprep','wenig']
+ALL_ORDER = ['vegetarisch','vegan','familie','schnell','mealprep','wenig','klassiker','besonders']
 MEAL = {'breakfast':'fr','lunch':'ma','dinner':'ma','snack':'sn','dessert':'de','bread':'br'}
 out = []; cf = collections.Counter(); ca = collections.Counter()
 for r in recs:
@@ -77,6 +82,7 @@ for r in recs:
                 'i': r['ingredients'], 'st': r['steps'], 'f': [k for k in FORM_ORDER if f[k]], 'a': [k for k in ALL_ORDER if a[k]], 'w': w,
                 'nu': [round(n['ENERCC']), round(n['PROT625'],1), round(n['FAT'],1), round(n['CHO'],1), round(n['FIBT'],1), round(n['SUGAR'],1)],
                 'al': al, 'im': im.get('url',''), 'at': im.get('attribution',''), 'su': im.get('sourceUrl','')})
+    if r['slug'] in NEU: out[-1]['neu'] = 1
     if 'unit' in r:
         out[-1].update({'rz': r.get('rest', 0), 'eh': r['unit'], 'pp': r['per'], 'np': pro(r), 'neu': 1})
 used = {row[0] for r in recs for row in r['ingredients']}

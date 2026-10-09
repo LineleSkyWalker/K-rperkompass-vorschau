@@ -44,5 +44,9 @@ doc = ('<!doctype html>\n<html lang="de">\n<head>\n<meta charset="utf-8">\n<meta
        '<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n'
        + head + '</head>\n<body>\n<header class="kopf">' + rest + '\n</body>\n</html>\n')
 open(site + '/index.html', 'w', encoding='utf-8').write(doc)
+# 3) Foto-Check: alle Rezeptfotos zum Durchsehen und Markieren
+_d = json.loads(open(A + '/data/data.json', encoding='utf-8').read())
+_l = [{'s': r['s'], 't': r['t'], 'u': r['im'].replace('/960px-', '/500px-')} for r in _d['R'] if r.get('im')]
+open(site + '/fotos.html', 'w', encoding='utf-8').write(open(A + '/src/fotos.html', encoding='utf-8').read().replace('{{LISTE}}', json.dumps(_l, ensure_ascii=False).replace('</', '<\\/')))
 size = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(site) for f in fs)
 print('Vorschau-Datei', len(one.encode()) // 1024, 'KB | Ordner neu/', size // 1024, 'KB,', sum(len(fs) for _, _, fs in os.walk(site)), 'Dateien')

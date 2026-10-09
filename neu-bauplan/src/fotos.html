@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Foto-Check</title>
+<style>
+:root { --t: #1AC7C9; --g: #F4D35E; --s: #111111; --l: #DDEDED; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif; color: var(--s); background: #fff; }
+header { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid var(--l); padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+h1 { font-size: 20px; margin: 0; letter-spacing: .04em; }
+header p { margin: 0; font-size: 14px; flex: 1 1 240px; }
+button { font: inherit; font-weight: 600; cursor: pointer; border-radius: 999px; padding: 9px 18px; border: 1px solid var(--s); background: #fff; color: var(--s); }
+button.haupt { background: var(--s); color: #fff; }
+main { padding: 16px; max-width: 1200px; margin: 0 auto; }
+.raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.bild { position: relative; border: 0; padding: 0; border-radius: 14px; overflow: hidden; background: #E8FAFA; text-align: left; display: flex; flex-direction: column; }
+.bild img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #E8FAFA; }
+.bild span { font-size: 13px; font-weight: 400; padding: 6px 9px 8px; line-height: 1.25; }
+.bild[aria-pressed="true"] { outline: 4px solid #E3342F; outline-offset: -4px; }
+.bild[aria-pressed="true"]::after { content: "Nicht schön"; position: absolute; top: 8px; left: 8px; background: #E3342F; color: #fff; font-size: 12px; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
+.bild[aria-pressed="true"] img { opacity: .55; }
+textarea { width: 100%; min-height: 120px; margin-top: 18px; font: 14px/1.4 inherit; padding: 10px; border: 1px solid var(--l); border-radius: 12px; }
+.hinweis { font-size: 14px; color: #555; margin: 14px 0 0; }
+:focus-visible { outline: 3px solid var(--t); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Foto-Check</h1>
+  <p id="stand">Tippe auf jedes Foto, das dir nicht gefällt.</p>
+  <button class="haupt" id="kopieren" type="button">Liste kopieren</button>
+  <button id="leeren" type="button">Auswahl leeren</button>
+</header>
+<main>
+  <div class="raster" id="raster"></div>
+  <p class="hinweis">Wenn du fertig bist: Tippe oben auf „Liste kopieren“ und füge die Liste in den Chat ein. Klappt das Kopieren nicht, markiere den Text im Feld unten und kopiere ihn von Hand.</p>
+  <textarea id="liste" readonly aria-label="Markierte Rezepte"></textarea>
+</main>
+<script id="daten" type="application/json">{{LISTE}}</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('daten').textContent), wahl = [];
+  try { wahl = JSON.parse(localStorage.getItem('kk-fotocheck') || '[]'); } catch (e) {}
+  var raster = document.getElementById('raster'), stand = document.getElementById('stand'), liste = document.getElementById('liste');
+  function zeige() {
+    var n = wahl.length;
+    stand.textContent = n ? n + ' von ' + D.length + ' Fotos markiert.' : 'Tippe auf jedes Foto, das dir nicht gefällt. ' + D.length + ' Fotos insgesamt.';
+    liste.value = n ? 'Diese Fotos gefallen mir nicht:\n' + D.filter(function (r) { return wahl.indexOf(r.s) > -1; }).map(function (r) { return '- ' + r.t + ' [' + r.s + ']'; }).join('\n') : '';
+    try { localStorage.setItem('kk-fotocheck', JSON.stringify(wahl)); } catch (e) {}
+  }
+  D.forEach(function (r) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'bild'; b.setAttribute('aria-pressed', wahl.indexOf(r.s) > -1);
+    var i = document.createElement('img'); i.loading = 'lazy'; i.alt = ''; i.src = r.u;
+    var s = document.createElement('span'); s.textContent = r.t;
+    b.appendChild(i); b.appendChild(s);
+    b.addEventListener('click', function () { var k = wahl.indexOf(r.s); if (k > -1) wahl.splice(k, 1); else wahl.push(r.s); b.setAttribute('aria-pressed', k < 0); zeige(); });
+    raster.appendChild(b);
+  });
+  document.getElementById('kopieren').addEventListener('click', function () {
+    var t = this, fertig = function (text) { t.textContent = text; setTimeout(function () { t.textContent = 'Liste kopieren'; }, 1800); };
+    if (!liste.value) { fertig('Noch nichts markiert'); return; }
+    try { navigator.clipboard.writeText(liste.value).then(function () { fertig('Kopiert'); }, function () { liste.select(); fertig('Bitte unten kopieren'); }); } catch (e) { liste.select(); fertig('Bitte unten kopieren'); }
+  });
+  document.getElementById('leeren').addEventListener('click', function () {
+    wahl = []; Array.prototype.forEach.call(document.querySelectorAll('.bild'), function (b) { b.setAttribute('aria-pressed', 'false'); }); zeige();
+  });
+  zeige();
+})();
+</script>
+</body>
+</html>

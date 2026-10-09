@@ -20,7 +20,7 @@ TROPICAL = {'mango','ananas','kokosmilch','kokosraspel','kokosjoghurt','kokosoel
 PRODUCE_SKIP = {'zitronensaft','limettensaft','zitronenabrieb','limettenabrieb','knoblauch','ingwer','basilikum','petersilie','koriander','dill','schnittlauch','minze','chili','rosmarin','kresse','meerrettich'}
 SPICY = {'chili','chiliflocken','currypaste','meerrettich'}
 BASIC = {'salz','pfeffer','wasser','olivenoel','rapsoel'}
-FAMILY_TAGS = {'pasta','pancake','casserole','potato_dish','soup','wrap','porridge','rice_dish','baking','egg_dish','bread_dish','german_classic','comfort_food'}
+FAMILY_TAGS = {'pasta','pancake','casserole','potato_dish','soup','wrap','porridge','rice_dish','baking','egg_dish','bread_dish','german_classic','comfort_food','classic','one_pot'}
 
 def meal_class(r):
     m = r['mealTypes']
@@ -48,7 +48,7 @@ def classify(r, ings, bls):
                        and free <= 5 and refined <= 20 and n['SUGAR'] <= {'main': 15, 'breakfast': 15, 'small': 10, 'bread': 10}[mc])
     med_hits = (ids & MED_VEG, ids & MED_EXTRA, ids & (LEGUMES - {'tofu','raeuchertofu','tempeh','edamame-tk'}), ids & FISH)
     med_base = ('olivenoel' in ids and not (ids & RED_MEAT) and sumg({'butter','sahne','schmand','creme-fraiche'}) <= 10
-                and not (ids & {'kokosmilch','sojasauce','currypaste','garam-masala','currypulver'}))
+                and not (ids & {'kokosmilch','sojasauce','currypaste','garam-masala','currypulver','cheddar','mais-dose','koriander','erdnussbutter'}))
     med_total = sum(len(x) for x in med_hits)
     f['mittelmeer'] = med_base and ((bool(med_hits[3]) and med_total >= 3) or
                                     (len(med_hits[0]) >= 1 and (bool(med_hits[2]) or len(med_hits[0]) >= 2) and med_total >= 4))
@@ -73,5 +73,7 @@ def classify(r, ings, bls):
     a['wenig'] = len(core) <= 5
     title = r['title'].lower()
     a['mealprep'] = bool(tags & {'soup','curry','one_pot','casserole'}) or (('meal_prep' in tags) and 'nicecream' not in title) or ('pasta' in tags and 'bolognese' in title) or (not tags & {'salad','wrap','bowl','soup','curry','pasta','german_classic','potato_dish'} and mc == 'main' and ' mit ' in title and bool(ids & WHOLE))
-    a['familie'] = ('family_friendly' in tags and bool(tags & FAMILY_TAGS) and not (ids & SPICY) and (act <= 60 or mc == 'bread') and 'curry' not in tags)
+    a['familie'] = ('family_friendly' in tags and bool(tags & FAMILY_TAGS) and not (ids & SPICY) and (act <= 80 or mc == 'bread') and 'curry' not in tags)
+    a['klassiker'] = bool(tags & {'german_classic', 'classic'})
+    a['besonders'] = 'special' in tags
     return n, g, f, a, dict(veg=veg, act=act, free=free, refined=refined, med=med_hits, nord=groups)

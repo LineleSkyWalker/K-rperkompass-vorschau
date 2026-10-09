@@ -1,0 +1,3295 @@
+[
+ {
+  "slug": "baked-oats-mit-beeren",
+  "title": "Baked Oats mit Beeren",
+  "short": "Haferflocken aus dem Ofen: außen leicht knusprig, innen saftig wie ein Kuchen und allein durch die Banane gesüßt.",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "sweet",
+   "warm",
+   "porridge",
+   "baking"
+  ],
+  "prep": 5,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "haferflocken",
+    100,
+    "g"
+   ],
+   [
+    "banane",
+    120,
+    "g",
+    "reif, geschält"
+   ],
+   [
+    "ei",
+    1,
+    "Stück"
+   ],
+   [
+    "milch",
+    150,
+    "ml"
+   ],
+   [
+    "backpulver",
+    1,
+    "TL"
+   ],
+   [
+    "zimt",
+    0.5,
+    "TL"
+   ],
+   [
+    "beeren-gemischt",
+    150,
+    "g"
+   ],
+   [
+    "mandeln",
+    20,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 180 °C Ober-/Unterhitze vorheizen.",
+   "Banane mit einer Gabel zerdrücken und mit Ei und Milch verrühren. Haferflocken, Backpulver und Zimt unterrühren.",
+   "Die Hälfte der Beeren unterheben und die Masse auf zwei ofenfeste Förmchen verteilen. Restliche Beeren und grob gehackte Mandeln daraufgeben.",
+   "22 bis 25 Minuten backen, bis die Oberfläche fest und goldbraun ist. Lauwarm essen."
+  ]
+ },
+ {
+  "slug": "tiramisu-overnight-oats",
+  "title": "Tiramisu-Overnight-Oats",
+  "short": "Frühstück mit Tiramisu-Geschmack: Haferflocken mit Espresso, darüber eine Schicht Vanille-Skyr und Kakao.",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "tags": [
+   "vegetarian",
+   "sweet",
+   "meal_prep",
+   "porridge",
+   "cold"
+  ],
+  "prep": 10,
+  "cook": 360,
+  "servings": 2,
+  "ingredients": [
+   [
+    "haferflocken",
+    80,
+    "g"
+   ],
+   [
+    "chiasamen",
+    10,
+    "g"
+   ],
+   [
+    "kaffee",
+    60,
+    "ml",
+    "abgekühlt"
+   ],
+   [
+    "milch",
+    120,
+    "ml"
+   ],
+   [
+    "skyr",
+    250,
+    "g"
+   ],
+   [
+    "honig",
+    2,
+    "TL"
+   ],
+   [
+    "vanille",
+    0.5,
+    "TL"
+   ],
+   [
+    "kakao",
+    4,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Haferflocken, Chiasamen, Espresso, Milch und die Hälfte des Honigs verrühren und auf zwei Gläser verteilen.",
+   "Skyr mit Vanille und dem restlichen Honig glatt rühren und auf die Haferschicht geben.",
+   "Abgedeckt mindestens 6 Stunden oder über Nacht in den Kühlschrank stellen.",
+   "Vor dem Essen mit Kakao bestäuben."
+  ]
+ },
+ {
+  "slug": "huettenkaese-fladen-mit-avocado",
+  "title": "Hüttenkäse-Fladen mit Avocado und Tomate",
+  "short": "Der Fladen besteht nur aus Hüttenkäse und Ei, wird im Ofen gebacken und dann wie ein Wrap gefüllt.",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "tags": [
+   "vegetarian",
+   "egg_dish",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 30,
+  "servings": 2,
+  "ingredients": [
+   [
+    "huettenkaese",
+    200,
+    "g"
+   ],
+   [
+    "ei",
+    2,
+    "Stück"
+   ],
+   [
+    "oregano",
+    0.5,
+    "TL"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "avocado",
+    140,
+    "g"
+   ],
+   [
+    "cherrytomaten",
+    150,
+    "g"
+   ],
+   [
+    "rucola",
+    30,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    10,
+    "ml"
+   ],
+   [
+    "pfeffer",
+    0.25,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 180 °C Ober-/Unterhitze vorheizen. Ein Blech mit Backpapier auslegen.",
+   "Hüttenkäse, Eier, Oregano und Salz mit dem Stabmixer fein pürieren.",
+   "Die Masse zu zwei ovalen, etwa 5 mm dicken Fladen auf das Backpapier streichen.",
+   "28 bis 32 Minuten backen, bis die Fladen goldbraun und fest sind. Kurz abkühlen lassen, dann lösen sie sich leicht vom Papier.",
+   "Avocado in Scheiben schneiden, Tomaten halbieren. Die Fladen mit Avocado, Tomaten und Rucola belegen, mit Zitronensaft und Pfeffer würzen und zusammenklappen."
+  ]
+ },
+ {
+  "slug": "gyros-bowl-mit-haehnchen",
+  "title": "Gyros-Bowl mit Hähnchen und Tzatziki",
+  "short": "Würziges Hähnchen, Naturreis, frisches Gemüse und selbst gerührtes Tzatziki in einer Schüssel.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "bowl",
+   "rice_dish",
+   "meal_prep",
+   "savory"
+  ],
+  "prep": 20,
+  "cook": 20,
+  "servings": 2,
+  "ingredients": [
+   [
+    "haehnchenbrust",
+    300,
+    "g"
+   ],
+   [
+    "paprikapulver",
+    1,
+    "TL"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "reis-vollkorn",
+    120,
+    "g"
+   ],
+   [
+    "gurke",
+    200,
+    "g"
+   ],
+   [
+    "tomate",
+    200,
+    "g"
+   ],
+   [
+    "rote-zwiebel",
+    40,
+    "g"
+   ],
+   [
+    "griechischer-joghurt",
+    150,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    10,
+    "ml"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Reis nach Packungsangabe garen.",
+   "Hähnchen in dünne Streifen schneiden und mit Paprikapulver, Oregano, der Hälfte des gepressten Knoblauchs, Öl, Salz und Pfeffer mischen.",
+   "Für das Tzatziki die Hälfte der Gurke grob raspeln, gut ausdrücken und mit Joghurt, dem restlichen Knoblauch und Zitronensaft verrühren.",
+   "Restliche Gurke und Tomaten würfeln, Zwiebel in feine Ringe schneiden.",
+   "Hähnchen in einer heißen Pfanne 6 bis 8 Minuten rundum kräftig braten, bis es durchgegart ist.",
+   "Reis auf zwei Schalen verteilen, Hähnchen, Gemüse und Tzatziki daraufgeben."
+  ]
+ },
+ {
+  "slug": "one-pot-pasta-tomate-spinat",
+  "title": "One-Pot-Pasta mit Tomaten und Spinat",
+  "short": "Alles gart zusammen in einem Topf. Die Stärke der Nudeln macht die Sauce von selbst cremig.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "pasta",
+   "one_pot",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "vollkornpasta",
+    180,
+    "g"
+   ],
+   [
+    "cherrytomaten",
+    300,
+    "g"
+   ],
+   [
+    "spinat",
+    100,
+    "g"
+   ],
+   [
+    "zwiebel",
+    60,
+    "g"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "gemuesebruehe",
+    500,
+    "ml"
+   ],
+   [
+    "tomatenmark",
+    15,
+    "g"
+   ],
+   [
+    "frischkaese",
+    60,
+    "g"
+   ],
+   [
+    "parmesan",
+    20,
+    "g"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel fein würfeln, Knoblauch hacken, Tomaten halbieren.",
+   "Pasta, Tomaten, Zwiebel, Knoblauch, Tomatenmark und Oregano in einen breiten Topf geben und die Brühe angießen.",
+   "Aufkochen und offen 10 bis 12 Minuten köcheln lassen. Dabei öfter umrühren, bis die Pasta gar und die Flüssigkeit fast aufgenommen ist.",
+   "Spinat und Frischkäse unterrühren, bis der Spinat zusammenfällt. Mit Pfeffer abschmecken und mit Parmesan bestreuen."
+  ]
+ },
+ {
+  "slug": "ofen-feta-pasta",
+  "title": "Ofen-Feta-Pasta mit Tomaten",
+  "short": "Feta und Tomaten schmoren im Ofen und werden mit der Gabel zur Sauce zerdrückt. Fünf Minuten Arbeit, der Rest erledigt sich von selbst.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "pasta",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 30,
+  "servings": 2,
+  "ingredients": [
+   [
+    "feta",
+    150,
+    "g"
+   ],
+   [
+    "cherrytomaten",
+    400,
+    "g"
+   ],
+   [
+    "olivenoel",
+    20,
+    "ml"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "pasta-kurz",
+    180,
+    "g"
+   ],
+   [
+    "basilikum",
+    5,
+    "g"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Ober-/Unterhitze vorheizen.",
+   "Tomaten in eine Auflaufform geben, Knoblauch in Scheiben dazugeben und alles mit Öl, Oregano und Pfeffer mischen. Den Feta im Ganzen in die Mitte setzen.",
+   "25 bis 30 Minuten backen, bis die Tomaten aufplatzen und der Feta weich ist.",
+   "Inzwischen die Pasta bissfest kochen und eine Tasse Kochwasser auffangen.",
+   "Feta und Tomaten mit einer Gabel zu einer Sauce zerdrücken. Pasta und einen Schuss Kochwasser unterrühren und mit Basilikum servieren."
+  ]
+ },
+ {
+  "slug": "smash-tacos-mit-rinderhack",
+  "title": "Smash-Tacos mit Rinderhack",
+  "short": "Das Hackfleisch wird dünn auf den Wrap gedrückt und direkt darauf gebraten. So wird es knusprig wie bei einem Burger.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "wrap",
+   "savory"
+  ],
+  "prep": 15,
+  "cook": 10,
+  "servings": 2,
+  "ingredients": [
+   [
+    "tortilla",
+    4,
+    "Stück",
+    "klein"
+   ],
+   [
+    "hackfleisch-rind",
+    240,
+    "g"
+   ],
+   [
+    "cheddar",
+    60,
+    "g"
+   ],
+   [
+    "eisbergsalat",
+    80,
+    "g"
+   ],
+   [
+    "tomate",
+    120,
+    "g"
+   ],
+   [
+    "gewuerzgurken",
+    50,
+    "g"
+   ],
+   [
+    "rote-zwiebel",
+    30,
+    "g"
+   ],
+   [
+    "joghurt",
+    60,
+    "g"
+   ],
+   [
+    "senf",
+    2,
+    "TL"
+   ],
+   [
+    "ketchup",
+    15,
+    "g"
+   ],
+   [
+    "paprikapulver",
+    0.5,
+    "TL"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Für die Sauce Joghurt, Senf, Ketchup und Paprikapulver verrühren. Salat in Streifen schneiden, Tomate und Gewürzgurken würfeln, Zwiebel fein hacken.",
+   "Hackfleisch mit Salz und Pfeffer würzen und in 4 Portionen teilen. Jede Portion dünn und bis zum Rand auf einen Wrap drücken.",
+   "Eine Pfanne stark erhitzen. Die Wraps nacheinander mit der Fleischseite nach unten 2 bis 3 Minuten braten, bis das Fleisch kräftig gebräunt und durchgegart ist.",
+   "Wenden, Cheddar auf das Fleisch streuen und 1 Minute schmelzen lassen.",
+   "Mit Salat, Tomate, Gurken, Zwiebel und Sauce füllen und zusammenklappen."
+  ]
+ },
+ {
+  "slug": "knuspriger-reissalat-mit-edamame",
+  "title": "Knuspriger Reissalat mit Edamame",
+  "short": "Der Reis wird im Ofen goldbraun geröstet und kommt erst zum Schluss in den Salat. Dazu ein cremiges Erdnuss-Dressing.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegan",
+   "vegetarian",
+   "salad",
+   "special",
+   "fresh"
+  ],
+  "prep": 20,
+  "cook": 30,
+  "servings": 2,
+  "ingredients": [
+   [
+    "reis-basmati",
+    150,
+    "g"
+   ],
+   [
+    "sojasauce",
+    25,
+    "ml"
+   ],
+   [
+    "sesamoel",
+    10,
+    "ml"
+   ],
+   [
+    "edamame-tk",
+    150,
+    "g"
+   ],
+   [
+    "gurke",
+    200,
+    "g"
+   ],
+   [
+    "karotte",
+    100,
+    "g"
+   ],
+   [
+    "fruehlingszwiebel",
+    30,
+    "g"
+   ],
+   [
+    "koriander",
+    5,
+    "g"
+   ],
+   [
+    "erdnuesse",
+    30,
+    "g"
+   ],
+   [
+    "erdnussbutter",
+    30,
+    "g"
+   ],
+   [
+    "limettensaft",
+    20,
+    "ml"
+   ],
+   [
+    "ahornsirup",
+    1,
+    "TL"
+   ],
+   [
+    "wasser",
+    30,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Reis garen und kurz ausdampfen lassen. Ofen auf 220 °C Umluft vorheizen.",
+   "Reis mit 1 EL der Sojasauce und dem Sesamöl mischen und dünn auf einem Blech mit Backpapier verteilen. 20 bis 25 Minuten backen und einmal wenden, bis er goldbraun und knusprig ist.",
+   "Edamame nach Packungsangabe garen. Gurke würfeln, Möhre raspeln, Frühlingszwiebeln in Ringe schneiden, Koriander hacken.",
+   "Für das Dressing Erdnussmus, restliche Sojasauce, Limettensaft, Ahornsirup und Wasser glatt rühren.",
+   "Gemüse und Edamame mit dem Dressing mischen. Den knusprigen Reis und die Erdnüsse erst kurz vor dem Essen unterheben."
+  ]
+ },
+ {
+  "slug": "cremiges-tomaten-haehnchen-mit-spinat",
+  "title": "Cremiges Tomaten-Hähnchen mit Spinat",
+  "short": "Zartes Hähnchen in einer Tomaten-Sahne-Sauce mit Parmesan. In einer Pfanne gekocht und in 30 Minuten fertig.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "special",
+   "rice_dish",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 20,
+  "servings": 2,
+  "ingredients": [
+   [
+    "haehnchenbrust",
+    320,
+    "g"
+   ],
+   [
+    "olivenoel",
+    10,
+    "ml"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "tomatenmark",
+    20,
+    "g"
+   ],
+   [
+    "cherrytomaten",
+    200,
+    "g"
+   ],
+   [
+    "gemuesebruehe",
+    100,
+    "ml"
+   ],
+   [
+    "sahne",
+    80,
+    "ml"
+   ],
+   [
+    "parmesan",
+    25,
+    "g"
+   ],
+   [
+    "spinat",
+    100,
+    "g"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ],
+   [
+    "reis-vollkorn",
+    120,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Reis nach Packungsangabe garen.",
+   "Hähnchenbrust waagerecht halbieren, salzen und pfeffern. Im Öl pro Seite 3 bis 4 Minuten goldbraun braten und herausnehmen.",
+   "Gehackten Knoblauch und Tomatenmark im Bratfett 1 Minute anrösten. Halbierte Tomaten, Brühe, Sahne und Oregano zugeben und 5 Minuten köcheln lassen.",
+   "Parmesan und Spinat einrühren. Das Hähnchen zurück in die Sauce legen und 3 bis 4 Minuten ziehen lassen, bis es durchgegart ist.",
+   "Mit dem Reis servieren."
+  ]
+ },
+ {
+  "slug": "halloumi-vom-blech",
+  "title": "Halloumi vom Blech mit Gemüse und Kichererbsen",
+  "short": "Ein Blech, eine Schüssel, kein Abwasch: buntes Ofengemüse mit Kichererbsen und goldbraunem Halloumi.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "one_pot",
+   "savory",
+   "warm"
+  ],
+  "prep": 15,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "halloumi",
+    200,
+    "g"
+   ],
+   [
+    "zucchini",
+    250,
+    "g"
+   ],
+   [
+    "paprika",
+    200,
+    "g"
+   ],
+   [
+    "rote-zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "cherrytomaten",
+    200,
+    "g"
+   ],
+   [
+    "kichererbsen-dose",
+    240,
+    "g"
+   ],
+   [
+    "olivenoel",
+    20,
+    "ml"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "paprikapulver",
+    1,
+    "TL"
+   ],
+   [
+    "zitronensaft",
+    15,
+    "ml"
+   ],
+   [
+    "petersilie",
+    5,
+    "g"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Umluft vorheizen.",
+   "Zucchini und Paprika in mundgerechte Stücke schneiden, Zwiebel in Spalten. Kichererbsen abspülen.",
+   "Gemüse, Tomaten und Kichererbsen auf einem Blech mit Öl, Oregano, Paprikapulver und Pfeffer mischen und 15 Minuten backen.",
+   "Halloumi in Scheiben schneiden, auf das Gemüse legen und weitere 10 Minuten backen, bis er goldbraun ist.",
+   "Mit Zitronensaft beträufeln und mit gehackter Petersilie bestreuen."
+  ]
+ },
+ {
+  "slug": "gnocchi-pfanne-mit-tomaten-und-mozzarella",
+  "title": "Gnocchi-Pfanne mit Tomaten und Mozzarella",
+  "short": "Die Gnocchi kommen ohne Vorkochen in die Pfanne und werden außen knusprig. In 20 Minuten steht das Essen auf dem Tisch.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "pasta",
+   "savory",
+   "warm"
+  ],
+  "prep": 5,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "gnocchi",
+    400,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "cherrytomaten",
+    300,
+    "g"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "spinat",
+    80,
+    "g"
+   ],
+   [
+    "mozzarella",
+    125,
+    "g"
+   ],
+   [
+    "basilikum",
+    5,
+    "g"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Gnocchi im Öl in einer großen Pfanne 6 bis 8 Minuten goldbraun und knusprig braten.",
+   "Halbierte Tomaten und gehackten Knoblauch zugeben und 4 Minuten mitbraten, bis die Tomaten weich sind.",
+   "Spinat unterheben und zusammenfallen lassen. Mit Salz und Pfeffer würzen.",
+   "Mozzarella zupfen und darauf verteilen. Deckel 2 Minuten auflegen, bis der Käse schmilzt. Mit Basilikum servieren."
+  ]
+ },
+ {
+  "slug": "erdnuss-nudeln-mit-gemuese",
+  "title": "Erdnuss-Nudeln mit Gemüse",
+  "short": "Bissfestes Gemüse und Nudeln in einer cremigen Erdnuss-Sauce. Schmeckt warm und am nächsten Tag kalt aus der Box.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "pasta",
+   "meal_prep",
+   "savory"
+  ],
+  "prep": 15,
+  "cook": 10,
+  "servings": 2,
+  "ingredients": [
+   [
+    "mie-nudeln",
+    150,
+    "g"
+   ],
+   [
+    "karotte",
+    150,
+    "g"
+   ],
+   [
+    "paprika",
+    150,
+    "g"
+   ],
+   [
+    "pak-choi",
+    200,
+    "g"
+   ],
+   [
+    "fruehlingszwiebel",
+    30,
+    "g"
+   ],
+   [
+    "erdnussbutter",
+    50,
+    "g"
+   ],
+   [
+    "sojasauce",
+    30,
+    "ml"
+   ],
+   [
+    "limettensaft",
+    20,
+    "ml"
+   ],
+   [
+    "ingwer",
+    5,
+    "g"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "ahornsirup",
+    1,
+    "TL"
+   ],
+   [
+    "sesamoel",
+    10,
+    "ml"
+   ],
+   [
+    "sesam",
+    10,
+    "g"
+   ],
+   [
+    "wasser",
+    60,
+    "ml",
+    "warm"
+   ]
+  ],
+  "steps": [
+   "Nudeln nach Packungsangabe garen und kalt abschrecken.",
+   "Für die Sauce Erdnussmus, Sojasauce, Limettensaft, geriebenen Ingwer, gepressten Knoblauch, Ahornsirup und warmes Wasser glatt rühren.",
+   "Möhre in feine Stifte, Paprika in Streifen und Pak Choi in Stücke schneiden.",
+   "Das Gemüse im Sesamöl 4 bis 5 Minuten bei starker Hitze braten. Es soll bissfest bleiben.",
+   "Nudeln und Sauce zugeben und 1 bis 2 Minuten durchschwenken. Mit Frühlingszwiebeln und Sesam bestreuen."
+  ]
+ },
+ {
+  "slug": "zitronen-pasta-mit-garnelen-und-zucchini",
+  "title": "Zitronen-Pasta mit Garnelen und Zucchini",
+  "short": "Leichte Pasta mit Knoblauch, Zitrone und Olivenöl. Wirkt wie ein Restaurantgericht und ist in 25 Minuten fertig.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "fish",
+   "special",
+   "pasta",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "spaghetti",
+    160,
+    "g"
+   ],
+   [
+    "garnelen",
+    200,
+    "g"
+   ],
+   [
+    "zucchini",
+    300,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "olivenoel",
+    20,
+    "ml"
+   ],
+   [
+    "zitronensaft",
+    20,
+    "ml"
+   ],
+   [
+    "zitronenabrieb",
+    1,
+    "TL"
+   ],
+   [
+    "petersilie",
+    8,
+    "g"
+   ],
+   [
+    "parmesan",
+    20,
+    "g"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Spaghetti bissfest kochen und eine Tasse Kochwasser auffangen. Garnelen auftauen und trocken tupfen.",
+   "Zucchini in dünne Halbmonde schneiden, Knoblauch fein hacken.",
+   "Zucchini in der Hälfte des Öls 4 Minuten braten. Garnelen und Knoblauch zugeben und 2 bis 3 Minuten braten, bis die Garnelen rosa sind.",
+   "Pasta, restliches Öl, Zitronensaft, Zitronenabrieb und einen Schuss Kochwasser unterschwenken. Mit Petersilie, Parmesan, Salz und Pfeffer abschmecken."
+  ]
+ },
+ {
+  "slug": "weisskohl-steaks-aus-dem-ofen",
+  "title": "Weißkohl-Steaks aus dem Ofen mit Kichererbsen",
+  "short": "Dicke Kohlscheiben werden im Ofen außen dunkel und knusprig, innen zart. Dazu knusprige Kichererbsen und eine Joghurt-Tahini-Sauce.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "special",
+   "savory",
+   "warm"
+  ],
+  "prep": 15,
+  "cook": 35,
+  "servings": 2,
+  "ingredients": [
+   [
+    "weisskohl",
+    500,
+    "g"
+   ],
+   [
+    "kichererbsen-dose",
+    240,
+    "g"
+   ],
+   [
+    "olivenoel",
+    25,
+    "ml"
+   ],
+   [
+    "paprikapulver-geraeuchert",
+    1,
+    "TL"
+   ],
+   [
+    "kreuzkuemmel",
+    0.5,
+    "TL"
+   ],
+   [
+    "griechischer-joghurt",
+    150,
+    "g"
+   ],
+   [
+    "tahini",
+    20,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    15,
+    "ml"
+   ],
+   [
+    "knoblauch",
+    3,
+    "g"
+   ],
+   [
+    "petersilie",
+    5,
+    "g"
+   ],
+   [
+    "pita",
+    120,
+    "g"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 220 °C Ober-/Unterhitze vorheizen. Den Kohl mit Strunk in 4 etwa 2 cm dicke Scheiben schneiden, damit sie zusammenhalten.",
+   "Öl mit Paprikapulver, Kreuzkümmel, Salz und Pfeffer verrühren. Die Kohlscheiben auf ein Blech legen und von beiden Seiten damit bestreichen. Abgespülte Kichererbsen im restlichen Würzöl wenden und daneben verteilen.",
+   "30 bis 35 Minuten backen und den Kohl nach der Hälfte der Zeit wenden, bis die Ränder dunkel und knusprig sind.",
+   "Joghurt, Tahini, Zitronensaft und gepressten Knoblauch glatt rühren.",
+   "Die Sauce auf zwei Teller streichen, Kohl und Kichererbsen daraufsetzen und mit Petersilie bestreuen. Pita dazu reichen."
+  ]
+ },
+ {
+  "slug": "spaghetti-bolognese-mit-viel-gemuese",
+  "title": "Spaghetti Bolognese mit viel Gemüse",
+  "short": "Der Klassiker, bei dem Möhren und Sellerie fein gewürfelt in der Sauce verschwinden. Die Sauce reicht für zwei Mahlzeiten und lässt sich einfrieren.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "pasta",
+   "meal_prep",
+   "comfort_food",
+   "savory"
+  ],
+  "prep": 15,
+  "cook": 35,
+  "servings": 4,
+  "ingredients": [
+   [
+    "hackfleisch-rind",
+    400,
+    "g"
+   ],
+   [
+    "zwiebel",
+    100,
+    "g"
+   ],
+   [
+    "karotte",
+    200,
+    "g"
+   ],
+   [
+    "sellerie",
+    100,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "tomatenmark",
+    30,
+    "g"
+   ],
+   [
+    "tomaten-dose",
+    800,
+    "g"
+   ],
+   [
+    "gemuesebruehe",
+    150,
+    "ml"
+   ],
+   [
+    "oregano",
+    2,
+    "TL"
+   ],
+   [
+    "spaghetti",
+    360,
+    "g"
+   ],
+   [
+    "parmesan",
+    40,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel, Möhren, Sellerie und Knoblauch sehr fein würfeln.",
+   "Hackfleisch im Öl bei starker Hitze krümelig und braun braten. Das Gemüse zugeben und 5 Minuten mitbraten.",
+   "Tomatenmark kurz anrösten, dann Tomaten, Brühe und Oregano zugeben. Mit Deckel 25 bis 30 Minuten sanft köcheln lassen.",
+   "Spaghetti bissfest kochen.",
+   "Die Sauce mit Salz und Pfeffer abschmecken und mit Spaghetti und Parmesan servieren."
+  ]
+ },
+ {
+  "slug": "kartoffelsuppe-mit-wuerstchen",
+  "title": "Kartoffelsuppe mit Würstchen",
+  "short": "Sämige Kartoffelsuppe wie früher, mit viel Wurzelgemüse und Geflügelwürstchen. Schmeckt aufgewärmt noch besser.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "german_classic",
+   "soup",
+   "potato_dish",
+   "comfort_food",
+   "meal_prep",
+   "warm"
+  ],
+  "prep": 20,
+  "cook": 25,
+  "servings": 4,
+  "ingredients": [
+   [
+    "kartoffel",
+    800,
+    "g"
+   ],
+   [
+    "karotte",
+    200,
+    "g"
+   ],
+   [
+    "lauch",
+    150,
+    "g"
+   ],
+   [
+    "sellerieknolle",
+    100,
+    "g"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "rapsoel",
+    15,
+    "ml"
+   ],
+   [
+    "gemuesebruehe",
+    1200,
+    "ml"
+   ],
+   [
+    "gefluegelwurst",
+    200,
+    "g"
+   ],
+   [
+    "schmand",
+    60,
+    "g"
+   ],
+   [
+    "petersilie",
+    8,
+    "g"
+   ],
+   [
+    "muskat",
+    0.25,
+    "TL"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Kartoffeln, Möhren und Sellerie schälen und würfeln. Lauch in Ringe schneiden, Zwiebel hacken.",
+   "Zwiebel im Öl glasig dünsten und das Gemüse 3 Minuten mitdünsten. Brühe angießen und 20 Minuten köcheln lassen, bis die Kartoffeln weich sind.",
+   "Etwa ein Drittel der Suppe pürieren oder mit einem Stampfer grob zerdrücken. So wird sie sämig.",
+   "Würstchen in Scheiben schneiden und 5 Minuten in der Suppe erhitzen. Schmand einrühren, mit Muskat, Salz und Pfeffer abschmecken und mit Petersilie bestreuen."
+  ]
+ },
+ {
+  "slug": "koenigsberger-klopse",
+  "title": "Königsberger Klopse mit Salzkartoffeln",
+  "short": "Zarte Fleischklößchen in heller Kapernsauce, ein Sonntagsessen aus Omas Küche.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "german_classic",
+   "comfort_food",
+   "sunday_dinner",
+   "potato_dish",
+   "warm"
+  ],
+  "prep": 25,
+  "cook": 30,
+  "servings": 4,
+  "ingredients": [
+   [
+    "hackfleisch-gemischt",
+    500,
+    "g"
+   ],
+   [
+    "semmelbroesel",
+    40,
+    "g"
+   ],
+   [
+    "ei",
+    1,
+    "Stück"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "senf",
+    2,
+    "TL"
+   ],
+   [
+    "gemuesebruehe",
+    800,
+    "ml"
+   ],
+   [
+    "butter",
+    30,
+    "g"
+   ],
+   [
+    "mehl",
+    30,
+    "g"
+   ],
+   [
+    "sahne",
+    100,
+    "ml"
+   ],
+   [
+    "kapern",
+    40,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    15,
+    "ml"
+   ],
+   [
+    "kartoffel",
+    800,
+    "g"
+   ],
+   [
+    "petersilie",
+    5,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel sehr fein würfeln. Hackfleisch, Semmelbrösel, Ei, Zwiebel, Senf, die Hälfte des Salzes und Pfeffer verkneten. Mit feuchten Händen 12 Klopse formen.",
+   "Brühe aufkochen und die Hitze reduzieren. Die Klopse in der leise siedenden Brühe 12 bis 15 Minuten gar ziehen lassen und herausheben. Brühe durch ein Sieb gießen und 500 ml abmessen.",
+   "Kartoffeln schälen und in Salzwasser etwa 20 Minuten garen.",
+   "Butter schmelzen, Mehl einrühren und 1 Minute anschwitzen. Die abgemessene Brühe nach und nach mit dem Schneebesen einrühren und 5 Minuten köcheln lassen. Sahne, Kapern und Zitronensaft zugeben und abschmecken.",
+   "Die Klopse in der Sauce erwärmen und mit Kartoffeln und Petersilie servieren."
+  ]
+ },
+ {
+  "slug": "kaiserschmarrn-mit-apfelmus",
+  "title": "Kaiserschmarrn mit Apfelmus",
+  "short": "Luftig durch geschlagenes Eiweiß, außen goldbraun und in der Pfanne in Stücke gerissen. Ein süßes Hauptgericht für die ganze Familie.",
+  "mealTypes": [
+   "lunch",
+   "dinner",
+   "dessert"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "classic",
+   "pancake",
+   "sweet",
+   "comfort_food",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "ei",
+    3,
+    "Stück"
+   ],
+   [
+    "mehl",
+    120,
+    "g"
+   ],
+   [
+    "milch",
+    200,
+    "ml"
+   ],
+   [
+    "zucker",
+    15,
+    "g"
+   ],
+   [
+    "vanille",
+    0.5,
+    "TL"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "butter",
+    25,
+    "g"
+   ],
+   [
+    "rosinen",
+    30,
+    "g"
+   ],
+   [
+    "puderzucker",
+    10,
+    "g"
+   ],
+   [
+    "apfelmus",
+    200,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Eier trennen. Eigelb mit Milch, Mehl, Vanille und Salz glatt rühren.",
+   "Eiweiß mit dem Zucker steif schlagen und vorsichtig unter den Teig heben.",
+   "Butter in einer großen Pfanne bei mittlerer Hitze schmelzen. Den Teig einfüllen, die Rosinen daraufstreuen und 4 bis 5 Minuten backen, bis die Unterseite goldbraun ist.",
+   "Den Teig vierteln, wenden und weitere 2 bis 3 Minuten backen. Mit zwei Pfannenwendern in Stücke reißen und kurz weiterbraten.",
+   "Mit Puderzucker bestäuben und mit Apfelmus servieren."
+  ]
+ },
+ {
+  "slug": "klassische-lasagne-mit-hackfleisch",
+  "title": "Klassische Lasagne",
+  "short": "Hackfleischsauce, Béchamel und eine goldbraune Käsekruste. Reicht für vier und schmeckt am nächsten Tag noch besser.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "casserole",
+   "comfort_food",
+   "sunday_dinner",
+   "meal_prep",
+   "warm"
+  ],
+  "prep": 30,
+  "cook": 40,
+  "servings": 4,
+  "ingredients": [
+   [
+    "hackfleisch-gemischt",
+    400,
+    "g"
+   ],
+   [
+    "zwiebel",
+    100,
+    "g"
+   ],
+   [
+    "karotte",
+    150,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "tomatenmark",
+    30,
+    "g"
+   ],
+   [
+    "tomaten-dose",
+    800,
+    "g"
+   ],
+   [
+    "oregano",
+    2,
+    "TL"
+   ],
+   [
+    "butter",
+    40,
+    "g"
+   ],
+   [
+    "mehl",
+    40,
+    "g"
+   ],
+   [
+    "milch",
+    500,
+    "ml"
+   ],
+   [
+    "muskat",
+    0.25,
+    "TL"
+   ],
+   [
+    "lasagneplatten",
+    250,
+    "g"
+   ],
+   [
+    "gouda",
+    100,
+    "g"
+   ],
+   [
+    "parmesan",
+    30,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel, Möhren und Knoblauch fein würfeln. Hackfleisch im Öl krümelig braten und das Gemüse 5 Minuten mitbraten. Tomatenmark, Tomaten und Oregano zugeben, 15 Minuten köcheln lassen und würzen.",
+   "Für die Béchamel Butter schmelzen, Mehl einrühren und 1 Minute anschwitzen. Milch nach und nach mit dem Schneebesen einrühren, unter Rühren aufkochen und 3 Minuten köcheln lassen. Mit Muskat und Salz würzen.",
+   "Ofen auf 190 °C Ober-/Unterhitze vorheizen. Etwas Béchamel in einer Auflaufform (etwa 20 × 30 cm) verstreichen. Abwechselnd Lasagneplatten, Hackfleischsauce und Béchamel einschichten und mit Béchamel abschließen.",
+   "Gouda und Parmesan darüberstreuen und 35 bis 40 Minuten backen, bis die Oberfläche goldbraun ist. Vor dem Anschneiden 10 Minuten ruhen lassen."
+  ]
+ },
+ {
+  "slug": "milchreis-mit-zimt-und-kirschen",
+  "title": "Milchreis mit Zimt und Kirschen",
+  "short": "Cremiger Milchreis mit warmen Kirschen. Als Dessert für vier oder als süßes Mittagessen für zwei.",
+  "mealTypes": [
+   "dessert"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "classic",
+   "sweet",
+   "comfort_food",
+   "warm"
+  ],
+  "prep": 5,
+  "cook": 35,
+  "servings": 4,
+  "ingredients": [
+   [
+    "reis-risotto",
+    200,
+    "g",
+    "oder Milchreis"
+   ],
+   [
+    "milch",
+    1000,
+    "ml"
+   ],
+   [
+    "zucker",
+    30,
+    "g"
+   ],
+   [
+    "vanille",
+    1,
+    "TL"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "kirschen-glas",
+    350,
+    "g"
+   ],
+   [
+    "speisestaerke",
+    10,
+    "g"
+   ],
+   [
+    "zimt",
+    1,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Milch mit Zucker, Vanille und Salz aufkochen. Den Reis einrühren und bei kleinster Hitze mit Deckel 30 bis 35 Minuten quellen lassen. Dabei öfter umrühren.",
+   "Kirschen mit ihrem Saft erhitzen. Stärke mit 2 EL kaltem Wasser glatt rühren, einrühren und einmal aufkochen, bis der Saft bindet.",
+   "Den Milchreis mit Zimt bestreuen und mit den warmen Kirschen servieren."
+  ]
+ },
+ {
+  "slug": "huehnersuppe-mit-nudeln",
+  "title": "Hühnersuppe mit Nudeln",
+  "short": "Selbst gekochte Brühe mit zartem Hühnerfleisch, Gemüse und Suppennudeln. Tut bei Erkältung gut und an jedem anderen Tag auch.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "soup",
+   "comfort_food",
+   "meal_prep",
+   "warm"
+  ],
+  "prep": 15,
+  "cook": 60,
+  "servings": 4,
+  "ingredients": [
+   [
+    "haehnchenschenkel",
+    600,
+    "g"
+   ],
+   [
+    "wasser",
+    1800,
+    "ml"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "karotte",
+    250,
+    "g"
+   ],
+   [
+    "lauch",
+    150,
+    "g"
+   ],
+   [
+    "sellerieknolle",
+    150,
+    "g"
+   ],
+   [
+    "petersilie",
+    15,
+    "g"
+   ],
+   [
+    "pasta-kurz",
+    120,
+    "g",
+    "oder Suppennudeln"
+   ],
+   [
+    "salz",
+    1.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Hähnchenschenkel mit dem kalten Wasser, der halbierten Zwiebel und der Hälfte von Möhren, Lauch und Sellerie (grob zerteilt) aufsetzen. Aufkochen, den Schaum abschöpfen und 45 Minuten leise köcheln lassen.",
+   "Das Fleisch herausnehmen und die Brühe durch ein Sieb gießen. Das Fleisch vom Knochen lösen und klein zupfen.",
+   "Das restliche Gemüse klein würfeln und in der Brühe 10 Minuten garen. Die Nudeln zugeben und nach Packungsangabe mitkochen.",
+   "Das Fleisch zurück in die Suppe geben, salzen und pfeffern und mit gehackter Petersilie bestreuen."
+  ]
+ },
+ {
+  "slug": "chili-con-carne",
+  "title": "Chili con Carne",
+  "short": "Mild gewürzt, damit alle am Tisch mitessen können. Ein großer Topf reicht für zwei Tage oder für den Gefrierschrank.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "one_pot",
+   "meal_prep",
+   "comfort_food",
+   "rice_dish",
+   "warm"
+  ],
+  "prep": 15,
+  "cook": 35,
+  "servings": 4,
+  "ingredients": [
+   [
+    "hackfleisch-rind",
+    400,
+    "g"
+   ],
+   [
+    "zwiebel",
+    120,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "paprika",
+    300,
+    "g"
+   ],
+   [
+    "rapsoel",
+    15,
+    "ml"
+   ],
+   [
+    "tomatenmark",
+    30,
+    "g"
+   ],
+   [
+    "tomaten-dose",
+    800,
+    "g"
+   ],
+   [
+    "kidneybohnen-dose",
+    480,
+    "g"
+   ],
+   [
+    "mais-dose",
+    280,
+    "g"
+   ],
+   [
+    "gemuesebruehe",
+    200,
+    "ml"
+   ],
+   [
+    "kreuzkuemmel",
+    1,
+    "TL"
+   ],
+   [
+    "paprikapulver",
+    2,
+    "TL"
+   ],
+   [
+    "oregano",
+    1,
+    "TL"
+   ],
+   [
+    "kakao",
+    2,
+    "g"
+   ],
+   [
+    "reis-vollkorn",
+    240,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel und Knoblauch hacken, Paprika würfeln. Bohnen und Mais abspülen.",
+   "Hackfleisch im Öl bei starker Hitze krümelig braten. Zwiebel, Knoblauch und Paprika zugeben und 5 Minuten mitbraten.",
+   "Tomatenmark, Kreuzkümmel, Paprikapulver und Oregano 1 Minute mitrösten. Tomaten, Brühe und Kakao zugeben und mit Deckel 20 Minuten köcheln lassen.",
+   "Inzwischen den Reis garen.",
+   "Bohnen und Mais zum Chili geben und weitere 10 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken und mit dem Reis servieren. Wer es scharf mag, würzt am Tisch mit Chiliflocken nach."
+  ]
+ },
+ {
+  "slug": "fischstaebchen-selbst-gemacht",
+  "title": "Selbst gemachte Fischstäbchen mit Kartoffelstampf",
+  "short": "Knusprig aus dem Ofen statt aus der Fritteuse, dazu cremiger Kartoffelstampf und Erbsen.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "fish",
+   "potato_dish",
+   "savory",
+   "warm"
+  ],
+  "prep": 25,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "kabeljaufilet",
+    300,
+    "g"
+   ],
+   [
+    "mehl",
+    30,
+    "g"
+   ],
+   [
+    "ei",
+    1,
+    "Stück"
+   ],
+   [
+    "semmelbroesel",
+    60,
+    "g"
+   ],
+   [
+    "rapsoel",
+    15,
+    "ml"
+   ],
+   [
+    "kartoffel",
+    500,
+    "g"
+   ],
+   [
+    "milch",
+    80,
+    "ml"
+   ],
+   [
+    "butter",
+    15,
+    "g"
+   ],
+   [
+    "erbsen-tk",
+    200,
+    "g"
+   ],
+   [
+    "muskat",
+    0.25,
+    "TL"
+   ],
+   [
+    "zitrone",
+    0.5,
+    "Stück"
+   ],
+   [
+    "salz",
+    0.75,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.25,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 220 °C Umluft vorheizen. Kartoffeln schälen und in Salzwasser etwa 20 Minuten garen.",
+   "Den Fisch trocken tupfen, in etwa 2 cm breite Streifen schneiden und salzen. Nacheinander in Mehl, verquirltem Ei und Semmelbröseln wenden.",
+   "Auf ein Blech mit Backpapier legen, mit dem Öl beträufeln und 12 bis 15 Minuten backen. Einmal wenden, bis die Stäbchen goldbraun sind.",
+   "Erbsen 3 Minuten in kochendem Wasser garen.",
+   "Kartoffeln abgießen und mit warmer Milch und Butter stampfen. Mit Muskat, Salz und Pfeffer abschmecken.",
+   "Fischstäbchen mit Kartoffelstampf, Erbsen und Zitronenspalten servieren."
+  ]
+ },
+ {
+  "slug": "kaesespaetzle-mit-roestzwiebeln",
+  "title": "Käsespätzle mit Röstzwiebeln und Salat",
+  "short": "Wirtshausküche für zu Hause: Spätzle mit geschmolzenem Käse und goldbraunen Zwiebeln, dazu ein frischer Feldsalat.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "german_classic",
+   "comfort_food",
+   "savory",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 20,
+  "servings": 2,
+  "ingredients": [
+   [
+    "spaetzle",
+    300,
+    "g"
+   ],
+   [
+    "zwiebel",
+    200,
+    "g"
+   ],
+   [
+    "butter",
+    20,
+    "g"
+   ],
+   [
+    "gouda",
+    120,
+    "g",
+    "oder Bergkäse"
+   ],
+   [
+    "milch",
+    50,
+    "ml"
+   ],
+   [
+    "muskat",
+    0.25,
+    "TL"
+   ],
+   [
+    "schnittlauch",
+    5,
+    "g"
+   ],
+   [
+    "feldsalat",
+    80,
+    "g"
+   ],
+   [
+    "essig-apfel",
+    10,
+    "ml"
+   ],
+   [
+    "rapsoel",
+    10,
+    "ml"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebeln in feine Ringe schneiden und in der Butter bei mittlerer Hitze 12 bis 15 Minuten goldbraun rösten. Herausnehmen.",
+   "Spätzle nach Packungsangabe garen und abgießen.",
+   "Die Spätzle mit der Milch in der Zwiebelpfanne erhitzen. Den geriebenen Käse nach und nach unterheben, bis er Fäden zieht. Mit Muskat, Salz und Pfeffer würzen.",
+   "Feldsalat mit Essig, Öl und einer Prise Salz anmachen.",
+   "Die Käsespätzle mit den Röstzwiebeln und Schnittlauch bestreuen und mit dem Salat servieren."
+  ]
+ },
+ {
+  "slug": "toast-hawaii-vom-blech",
+  "title": "Toast Hawaii vom Blech",
+  "short": "Der Retro-Klassiker mit Vollkorntoast und frischer Ananas. In 20 Minuten fertig und bei Kindern beliebt.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "bread_dish",
+   "savory",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 12,
+  "servings": 2,
+  "ingredients": [
+   [
+    "toast-vollkorn",
+    120,
+    "g",
+    "4 Scheiben"
+   ],
+   [
+    "butter",
+    10,
+    "g"
+   ],
+   [
+    "schinken-gekocht",
+    80,
+    "g"
+   ],
+   [
+    "ananas",
+    200,
+    "g",
+    "frisch, in Scheiben"
+   ],
+   [
+    "gouda",
+    100,
+    "g"
+   ],
+   [
+    "paprikapulver",
+    0.5,
+    "TL"
+   ],
+   [
+    "salat-mix",
+    80,
+    "g"
+   ],
+   [
+    "essig-balsamico",
+    10,
+    "ml"
+   ],
+   [
+    "olivenoel",
+    10,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Ein Blech mit Backpapier auslegen.",
+   "Toastscheiben dünn mit Butter bestreichen und auf das Blech legen. Mit Schinken und Ananas belegen und den Käse daraufgeben.",
+   "10 bis 12 Minuten backen, bis der Käse geschmolzen und leicht gebräunt ist. Mit Paprikapulver bestäuben.",
+   "Den Salat mit Essig und Öl anmachen und dazu servieren."
+  ]
+ },
+ {
+  "slug": "rote-gruetze-mit-vanillejoghurt",
+  "title": "Rote Grütze mit Vanillejoghurt",
+  "short": "Beeren und Kirschen, kurz aufgekocht und leicht gebunden. Hält sich im Kühlschrank drei Tage.",
+  "mealTypes": [
+   "dessert"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "german_classic",
+   "sweet",
+   "meal_prep",
+   "cold"
+  ],
+  "prep": 5,
+  "cook": 10,
+  "servings": 4,
+  "ingredients": [
+   [
+    "beeren-gemischt",
+    500,
+    "g"
+   ],
+   [
+    "kirschen-glas",
+    200,
+    "g"
+   ],
+   [
+    "wasser",
+    150,
+    "ml"
+   ],
+   [
+    "speisestaerke",
+    25,
+    "g"
+   ],
+   [
+    "zucker",
+    30,
+    "g"
+   ],
+   [
+    "joghurt",
+    300,
+    "g"
+   ],
+   [
+    "vanille",
+    1,
+    "TL"
+   ],
+   [
+    "honig",
+    2,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Beeren, Kirschen mit ihrem Saft, Zucker und 100 ml des Wassers aufkochen.",
+   "Die Stärke mit dem restlichen kalten Wasser glatt rühren, in die kochenden Früchte rühren und 1 Minute köcheln lassen, bis die Grütze bindet.",
+   "In Gläser oder eine Schüssel füllen und abkühlen lassen.",
+   "Joghurt mit Vanille und Honig verrühren und zur Grütze servieren."
+  ]
+ },
+ {
+  "slug": "honig-soja-haehnchen-mit-brokkoli",
+  "title": "Honig-Soja-Hähnchen mit Brokkoli und Reis",
+  "short": "Glänzend glasiertes Hähnchen mit knackigem Brokkoli. Lässt sich gut in Boxen füllen und hält drei Tage.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "meal_prep",
+   "rice_dish",
+   "savory",
+   "warm"
+  ],
+  "prep": 15,
+  "cook": 20,
+  "servings": 2,
+  "ingredients": [
+   [
+    "haehnchenbrust",
+    300,
+    "g"
+   ],
+   [
+    "sojasauce",
+    30,
+    "ml"
+   ],
+   [
+    "honig",
+    3,
+    "TL"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "ingwer",
+    5,
+    "g"
+   ],
+   [
+    "speisestaerke",
+    5,
+    "g"
+   ],
+   [
+    "wasser",
+    60,
+    "ml"
+   ],
+   [
+    "rapsoel",
+    10,
+    "ml"
+   ],
+   [
+    "brokkoli",
+    350,
+    "g"
+   ],
+   [
+    "reis-basmati",
+    140,
+    "g"
+   ],
+   [
+    "sesam",
+    10,
+    "g"
+   ],
+   [
+    "fruehlingszwiebel",
+    20,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Reis nach Packungsangabe garen.",
+   "Sojasauce, Honig, gepressten Knoblauch, geriebenen Ingwer, Stärke und Wasser verrühren.",
+   "Brokkoli in kleine Röschen teilen und 3 Minuten in kochendem Wasser garen, dann abgießen.",
+   "Hähnchen in mundgerechte Stücke schneiden und im Öl 5 bis 6 Minuten rundum goldbraun braten.",
+   "Die Sauce zugeben und 2 Minuten köcheln lassen, bis sie eindickt und das Fleisch überzieht. Den Brokkoli unterheben.",
+   "Mit Reis servieren und mit Sesam und Frühlingszwiebeln bestreuen."
+  ]
+ },
+ {
+  "slug": "rote-linsen-dal-mit-spinat",
+  "title": "Rote-Linsen-Dal mit Spinat",
+  "short": "Cremig durch Kokosmilch, wärmend durch Ingwer und Kurkuma. Günstig, sättigend und ideal zum Vorkochen.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegan",
+   "vegetarian",
+   "curry",
+   "one_pot",
+   "meal_prep",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "rote-linsen",
+    160,
+    "g"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "ingwer",
+    8,
+    "g"
+   ],
+   [
+    "rapsoel",
+    10,
+    "ml"
+   ],
+   [
+    "kurkuma",
+    1,
+    "TL"
+   ],
+   [
+    "kreuzkuemmel",
+    1,
+    "TL"
+   ],
+   [
+    "garam-masala",
+    1,
+    "TL"
+   ],
+   [
+    "tomaten-dose",
+    200,
+    "g"
+   ],
+   [
+    "kokosmilch",
+    200,
+    "ml"
+   ],
+   [
+    "gemuesebruehe",
+    400,
+    "ml"
+   ],
+   [
+    "spinat",
+    150,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    15,
+    "ml"
+   ],
+   [
+    "reis-basmati",
+    120,
+    "g"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel, Knoblauch und Ingwer fein hacken und im Öl 3 Minuten anschwitzen. Kurkuma, Kreuzkümmel und Garam Masala 30 Sekunden mitrösten.",
+   "Linsen, Tomaten, Kokosmilch und Brühe zugeben und 15 bis 18 Minuten köcheln lassen, bis die Linsen zerfallen.",
+   "Inzwischen den Reis garen.",
+   "Den Spinat unter das Dal heben und zusammenfallen lassen. Mit Zitronensaft und Salz abschmecken und mit dem Reis servieren."
+  ]
+ },
+ {
+  "slug": "burrito-bowl-mit-schwarzen-bohnen",
+  "title": "Burrito-Bowl mit schwarzen Bohnen",
+  "short": "Alles, was in einen Burrito gehört, in einer Schüssel: Reis, Bohnen, Mais, Avocado und eine Limetten-Joghurt-Sauce.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "bowl",
+   "meal_prep",
+   "rice_dish",
+   "savory"
+  ],
+  "prep": 20,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "reis-vollkorn",
+    120,
+    "g"
+   ],
+   [
+    "schwarze-bohnen-dose",
+    240,
+    "g"
+   ],
+   [
+    "mais-dose",
+    140,
+    "g"
+   ],
+   [
+    "paprika",
+    150,
+    "g"
+   ],
+   [
+    "tomate",
+    200,
+    "g"
+   ],
+   [
+    "avocado",
+    140,
+    "g"
+   ],
+   [
+    "rote-zwiebel",
+    30,
+    "g"
+   ],
+   [
+    "limettensaft",
+    20,
+    "ml"
+   ],
+   [
+    "koriander",
+    5,
+    "g"
+   ],
+   [
+    "kreuzkuemmel",
+    0.5,
+    "TL"
+   ],
+   [
+    "paprikapulver-geraeuchert",
+    0.5,
+    "TL"
+   ],
+   [
+    "joghurt",
+    100,
+    "g"
+   ],
+   [
+    "cheddar",
+    40,
+    "g"
+   ],
+   [
+    "olivenoel",
+    10,
+    "ml"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Reis nach Packungsangabe garen.",
+   "Paprika würfeln und im Öl 4 Minuten braten. Abgespülte Bohnen, Mais, Kreuzkümmel und Paprikapulver zugeben und 3 Minuten erwärmen.",
+   "Tomate und Zwiebel fein würfeln und mit der Hälfte des Limettensafts, Koriander und Salz zu einer Salsa mischen.",
+   "Joghurt mit dem restlichen Limettensaft verrühren. Avocado in Scheiben schneiden.",
+   "Reis auf zwei Schalen verteilen und Bohnengemüse, Salsa, Avocado, Cheddar und Joghurtsauce daraufgeben. Zum Mitnehmen die Avocado erst frisch dazugeben."
+  ]
+ },
+ {
+  "slug": "eier-muffins-mit-gemuese-und-feta",
+  "title": "Eier-Muffins mit Gemüse und Feta",
+  "short": "Herzhaftes Frühstück zum Mitnehmen. Am Sonntag gebacken, reichen sie für drei Morgen.",
+  "mealTypes": [
+   "breakfast",
+   "snack"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "egg_dish",
+   "meal_prep",
+   "baking",
+   "savory"
+  ],
+  "prep": 10,
+  "cook": 20,
+  "servings": 3,
+  "ingredients": [
+   [
+    "ei",
+    6,
+    "Stück"
+   ],
+   [
+    "milch",
+    50,
+    "ml"
+   ],
+   [
+    "paprika",
+    120,
+    "g"
+   ],
+   [
+    "spinat",
+    60,
+    "g"
+   ],
+   [
+    "fruehlingszwiebel",
+    30,
+    "g"
+   ],
+   [
+    "feta",
+    80,
+    "g"
+   ],
+   [
+    "rapsoel",
+    5,
+    "ml"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 180 °C Ober-/Unterhitze vorheizen. 6 Mulden eines Muffinblechs mit dem Öl einfetten.",
+   "Paprika fein würfeln, Spinat grob hacken, Frühlingszwiebeln in Ringe schneiden. Das Gemüse auf die Mulden verteilen und den Feta darüberbröseln.",
+   "Eier mit Milch, Salz und Pfeffer verquirlen und über das Gemüse gießen.",
+   "18 bis 20 Minuten backen, bis die Muffins gestockt und leicht gebräunt sind. Im Kühlschrank halten sie sich drei Tage."
+  ]
+ },
+ {
+  "slug": "dattel-kakao-energy-balls",
+  "title": "Dattel-Kakao-Energy-Balls",
+  "short": "Kleine Kugeln aus Datteln, Nüssen und Haferflocken, ganz ohne Backen. Für die Brotdose oder das Tief am Nachmittag.",
+  "mealTypes": [
+   "snack"
+  ],
+  "tags": [
+   "vegan",
+   "vegetarian",
+   "family_friendly",
+   "sweet",
+   "meal_prep"
+  ],
+  "prep": 15,
+  "cook": 0,
+  "servings": 4,
+  "ingredients": [
+   [
+    "datteln",
+    150,
+    "g",
+    "entsteint"
+   ],
+   [
+    "haferflocken",
+    60,
+    "g"
+   ],
+   [
+    "mandeln",
+    60,
+    "g"
+   ],
+   [
+    "erdnussbutter",
+    30,
+    "g"
+   ],
+   [
+    "kakao",
+    15,
+    "g"
+   ],
+   [
+    "kokosraspel",
+    20,
+    "g"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ],
+   [
+    "wasser",
+    15,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Mandeln und Haferflocken im Mixer grob mahlen.",
+   "Datteln, Erdnussmus, Kakao, Salz und Wasser zugeben und mixen, bis eine klebrige Masse entsteht, die beim Zusammendrücken hält.",
+   "Mit feuchten Händen 12 Kugeln formen und in den Kokosraspeln wälzen.",
+   "Im Kühlschrank halten sich die Kugeln in einer Dose etwa eine Woche."
+  ]
+ },
+ {
+  "slug": "hackbaellchen-in-tomatensauce",
+  "title": "Hackbällchen in Tomatensauce",
+  "short": "Saftige Bällchen in einer milden Tomatensauce. Die doppelte Menge lohnt sich, denn sie lassen sich gut einfrieren.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "family_friendly",
+   "classic",
+   "meal_prep",
+   "comfort_food",
+   "rice_dish",
+   "warm"
+  ],
+  "prep": 20,
+  "cook": 25,
+  "servings": 4,
+  "ingredients": [
+   [
+    "hackfleisch-gemischt",
+    500,
+    "g"
+   ],
+   [
+    "semmelbroesel",
+    40,
+    "g"
+   ],
+   [
+    "ei",
+    1,
+    "Stück"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "oregano",
+    2,
+    "TL"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "tomaten-passiert",
+    700,
+    "g"
+   ],
+   [
+    "tomatenmark",
+    20,
+    "g"
+   ],
+   [
+    "basilikum",
+    8,
+    "g"
+   ],
+   [
+    "parmesan",
+    30,
+    "g"
+   ],
+   [
+    "reis-vollkorn",
+    240,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Reis nach Packungsangabe garen.",
+   "Zwiebel sehr fein würfeln, Knoblauch pressen. Hackfleisch mit Semmelbröseln, Ei, der Hälfte der Zwiebel, 1 TL Oregano, Salz und Pfeffer verkneten und zu etwa 20 kleinen Bällchen formen.",
+   "Die Bällchen im Öl rundum 5 Minuten anbraten und herausnehmen.",
+   "Restliche Zwiebel und Knoblauch im Bratfett 2 Minuten dünsten. Tomatenmark, passierte Tomaten und restlichen Oregano zugeben und aufkochen.",
+   "Die Bällchen in die Sauce legen und mit Deckel 12 bis 15 Minuten gar ziehen lassen. Mit Basilikum und Parmesan bestreuen und mit dem Reis servieren."
+  ]
+ },
+ {
+  "slug": "champignon-risotto",
+  "title": "Champignon-Risotto mit Parmesan",
+  "short": "Cremiges Risotto mit gebratenen Pilzen. Das Rühren ist die halbe Miete und eine gute Gelegenheit, den Tag ausklingen zu lassen.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "special",
+   "rice_dish",
+   "comfort_food",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 30,
+  "servings": 2,
+  "ingredients": [
+   [
+    "reis-risotto",
+    160,
+    "g"
+   ],
+   [
+    "champignons",
+    300,
+    "g"
+   ],
+   [
+    "zwiebel",
+    60,
+    "g"
+   ],
+   [
+    "knoblauch",
+    5,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "gemuesebruehe",
+    650,
+    "ml",
+    "heiß"
+   ],
+   [
+    "parmesan",
+    40,
+    "g"
+   ],
+   [
+    "butter",
+    15,
+    "g"
+   ],
+   [
+    "petersilie",
+    5,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    5,
+    "ml"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Champignons in Scheiben schneiden und in der Hälfte des Öls bei starker Hitze goldbraun braten. Herausnehmen.",
+   "Zwiebel und Knoblauch fein würfeln und im restlichen Öl glasig dünsten. Den Reis zugeben und 1 Minute mitrühren.",
+   "Die heiße Brühe kellenweise angießen und unter häufigem Rühren jeweils einkochen lassen. Nach 18 bis 20 Minuten ist der Reis cremig und hat noch leichten Biss.",
+   "Champignons, Parmesan und Butter unterrühren. Mit Zitronensaft und Pfeffer abschmecken und mit Petersilie bestreuen."
+  ]
+ },
+ {
+  "slug": "gefuellte-suesskartoffeln-mit-feta",
+  "title": "Gefüllte Süßkartoffeln mit Feta und Granatapfel",
+  "short": "Weich gebackene Süßkartoffeln, gefüllt mit knusprigen Kichererbsen, Feta und Granatapfelkernen. Sieht festlich aus und macht wenig Arbeit.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "special",
+   "savory",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 45,
+  "servings": 2,
+  "ingredients": [
+   [
+    "suesskartoffel",
+    600,
+    "g",
+    "2 mittelgroße"
+   ],
+   [
+    "kichererbsen-dose",
+    240,
+    "g"
+   ],
+   [
+    "olivenoel",
+    10,
+    "ml"
+   ],
+   [
+    "paprikapulver-geraeuchert",
+    1,
+    "TL"
+   ],
+   [
+    "feta",
+    100,
+    "g"
+   ],
+   [
+    "granatapfel",
+    60,
+    "g"
+   ],
+   [
+    "rucola",
+    40,
+    "g"
+   ],
+   [
+    "griechischer-joghurt",
+    100,
+    "g"
+   ],
+   [
+    "tahini",
+    15,
+    "g"
+   ],
+   [
+    "zitronensaft",
+    10,
+    "ml"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Umluft vorheizen. Süßkartoffeln waschen, mehrmals einstechen und auf einem Blech 40 bis 45 Minuten backen, bis sie weich sind.",
+   "Kichererbsen abspülen, trocken tupfen und mit Öl, Paprikapulver und Salz mischen. Für die letzten 20 Minuten mit auf das Blech geben.",
+   "Joghurt, Tahini und Zitronensaft glatt rühren.",
+   "Die Süßkartoffeln längs einschneiden und aufdrücken. Mit Kichererbsen, zerbröseltem Feta, Rucola und Granatapfelkernen füllen und die Sauce darübergeben."
+  ]
+ },
+ {
+  "slug": "flammkuchen-mit-birne-und-blauschimmelkaese",
+  "title": "Flammkuchen mit Birne, Blauschimmelkäse und Walnüssen",
+  "short": "Süß, würzig und knusprig. Mit fertigem Teig in einer halben Stunde auf dem Tisch und ein Hingucker, wenn Gäste kommen.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "special",
+   "baking",
+   "sunday_dinner",
+   "savory"
+  ],
+  "prep": 15,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "pizzateig",
+    400,
+    "g",
+    "oder Flammkuchenteig"
+   ],
+   [
+    "schmand",
+    120,
+    "g"
+   ],
+   [
+    "birne",
+    200,
+    "g"
+   ],
+   [
+    "rote-zwiebel",
+    60,
+    "g"
+   ],
+   [
+    "blauschimmelkaese",
+    80,
+    "g"
+   ],
+   [
+    "walnuesse",
+    30,
+    "g"
+   ],
+   [
+    "rucola",
+    40,
+    "g"
+   ],
+   [
+    "honig",
+    2,
+    "TL"
+   ],
+   [
+    "thymian",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen mit einem Blech auf 230 °C Ober-/Unterhitze vorheizen.",
+   "Den Teig auf Backpapier sehr dünn ausrollen und mit Schmand bestreichen.",
+   "Birne in dünne Spalten und Zwiebel in feine Ringe schneiden und auf dem Teig verteilen. Käse darüberbröseln, Walnüsse und Thymian daraufstreuen.",
+   "Mit dem Backpapier auf das heiße Blech ziehen und 12 bis 15 Minuten backen, bis der Rand knusprig ist.",
+   "Mit Rucola belegen, mit Honig beträufeln und pfeffern."
+  ]
+ },
+ {
+  "slug": "zanderfilet-auf-rahmwirsing",
+  "title": "Zanderfilet auf Rahmwirsing",
+  "short": "Auf der Haut knusprig gebratener Zander mit cremigem Wirsing und Kartoffeln. Ein Sonntagsessen, das leichter ist, als es aussieht.",
+  "mealTypes": [
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "fish",
+   "special",
+   "sunday_dinner",
+   "potato_dish",
+   "warm"
+  ],
+  "prep": 20,
+  "cook": 25,
+  "servings": 2,
+  "ingredients": [
+   [
+    "zanderfilet",
+    300,
+    "g",
+    "mit Haut"
+   ],
+   [
+    "wirsing",
+    400,
+    "g"
+   ],
+   [
+    "zwiebel",
+    60,
+    "g"
+   ],
+   [
+    "butter",
+    15,
+    "g"
+   ],
+   [
+    "sahne",
+    80,
+    "ml"
+   ],
+   [
+    "gemuesebruehe",
+    100,
+    "ml"
+   ],
+   [
+    "senf",
+    1,
+    "TL"
+   ],
+   [
+    "muskat",
+    0.25,
+    "TL"
+   ],
+   [
+    "kartoffel",
+    400,
+    "g"
+   ],
+   [
+    "rapsoel",
+    10,
+    "ml"
+   ],
+   [
+    "mehl",
+    10,
+    "g"
+   ],
+   [
+    "zitrone",
+    0.5,
+    "Stück"
+   ],
+   [
+    "dill",
+    5,
+    "g"
+   ],
+   [
+    "salz",
+    0.75,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Kartoffeln schälen und in Salzwasser etwa 20 Minuten garen.",
+   "Wirsing ohne Strunk in feine Streifen schneiden, Zwiebel würfeln. Die Zwiebel in der Butter glasig dünsten, den Wirsing zugeben und 5 Minuten mitdünsten.",
+   "Brühe und Sahne angießen und 8 bis 10 Minuten köcheln lassen, bis der Wirsing weich ist. Mit Senf, Muskat, Salz und Pfeffer abschmecken.",
+   "Den Fisch trocken tupfen, salzen und die Hautseite dünn mit Mehl bestäuben. Im heißen Öl auf der Hautseite 4 Minuten braten, bis sie knusprig ist. Wenden und 1 bis 2 Minuten fertig garen.",
+   "Den Zander auf dem Rahmwirsing anrichten und mit Kartoffeln, Dill und Zitronenspalten servieren."
+  ]
+ },
+ {
+  "slug": "shakshuka-mit-feta",
+  "title": "Shakshuka mit Feta",
+  "short": "Eier, in einer würzigen Tomaten-Paprika-Sauce pochiert. Die Pfanne kommt direkt auf den Tisch, das Brot wird hineingetunkt.",
+  "mealTypes": [
+   "breakfast",
+   "lunch",
+   "dinner"
+  ],
+  "tags": [
+   "vegetarian",
+   "special",
+   "egg_dish",
+   "savory",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 20,
+  "servings": 2,
+  "ingredients": [
+   [
+    "ei",
+    4,
+    "Stück"
+   ],
+   [
+    "tomaten-dose",
+    400,
+    "g"
+   ],
+   [
+    "paprika",
+    200,
+    "g"
+   ],
+   [
+    "zwiebel",
+    80,
+    "g"
+   ],
+   [
+    "knoblauch",
+    6,
+    "g"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ],
+   [
+    "kreuzkuemmel",
+    1,
+    "TL"
+   ],
+   [
+    "paprikapulver",
+    1,
+    "TL"
+   ],
+   [
+    "feta",
+    80,
+    "g"
+   ],
+   [
+    "petersilie",
+    5,
+    "g"
+   ],
+   [
+    "sauerteigbrot",
+    120,
+    "g"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "pfeffer",
+    0.5,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Zwiebel und Paprika würfeln und im Öl 5 Minuten braten. Gehackten Knoblauch, Kreuzkümmel und Paprikapulver 1 Minute mitrösten.",
+   "Tomaten zugeben und 8 bis 10 Minuten köcheln lassen, bis die Sauce eindickt. Mit Salz und Pfeffer würzen.",
+   "Mit einem Löffel vier Mulden in die Sauce drücken und in jede ein Ei schlagen. Mit Deckel 5 bis 7 Minuten garen, bis das Eiweiß gestockt und das Eigelb noch weich ist.",
+   "Mit zerbröseltem Feta und Petersilie bestreuen und mit dem Brot servieren."
+  ]
+ },
+ {
+  "slug": "zitronen-ricotta-pancakes",
+  "title": "Zitronen-Ricotta-Pancakes mit Beeren",
+  "short": "Dick, fluffig und frisch durch Zitrone. Das Frühstück für einen langsamen Sonntagmorgen.",
+  "mealTypes": [
+   "breakfast"
+  ],
+  "tags": [
+   "vegetarian",
+   "family_friendly",
+   "special",
+   "pancake",
+   "sweet",
+   "sunday_dinner",
+   "warm"
+  ],
+  "prep": 10,
+  "cook": 15,
+  "servings": 2,
+  "ingredients": [
+   [
+    "ricotta",
+    200,
+    "g"
+   ],
+   [
+    "ei",
+    2,
+    "Stück"
+   ],
+   [
+    "milch",
+    80,
+    "ml"
+   ],
+   [
+    "mehl",
+    120,
+    "g"
+   ],
+   [
+    "backpulver",
+    1.5,
+    "TL"
+   ],
+   [
+    "zucker",
+    10,
+    "g"
+   ],
+   [
+    "zitronenabrieb",
+    1,
+    "TL"
+   ],
+   [
+    "zitronensaft",
+    10,
+    "ml"
+   ],
+   [
+    "butter",
+    10,
+    "g"
+   ],
+   [
+    "beeren-gemischt",
+    200,
+    "g"
+   ],
+   [
+    "ahornsirup",
+    2,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ricotta, Eier, Milch, Zucker, Zitronenabrieb und Zitronensaft verrühren. Mehl und Backpulver mischen und kurz unterheben. Der Teig darf klumpig bleiben.",
+   "Etwas Butter in einer Pfanne bei mittlerer Hitze schmelzen. Pro Pancake 2 EL Teig hineingeben und 2 bis 3 Minuten backen, bis sich Bläschen bilden.",
+   "Wenden und weitere 2 Minuten backen. So den ganzen Teig verarbeiten.",
+   "Mit Beeren und Ahornsirup servieren."
+  ]
+ }
+]
