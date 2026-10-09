@@ -1,0 +1,702 @@
+[
+ {
+  "slug": "saaten-vollkornbrot-ohne-gehzeit",
+  "title": "Saaten-Vollkornbrot ohne Gehzeit",
+  "short": "Rühren, in die Form füllen, in den kalten Ofen stellen: ein saftiges Vollkornbrot mit Saaten, das ohne Kneten und ohne Gehzeit auskommt.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegan",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 10,
+  "cook": 60,
+  "rest": 0,
+  "servings": 18,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "dinkelmehl",
+    500,
+    "g"
+   ],
+   [
+    "hefe-trocken",
+    14,
+    "g",
+    "1 Päckchen = 7 g"
+   ],
+   [
+    "salz",
+    2,
+    "TL"
+   ],
+   [
+    "sonnenblumenkerne",
+    60,
+    "g"
+   ],
+   [
+    "leinsamen",
+    50,
+    "g"
+   ],
+   [
+    "sesam",
+    40,
+    "g"
+   ],
+   [
+    "essig-apfel",
+    30,
+    "ml"
+   ],
+   [
+    "wasser",
+    500,
+    "ml",
+    "lauwarm"
+   ]
+  ],
+  "steps": [
+   "Eine Kastenform (etwa 25 cm) fetten oder mit Backpapier auslegen.",
+   "Mehl, Trockenhefe, Salz und Saaten in einer Schüssel mischen. Lauwarmes Wasser und Essig zugeben und mit einem Löffel zu einem weichen Teig verrühren.",
+   "Teig in die Form füllen und glatt streichen. Nach Wunsch mit weiteren Saaten bestreuen.",
+   "Die Form in den kalten Ofen stellen, auf 200 °C Ober-/Unterhitze schalten und 60 Minuten backen.",
+   "Brot aus der Form lösen und auf einem Gitter vollständig auskühlen lassen. Erst dann anschneiden."
+  ]
+ },
+ {
+  "slug": "haferflocken-quark-brot",
+  "title": "Haferflocken-Quark-Brot",
+  "short": "Ein Brot ohne Mehl und ohne Hefe: Quark, Haferflocken und Eier werden verrührt und gebacken.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 10,
+  "cook": 55,
+  "rest": 0,
+  "servings": 14,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "quark",
+    500,
+    "g"
+   ],
+   [
+    "haferflocken",
+    300,
+    "g"
+   ],
+   [
+    "ei",
+    2,
+    "Stück"
+   ],
+   [
+    "backpulver",
+    15,
+    "g",
+    "1 Päckchen = 15 g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "leinsamen",
+    30,
+    "g"
+   ],
+   [
+    "sonnenblumenkerne",
+    30,
+    "g"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 180 °C Ober-/Unterhitze vorheizen. Eine Kastenform mit Backpapier auslegen.",
+   "Quark, Eier und Salz verrühren. Haferflocken, Backpulver und Saaten untermischen, bis ein fester, klebriger Teig entsteht.",
+   "Teig in die Form geben, glatt streichen und der Länge nach einschneiden.",
+   "50 bis 55 Minuten backen, bis die Kruste goldbraun ist.",
+   "10 Minuten in der Form ruhen lassen, dann auf einem Gitter auskühlen lassen."
+  ]
+ },
+ {
+  "slug": "schnelle-quarkbroetchen",
+  "title": "Schnelle Quarkbrötchen",
+  "short": "Frische Brötchen in 40 Minuten: Der Teig aus Quark und Mehl braucht weder Hefe noch Gehzeit.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly"
+  ],
+  "prep": 15,
+  "cook": 25,
+  "rest": 0,
+  "servings": 8,
+  "per": 1,
+  "unit": [
+   "Brötchen",
+   "Brötchen"
+  ],
+  "ingredients": [
+   [
+    "quark",
+    250,
+    "g"
+   ],
+   [
+    "dinkelmehl",
+    150,
+    "g"
+   ],
+   [
+    "mehl",
+    150,
+    "g"
+   ],
+   [
+    "ei",
+    1,
+    "Stück"
+   ],
+   [
+    "backpulver",
+    15,
+    "g",
+    "1 Päckchen = 15 g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "milch",
+    60,
+    "ml"
+   ],
+   [
+    "sesam",
+    15,
+    "g",
+    "zum Bestreuen"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Ein Blech mit Backpapier auslegen.",
+   "Quark, Ei, Milch und Salz verrühren. Beide Mehle mit dem Backpulver mischen, zugeben und kurz zu einem glatten Teig verkneten. Klebt der Teig stark, 1 bis 2 EL Mehl zugeben.",
+   "Mit bemehlten Händen 8 Brötchen formen und auf das Blech setzen. Mit Wasser bestreichen und mit Sesam bestreuen.",
+   "20 bis 25 Minuten goldbraun backen."
+  ]
+ },
+ {
+  "slug": "buttermilch-sodabrot",
+  "title": "Buttermilch-Sodabrot",
+  "short": "Nach irischem Vorbild: Natron und Buttermilch lockern das Brot, geknetet wird nicht.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly"
+  ],
+  "prep": 10,
+  "cook": 40,
+  "rest": 0,
+  "servings": 12,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "dinkelmehl",
+    250,
+    "g"
+   ],
+   [
+    "mehl",
+    200,
+    "g"
+   ],
+   [
+    "haferflocken",
+    30,
+    "g"
+   ],
+   [
+    "natron",
+    1,
+    "TL"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "buttermilch",
+    400,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 200 °C Ober-/Unterhitze vorheizen. Ein Blech mit Backpapier auslegen.",
+   "Beide Mehle, Haferflocken, Natron und Salz gründlich mischen.",
+   "Buttermilch zugießen und mit einer Gabel nur so lange verrühren, bis ein weicher, klebriger Teig entsteht. Nicht kneten.",
+   "Auf einer bemehlten Fläche zu einem runden Laib formen, auf das Blech setzen und kreuzweise tief einschneiden.",
+   "35 bis 40 Minuten backen. Das Brot ist fertig, wenn es beim Klopfen auf die Unterseite hohl klingt.",
+   "Auf einem Gitter auskühlen lassen. Am besten schmeckt es am selben Tag."
+  ]
+ },
+ {
+  "slug": "moehren-walnuss-brot",
+  "title": "Möhren-Walnuss-Brot",
+  "short": "Hefebrot mit geraspelten Möhren und Walnüssen. Die Möhren halten es mehrere Tage saftig.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 20,
+  "cook": 45,
+  "rest": 90,
+  "servings": 18,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "dinkelmehl",
+    300,
+    "g"
+   ],
+   [
+    "mehl",
+    200,
+    "g"
+   ],
+   [
+    "karotte",
+    200,
+    "g"
+   ],
+   [
+    "walnuesse",
+    80,
+    "g"
+   ],
+   [
+    "hefe-trocken",
+    7,
+    "g",
+    "1 Päckchen = 7 g"
+   ],
+   [
+    "salz",
+    2,
+    "TL"
+   ],
+   [
+    "honig",
+    1,
+    "TL"
+   ],
+   [
+    "rapsoel",
+    15,
+    "ml"
+   ],
+   [
+    "wasser",
+    260,
+    "ml",
+    "lauwarm"
+   ]
+  ],
+  "steps": [
+   "Möhren schälen und fein raspeln. Walnüsse grob hacken.",
+   "Beide Mehle, Hefe und Salz mischen. Lauwarmes Wasser, Honig, Öl und Möhren zugeben und 5 bis 8 Minuten zu einem geschmeidigen Teig kneten. Walnüsse unterkneten.",
+   "Abgedeckt an einem warmen Ort etwa 60 Minuten gehen lassen, bis sich der Teig deutlich vergrößert hat.",
+   "Zu einem länglichen Laib formen, in eine gefettete Kastenform legen und weitere 30 Minuten gehen lassen.",
+   "Ofen auf 220 °C Ober-/Unterhitze vorheizen. Brot einschieben, nach 10 Minuten auf 200 °C zurückschalten und weitere 35 Minuten backen.",
+   "Aus der Form lösen und auf einem Gitter auskühlen lassen."
+  ]
+ },
+ {
+  "slug": "joghurt-pfannenbrot",
+  "title": "Joghurt-Pfannenbrot",
+  "short": "Weiche Fladen aus der Pfanne, ohne Hefe und ohne Ofen. Passen zu Dips, Suppen und Currys.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly"
+  ],
+  "prep": 25,
+  "cook": 15,
+  "rest": 0,
+  "servings": 6,
+  "per": 1,
+  "unit": [
+   "Fladen",
+   "Fladen"
+  ],
+  "ingredients": [
+   [
+    "dinkelmehl",
+    125,
+    "g"
+   ],
+   [
+    "mehl",
+    125,
+    "g"
+   ],
+   [
+    "joghurt",
+    200,
+    "g"
+   ],
+   [
+    "backpulver",
+    2,
+    "TL"
+   ],
+   [
+    "salz",
+    0.5,
+    "TL"
+   ],
+   [
+    "olivenoel",
+    15,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Beide Mehle, Backpulver und Salz mischen. Joghurt und Öl zugeben und zu einem weichen Teig verkneten. Klebt er, etwas Mehl zugeben.",
+   "Teig abgedeckt 10 Minuten ruhen lassen.",
+   "In 6 Stücke teilen und auf einer bemehlten Fläche jeweils etwa 5 mm dünn ausrollen.",
+   "Eine Pfanne ohne Fett stark erhitzen. Die Fladen nacheinander 2 bis 3 Minuten pro Seite backen, bis sie Blasen werfen und braune Flecken bekommen.",
+   "Warm servieren."
+  ]
+ },
+ {
+  "slug": "bananenbrot-mit-walnuessen",
+  "title": "Bananenbrot mit Walnüssen",
+  "short": "Saftig und süß allein durch sehr reife Bananen, ohne zugesetzten Zucker.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep",
+   "sweet"
+  ],
+  "prep": 15,
+  "cook": 55,
+  "rest": 0,
+  "servings": 14,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "banane",
+    360,
+    "g",
+    "geschält, sehr reif"
+   ],
+   [
+    "ei",
+    2,
+    "Stück"
+   ],
+   [
+    "dinkelmehl",
+    200,
+    "g"
+   ],
+   [
+    "haferflocken",
+    80,
+    "g"
+   ],
+   [
+    "walnuesse",
+    60,
+    "g"
+   ],
+   [
+    "rapsoel",
+    50,
+    "ml"
+   ],
+   [
+    "milch",
+    100,
+    "ml"
+   ],
+   [
+    "backpulver",
+    15,
+    "g",
+    "1 Päckchen = 15 g"
+   ],
+   [
+    "zimt",
+    1,
+    "TL"
+   ],
+   [
+    "salz",
+    0.25,
+    "TL"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 175 °C Ober-/Unterhitze vorheizen. Eine Kastenform mit Backpapier auslegen.",
+   "Bananen mit einer Gabel fein zerdrücken. Eier, Öl und Milch unterrühren.",
+   "Mehl, Haferflocken, Backpulver, Zimt und Salz mischen und kurz unter die Bananenmasse rühren. Walnüsse grob hacken und unterheben.",
+   "Teig in die Form füllen und 50 bis 55 Minuten backen. Bei der Stäbchenprobe darf kein Teig mehr kleben.",
+   "10 Minuten in der Form ruhen lassen, dann auf einem Gitter auskühlen lassen."
+  ]
+ },
+ {
+  "slug": "dinkelbroetchen-ueber-nacht",
+  "title": "Dinkelbrötchen über Nacht",
+  "short": "Am Abend in fünf Minuten angerührt, am Morgen nur noch abstechen und backen.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegan",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 15,
+  "cook": 25,
+  "rest": 660,
+  "servings": 8,
+  "per": 1,
+  "unit": [
+   "Brötchen",
+   "Brötchen"
+  ],
+  "ingredients": [
+   [
+    "dinkelmehl",
+    200,
+    "g"
+   ],
+   [
+    "mehl",
+    300,
+    "g"
+   ],
+   [
+    "hefe-trocken",
+    2,
+    "g"
+   ],
+   [
+    "salz",
+    2,
+    "TL"
+   ],
+   [
+    "wasser",
+    360,
+    "ml",
+    "kalt"
+   ]
+  ],
+  "steps": [
+   "Am Vorabend beide Mehle, Hefe und Salz mischen. Wasser zugeben und mit einem Löffel verrühren, bis kein trockenes Mehl mehr zu sehen ist. Nicht kneten.",
+   "Schüssel abdecken und 10 bis 12 Stunden im Kühlschrank gehen lassen.",
+   "Am Morgen den Ofen auf 230 °C Ober-/Unterhitze vorheizen und eine ofenfeste Schale mit Wasser auf den Ofenboden stellen.",
+   "Teig auf eine bemehlte Fläche geben und nicht mehr kneten. Mit einer Teigkarte oder einem Messer 8 Stücke abstechen und auf ein Blech mit Backpapier setzen.",
+   "20 bis 25 Minuten backen, bis die Brötchen goldbraun sind."
+  ]
+ },
+ {
+  "slug": "saaten-knaeckebrot",
+  "title": "Saaten-Knäckebrot",
+  "short": "Dünn, knusprig und voller Saaten. Luftdicht verpackt hält es sich zwei Wochen.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegan",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 20,
+  "cook": 60,
+  "rest": 0,
+  "servings": 30,
+  "per": 3,
+  "unit": [
+   "Stück",
+   "Stück"
+  ],
+  "ingredients": [
+   [
+    "haferflocken",
+    150,
+    "g"
+   ],
+   [
+    "dinkelmehl",
+    150,
+    "g"
+   ],
+   [
+    "sonnenblumenkerne",
+    100,
+    "g"
+   ],
+   [
+    "sesam",
+    50,
+    "g"
+   ],
+   [
+    "leinsamen",
+    50,
+    "g"
+   ],
+   [
+    "salz",
+    1,
+    "TL"
+   ],
+   [
+    "olivenoel",
+    30,
+    "ml"
+   ],
+   [
+    "wasser",
+    500,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Ofen auf 170 °C Umluft vorheizen. Zwei Bleche mit Backpapier auslegen.",
+   "Alle trockenen Zutaten mischen. Öl und Wasser zugeben und zu einem dünnflüssigen Teig verrühren. 10 Minuten quellen lassen.",
+   "Teig auf beide Bleche verteilen und hauchdünn ausstreichen.",
+   "15 Minuten backen, herausnehmen und mit einem Messer oder Pizzaschneider in Rechtecke schneiden.",
+   "Weitere 40 bis 45 Minuten backen, bis das Knäckebrot trocken und knusprig ist.",
+   "Vollständig auskühlen lassen und luftdicht aufbewahren."
+  ]
+ },
+ {
+  "slug": "kuerbiskern-topfbrot",
+  "title": "Kürbiskern-Topfbrot ohne Kneten",
+  "short": "Der Teig geht über Nacht von allein, gebacken wird im heißen Topf. So entsteht eine Kruste wie vom Bäcker.",
+  "mealTypes": [
+   "bread"
+  ],
+  "tags": [
+   "baking",
+   "vegan",
+   "vegetarian",
+   "family_friendly",
+   "meal_prep"
+  ],
+  "prep": 15,
+  "cook": 45,
+  "rest": 840,
+  "servings": 16,
+  "per": 2,
+  "unit": [
+   "Scheibe",
+   "Scheiben"
+  ],
+  "ingredients": [
+   [
+    "mehl",
+    350,
+    "g"
+   ],
+   [
+    "dinkelmehl",
+    150,
+    "g"
+   ],
+   [
+    "kuerbiskerne",
+    60,
+    "g"
+   ],
+   [
+    "hefe-trocken",
+    2,
+    "g"
+   ],
+   [
+    "salz",
+    2,
+    "TL"
+   ],
+   [
+    "wasser",
+    370,
+    "ml"
+   ]
+  ],
+  "steps": [
+   "Beide Mehle, Kürbiskerne, Hefe und Salz mischen. Wasser zugeben und mit einem Löffel verrühren, bis kein trockenes Mehl mehr zu sehen ist.",
+   "Abgedeckt 12 bis 18 Stunden bei Zimmertemperatur gehen lassen, bis der Teig Blasen wirft.",
+   "Einen ofenfesten Topf mit Deckel in den Ofen stellen und beides auf 230 °C Ober-/Unterhitze vorheizen.",
+   "Teig auf eine bemehlte Fläche geben, von allen Seiten zur Mitte falten und mit der Naht nach unten auf ein Stück Backpapier setzen.",
+   "Mit dem Backpapier in den heißen Topf heben. Vorsicht, der Topf ist sehr heiß. Deckel auflegen und 30 Minuten backen.",
+   "Deckel abnehmen und weitere 15 Minuten backen, bis die Kruste dunkel ist. Auf einem Gitter vollständig auskühlen lassen."
+  ]
+ }
+]

@@ -1,0 +1,626 @@
+<title>KØRPERKOMPASS Rezepte</title>
+{{FONTS}}
+<style>
+/* Layout: Workbook-Seiten als App. Türkiser Auftakt mit Logo, Schreibschrift und Bebas-Titel,
+   darunter weiße Seiten mit gesperrten Bebas-Überschriften, cremefarbenen Icon-Kreisen und Zitat-Flächen.
+   Unten (Handy) bzw. oben (Rechner) fünf Reiter. Bewusst nur ein helles Erscheinungsbild, wie das gedruckte Workbook. */
+:root {
+  --tuerkis: #1AC7C9;
+  --tuerkis-hell: #E8FAFA;
+  --gelb: #F4D35E;
+  --creme: #FFF7D6;
+  --weiss: #FFFFFF;
+  --schwarz: #111111;
+  --grau: #757575;
+  --linie: #DDEDED;
+  --display: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+  --text: "Avenir Next", Avenir, "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  --schreib: "Kristi", "Segoe Script", "Bradley Hand", cursive;
+  --tabs: 64px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--weiss); color: var(--schwarz); font-family: var(--text); font-weight: 300; font-size: 16px; line-height: 1.55; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+h1, h2, h3, p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--schwarz); outline-offset: 2px; }
+svg.i { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+.seite { max-width: 1120px; margin-inline: auto; padding-inline: 18px; }
+main { padding-bottom: calc(var(--tabs) + 28px); }
+.ansicht { display: flex; flex-direction: column; gap: 34px; padding-block: 26px 10px; }
+
+/* Kopf */
+.kopf { background: var(--weiss); border-bottom: 1px solid var(--linie); }
+.kopf .seite { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; }
+.marke { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 21px; letter-spacing: .14em; background: none; border: 0; padding: 0; }
+.marke img { width: 34px; height: 34px; }
+.reiter { display: flex; }
+.reiter button { background: none; border: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--grau); position: relative; flex: 1; min-width: 0; }
+.reiter button[aria-current="page"] { color: var(--schwarz); }
+.reiter button[aria-current="page"]::after { content: ""; position: absolute; top: 0; left: 22%; right: 22%; height: 3px; background: var(--tuerkis); border-radius: 0 0 3px 3px; }
+.reiter .zahl { position: absolute; top: 3px; left: calc(50% + 6px); background: var(--gelb); color: var(--schwarz); font-size: 10px; font-weight: 700; min-width: 17px; height: 17px; border-radius: 9px; display: grid; place-items: center; padding: 0 4px; }
+nav.unten { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--weiss); border-top: 1px solid var(--linie); padding-bottom: env(safe-area-inset-bottom, 0px); }
+nav.unten .reiter { max-width: 560px; margin-inline: auto; height: var(--tabs); }
+nav.oben { display: none; }
+@media (min-width: 860px) {
+  nav.unten { display: none; }
+  nav.oben { display: block; }
+  nav.oben .reiter { gap: 6px; }
+  nav.oben .reiter button { flex-direction: row; gap: 7px; font-size: 14px; padding: 18px 12px; flex: none; }
+  nav.oben .reiter button[aria-current="page"]::after { top: auto; bottom: 0; left: 12px; right: 12px; border-radius: 3px 3px 0 0; }
+  nav.oben .reiter .zahl { position: static; }
+  nav.oben svg.i { width: 20px; height: 20px; }
+  main { padding-bottom: 48px; }
+}
+
+/* Auftakt wie die Workbook-Titelseite */
+.auftakt { background: linear-gradient(165deg, #1AC7C9 0%, #5FD8D8 55%, #BDEFEE 100%); }
+.auftakt .seite { padding-block: 34px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.auftakt img { width: 92px; height: 92px; }
+.auftakt .schreib { font-family: var(--schreib); font-size: clamp(38px, 9vw, 54px); line-height: 1; color: var(--weiss); margin-top: 6px; }
+.auftakt h1 { font-family: var(--display); font-weight: 400; font-size: clamp(44px, 11vw, 78px); line-height: .95; letter-spacing: .03em; text-wrap: balance; }
+.auftakt p { font-family: var(--display); font-size: clamp(17px, 4.2vw, 22px); letter-spacing: .06em; line-height: 1.2; max-width: 30ch; margin-top: 8px; }
+
+/* Überschriften */
+.titel { display: flex; flex-direction: column; gap: 6px; }
+.titel h2 { font-family: var(--display); font-weight: 400; font-size: 27px; letter-spacing: .14em; line-height: 1.1; }
+.titel h2::after { content: ""; display: block; width: 56px; height: 2px; background: var(--tuerkis); margin-top: 8px; }
+.titel p { color: var(--grau); font-weight: 400; font-size: 15px; max-width: 60ch; }
+.block { display: flex; flex-direction: column; gap: 18px; }
+
+/* Ernährungsformen */
+.formen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 760px) { .formen { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; } }
+.form { background: var(--tuerkis-hell); border: 0; border-radius: 18px; padding: 16px 14px 14px; text-align: left; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.form:hover { background: #D6F5F5; }
+.form .kreis { width: 52px; height: 52px; border-radius: 50%; background: var(--creme); display: grid; place-items: center; }
+.form .kreis svg.i { width: 28px; height: 28px; }
+.form b { font-family: var(--display); font-weight: 400; font-size: clamp(20px, 5.6vw, 24px); letter-spacing: .05em; line-height: 1.05; overflow-wrap: break-word; }
+.form span { font-size: 14px; font-weight: 400; line-height: 1.35; }
+.form i { font-style: normal; font-family: var(--display); font-size: 15px; letter-spacing: .08em; margin-top: auto; padding-top: 4px; }
+
+/* Zitat-Fläche wie im Workbook */
+.zitat { background: var(--creme); border-radius: 44px 58px 48px 62px; padding: 30px 26px; position: relative; text-align: center; }
+.zitat::before, .zitat::after { font-family: Georgia, "Times New Roman", serif; font-size: 70px; line-height: 0; position: absolute; }
+.zitat::before { content: "\201C"; top: 34px; left: 18px; }
+.zitat::after { content: "\201D"; bottom: 4px; right: 20px; }
+.zitat p { font-family: var(--display); font-size: clamp(20px, 4.6vw, 26px); letter-spacing: .05em; line-height: 1.2; max-width: 34ch; margin-inline: auto; text-wrap: balance; }
+.zitat small { display: block; font-size: 14px; font-weight: 400; margin-top: 10px; }
+
+/* Filter-Knöpfe */
+.wahl { display: flex; flex-wrap: wrap; gap: 8px; }
+.knopf { background: var(--weiss); border: 1px solid var(--schwarz); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 400; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.knopf small { font-size: 12px; color: var(--grau); font-variant-numeric: tabular-nums; }
+.knopf:hover { background: var(--tuerkis-hell); }
+.knopf[aria-pressed="true"] { background: var(--tuerkis); border-color: var(--tuerkis); font-weight: 600; }
+.knopf[aria-pressed="true"] small { color: var(--schwarz); }
+.filter { display: flex; flex-direction: column; gap: 12px; }
+.filter .reihe { display: grid; grid-template-columns: 1fr; gap: 6px; }
+.filter .reihe > span { font-family: var(--display); font-size: 15px; letter-spacing: .12em; }
+@media (min-width: 760px) { .filter .reihe { grid-template-columns: 150px 1fr; align-items: start; } .filter .reihe > span { padding-top: 7px; } }
+.suche { display: flex; align-items: center; gap: 10px; border: 1px solid var(--schwarz); border-radius: 999px; padding: 9px 16px; }
+.suche input { border: 0; outline: 0; background: none; flex: 1; min-width: 0; font-weight: 400; }
+.suche:focus-within { outline: 2px solid var(--tuerkis); outline-offset: 1px; }
+.stand { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.stand b { font-family: var(--display); font-weight: 400; font-size: 22px; letter-spacing: .08em; }
+.link { background: none; border: 0; padding: 0; font-size: 14px; font-weight: 600; text-decoration: underline; text-decoration-color: var(--tuerkis); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* Vorstellung einer Ernährungsform */
+.vorstellung { background: linear-gradient(165deg, #1AC7C9 0%, #7FE0DE 100%); border-radius: 22px; padding: 22px 20px; display: grid; gap: 14px; }
+.vorstellung .schreib { font-family: var(--schreib); font-size: 38px; line-height: .9; color: var(--weiss); }
+.vorstellung h2 { font-family: var(--display); font-weight: 400; font-size: clamp(32px, 7vw, 44px); letter-spacing: .05em; line-height: 1; }
+.vorstellung dl { margin: 0; display: grid; gap: 10px; }
+.vorstellung dt { font-family: var(--display); font-size: 15px; letter-spacing: .12em; }
+.vorstellung dd { margin: 0; font-weight: 400; max-width: 62ch; }
+@media (min-width: 760px) { .vorstellung { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: center; padding: 28px; } }
+.planhinweis { background: var(--gelb); border-radius: 14px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; font-weight: 400; }
+
+/* Rezeptkarten */
+.karten { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 12px; }
+@media (min-width: 620px) { .karten { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 16px; } }
+@media (min-width: 960px) { .karten { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.karte { position: relative; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.karte .oeffnen { background: none; border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.foto { aspect-ratio: 4 / 3; width: 100%; border-radius: 16px; overflow: hidden; background: var(--tuerkis-hell); display: grid; place-items: center; position: relative; }
+.karte:nth-child(3n+2) .foto { background: var(--creme); }
+.foto img { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; }
+.foto svg.i { width: 44px; height: 44px; stroke-width: 1.1; color: var(--tuerkis); }
+.karte:nth-child(3n+2) .foto svg.i { color: #D9B42E; }
+.karte h3 { font-family: var(--display); font-weight: 400; font-size: 20px; letter-spacing: .05em; line-height: 1.08; overflow-wrap: anywhere; }
+.karte .oeffnen:hover h3 { text-decoration: underline; text-decoration-color: var(--tuerkis); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.karte .meta { font-size: 13px; font-weight: 400; color: var(--grau); }
+.karte .warum { font-size: 13px; font-weight: 400; line-height: 1.4; }
+.marken { display: flex; flex-wrap: wrap; gap: 5px; }
+.markeF, .markeA { font-size: 12px; font-weight: 400; padding: 1px 8px; border-radius: 999px; }
+.markeF { background: var(--tuerkis-hell); }
+.markeA { background: var(--creme); }
+.herz { position: absolute; top: 8px; right: 8px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--weiss); display: grid; place-items: center; z-index: 1; }
+.herz svg.i { width: 20px; height: 20px; }
+.herz[aria-pressed="true"] svg.i { fill: var(--tuerkis); stroke: var(--tuerkis); }
+.mehr { align-self: center; }
+.gross { background: var(--schwarz); color: var(--weiss); border: 0; border-radius: 999px; padding: 11px 22px; font-weight: 600; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; }
+.gross.hell { background: var(--gelb); color: var(--schwarz); }
+.gross.rand { background: var(--weiss); color: var(--schwarz); border: 1px solid var(--schwarz); }
+.gross svg.i { width: 20px; height: 20px; }
+.gross[aria-pressed="true"] svg.i { fill: var(--tuerkis); stroke: var(--tuerkis); }
+.leer { background: var(--tuerkis-hell); border-radius: 22px; padding: 30px 22px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.leer .schreib { font-family: var(--schreib); font-size: 40px; line-height: .9; }
+.leer p { max-width: 44ch; font-weight: 400; }
+
+/* Rezept-Seite */
+.blatt { position: fixed; inset: 0; z-index: 40; background: rgba(17, 17, 17, .45); overflow-y: auto; overscroll-behavior: contain; }
+.blatt .innen { background: var(--weiss); min-height: 100%; max-width: 780px; margin-inline: auto; display: flex; flex-direction: column; padding-bottom: calc(30px + env(safe-area-inset-bottom, 0px)); }
+@media (min-width: 820px) { .blatt { padding-block: 28px; } .blatt .innen { min-height: 0; border-radius: 22px; overflow: hidden; } }
+.blatt .foto { border-radius: 0; aspect-ratio: 16 / 9; }
+.blatt .zu { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 12px; width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--weiss); display: grid; place-items: center; z-index: 2; }
+.blatt .zu svg.i { width: 22px; height: 22px; stroke-width: 1.8; color: var(--schwarz); }
+.blatt .foto.ohne { aspect-ratio: auto; height: 120px; }
+.blatt .quelle { font-size: 11px; font-weight: 400; color: var(--grau); padding: 6px 20px 0; overflow-wrap: anywhere; }
+.blatt .inhalt { padding: 14px 20px 0; display: flex; flex-direction: column; gap: 26px; }
+.blatt .schreib { font-family: var(--schreib); font-size: 36px; line-height: .8; color: var(--tuerkis); }
+.blatt h2 { font-family: var(--display); font-weight: 400; font-size: clamp(32px, 7.5vw, 44px); letter-spacing: .04em; line-height: 1; text-wrap: balance; }
+.blatt h3 { font-family: var(--display); font-weight: 400; font-size: 21px; letter-spacing: .14em; }
+.blatt h3::after { content: ""; display: block; width: 44px; height: 2px; background: var(--tuerkis); margin-top: 6px; }
+.blatt .kurz { font-weight: 400; max-width: 62ch; }
+.zeiten { display: flex; flex-wrap: wrap; gap: 8px 22px; font-weight: 400; font-size: 15px; }
+.zeiten span { display: inline-flex; align-items: center; gap: 6px; }
+.zeiten svg.i { width: 19px; height: 19px; color: var(--tuerkis); }
+.taten { display: flex; flex-wrap: wrap; gap: 10px; }
+.tage { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: var(--creme); border-radius: 16px; padding: 12px 14px; }
+.tage span { font-weight: 400; font-size: 14px; flex-basis: 100%; }
+.tage button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--schwarz); background: var(--weiss); font-family: var(--display); font-size: 18px; letter-spacing: .04em; }
+.tage button:hover { background: var(--tuerkis); border-color: var(--tuerkis); }
+.passt { display: grid; gap: 10px; }
+.passt div { background: var(--tuerkis-hell); border-radius: 14px; padding: 12px 14px; }
+.passt b { font-family: var(--display); font-weight: 400; font-size: 18px; letter-spacing: .08em; display: block; }
+.passt p { font-weight: 400; font-size: 15px; }
+.portionen { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.zaehler { display: inline-flex; align-items: center; gap: 4px; }
+.zaehler button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--schwarz); background: var(--weiss); display: grid; place-items: center; }
+.zaehler button:disabled { opacity: .3; cursor: default; }
+.zaehler output { font-family: var(--display); font-size: 22px; min-width: 3.4em; white-space: nowrap; padding-inline: 4px; text-align: center; letter-spacing: .04em; }
+.zutaten { list-style: none; margin: 0; padding: 0; }
+.zutaten li { display: grid; grid-template-columns: 6.2em 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--linie); font-weight: 400; }
+.zutaten li b { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.zutaten li small { color: var(--grau); font-size: 13px; }
+.schritte { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 14px; }
+.schritte li { counter-increment: s; display: grid; grid-template-columns: 34px 1fr; gap: 12px; font-weight: 400; }
+.schritte li::before { content: counter(s); width: 34px; height: 34px; border-radius: 50%; background: var(--creme); display: grid; place-items: center; font-family: var(--display); font-size: 18px; }
+.klein { font-size: 14px; font-weight: 400; color: var(--grau); }
+details.werte { border: 1px solid var(--linie); border-radius: 14px; padding: 12px 14px; }
+details.werte summary { cursor: pointer; font-weight: 600; }
+details.werte table { border-collapse: collapse; width: 100%; margin-top: 10px; font-weight: 400; font-variant-numeric: tabular-nums; }
+details.werte td { padding: 5px 0; border-bottom: 1px solid var(--linie); }
+details.werte td:last-child { text-align: right; }
+
+/* Wochenplan und Einkaufsliste */
+.woche { display: grid; gap: 12px; }
+@media (min-width: 760px) { .woche { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tag { border: 1px solid var(--linie); border-radius: 18px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.tag header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.tag h3 { font-family: var(--display); font-weight: 400; font-size: 22px; letter-spacing: .12em; }
+.tag ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.tag li { display: grid; grid-template-columns: 1fr auto; gap: 6px 10px; align-items: center; background: var(--tuerkis-hell); border-radius: 12px; padding: 8px 10px 8px 12px; }
+.tag li .name { background: none; border: 0; padding: 0; text-align: left; font-weight: 600; font-size: 15px; min-width: 0; overflow-wrap: anywhere; }
+.tag li .zeile { display: flex; align-items: center; gap: 2px; }
+.mini { width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--weiss); display: grid; place-items: center; }
+.mini svg.i { width: 16px; height: 16px; }
+.tag li output { font-size: 13px; font-weight: 600; min-width: 2.6em; text-align: center; }
+.tag .frei { font-size: 14px; color: var(--grau); font-weight: 400; }
+.rund { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--schwarz); background: var(--weiss); display: grid; place-items: center; }
+.rund:hover { background: var(--gelb); border-color: var(--gelb); }
+.rund svg.i { width: 18px; height: 18px; }
+.liste { display: grid; gap: 22px; }
+@media (min-width: 760px) { .liste { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 32px; } }
+.gruppe h3 { font-family: var(--display); font-weight: 400; font-size: 19px; letter-spacing: .14em; border-bottom: 2px solid var(--tuerkis); padding-bottom: 4px; margin-bottom: 4px; }
+.gruppe label { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--linie); font-weight: 400; cursor: pointer; }
+.gruppe input { width: 20px; height: 20px; accent-color: var(--tuerkis); margin: 0; }
+.gruppe input:checked + span { text-decoration: line-through; color: var(--grau); }
+/* Monster */
+img.m { display: block; height: auto; }
+.zitat.mit { margin-top: 46px; padding-top: 92px; }
+.zitat.mit img.m { position: absolute; top: -52px; left: 50%; transform: translateX(-50%); width: 104px; }
+.zitat.mit::before { top: 40px; }
+.leer img.m { width: 118px; }
+.gedanken { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+@media (min-width: 640px) { .gedanken { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } }
+.gedanke { margin: 0; background: var(--creme); border-radius: 30px 40px 34px 44px; padding: 16px 20px 16px 14px; display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 2px 14px; align-items: center; max-width: 560px; }
+.gedanken .gedanke { max-width: none; }
+.gedanken .gedanke:nth-child(4n+2), .gedanken .gedanke:nth-child(4n+3) { background: var(--tuerkis-hell); }
+.gedanke img.m { width: 78px; grid-row: span 2; }
+.gedanke blockquote { margin: 0; font-family: var(--display); font-size: clamp(19px, 4.8vw, 22px); letter-spacing: .04em; line-height: 1.15; align-self: end; text-wrap: balance; }
+.gedanke blockquote::before { content: "\201E"; }
+.gedanke blockquote::after { content: "\201C"; }
+.gedanke figcaption { font-size: 13px; font-weight: 400; color: var(--grau); align-self: start; }
+a.gross { text-decoration: none; }
+.neu { position: absolute; top: 8px; left: 8px; background: var(--gelb); font-family: var(--display); font-size: 13px; letter-spacing: .1em; padding: 2px 9px; border-radius: 999px; z-index: 1; }
+.fuss { border-top: 1px solid var(--linie); padding-top: 18px; font-size: 13px; font-weight: 400; color: var(--grau); display: grid; gap: 6px; max-width: 78ch; }
+.melder { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--tabs) + 16px + env(safe-area-inset-bottom, 0px)); z-index: 60; background: var(--schwarz); color: var(--weiss); border-radius: 999px; padding: 10px 18px; font-size: 14px; font-weight: 600; max-width: calc(100% - 32px); text-align: center; }
+@media (min-width: 860px) { .melder { bottom: 24px; } }
+@media (prefers-reduced-motion: no-preference) { .knopf, .form, .herz, .rund { transition: background-color .15s; } }
+</style>
+
+<header class="kopf">
+  <div class="seite">
+    <button class="marke" type="button" data-geh="entdecken"><img src="{{LOGO}}" alt="">KØRPERKOMPASS</button>
+    <nav class="oben" aria-label="Bereiche"><div class="reiter" data-reiter></div></nav>
+  </div>
+</header>
+
+<main id="haupt"></main>
+<nav class="unten" aria-label="Bereiche"><div class="reiter" data-reiter></div></nav>
+<div class="blatt" id="blatt" role="dialog" aria-modal="true" aria-labelledby="blatt-titel" hidden></div>
+<div class="melder" id="melder" role="status" hidden></div>
+
+<script id="kk-daten" type="application/json">{{DATA}}</script>
+<script>
+(function () {
+  'use strict';
+  var D = JSON.parse(document.getElementById('kk-daten').textContent);
+  var R = D.R, I = D.I, NACH = {};
+  R.forEach(function (r, i) { r.x = i; NACH[r.s] = r; r.such = (r.t + ' ' + r.i.map(function (z) { return I[z[0]][0]; }).join(' ')).toLowerCase(); });
+  // Reihenfolge mischen, damit nicht zehn Varianten desselben Gerichts hintereinander stehen
+  var ORDNUNG = R.slice().sort(function (a, b) { return (a.x % 10) - (b.x % 10) || a.x - b.x; });
+
+  var IC = {
+    entdecken: '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+    rezepte: '<path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M9 7c0-1 1-1.5 1-2.5M13.5 7c0-1 1-1.5 1-2.5"/>',
+    merkliste: '<path d="M12 20s-7-4.4-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.6 12 20 12 20z"/>',
+    plan: '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/>',
+    einkauf: '<path d="M5 10h14l-1.5 9h-11z"/><path d="M9 10l3-6 3 6"/>',
+    suche: '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
+    uhr: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    teller: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/>',
+    brot: '<path d="M4 11a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4c0 1.3-.7 2.3-1.5 2.8V18a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-4.2C4.7 13.3 4 12.3 4 11z"/><path d="M9.5 10.5l1.3 2M13.2 10.5l1.3 2"/>',
+    zu: '<path d="M6 6l12 12M18 6L6 18"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
+    minus: '<path d="M5 12h14"/>',
+    ausgewogen: '<circle cx="12" cy="12" r="9"/><path d="M12 12V3M12 12l7.8 4.5M12 12l-7.8 4.5"/>',
+    mittelmeer: '<circle cx="12" cy="8.5" r="3.2"/><path d="M12 2.3v1.2M5.8 8.5H4.6M19.4 8.5h-1.2M7.6 4.1l.9.9M16.4 4.1l-.9.9"/><path d="M3 16.5c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M3 20.5c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/>',
+    nordisch: '<path d="M3 12c3-4.5 9-5.5 13-2.5l4-3v11l-4-3c-4 3-10 2-13-2.5z"/><circle cx="7.6" cy="11.4" r=".5"/>',
+    blutzucker: '<path d="M3 13c2.2 0 2.8-4 5.2-4s3 5 5.3 5 2.8-3 5-3c1.2 0 1.8.6 2.5 1"/><path d="M3 19h18" stroke-dasharray="1.5 3"/>',
+    ballast: '<path d="M12 21V8"/><path d="M12 17c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4zM12 17c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4zM12 12.5c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4zM12 12.5c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4zM12 8c-1.5-1.3-1.5-3.3 0-5 1.5 1.7 1.5 3.7 0 5z"/>',
+    eiweiss: '<path d="M12 3c3.5 0 6.5 5.5 6.5 10a6.5 6.5 0 0 1-13 0C5.5 8.5 8.5 3 12 3z"/><circle cx="12" cy="14" r="2.3"/>'
+  };
+  var MO = { allesnichts: '{{M_allesnichts}}', reiz: '{{M_reiz}}', balance: '{{M_balance}}', gewohnheit: '{{M_gewohnheit}}', belohnung: '{{M_belohnung}}', kontrolle: '{{M_kontrolle}}', trost: '{{M_trost}}', stress: '{{M_stress}}' };
+  var TYPEN = [
+    ['allesnichts', 'Alles-oder-nichts-Esser', 'Eine Mahlzeit macht keinen Tag gut oder schlecht.'],
+    ['reiz', 'Reiz-Esser', 'Sieht lecker aus? Dann setz dich hin und genieß es.'],
+    ['balance', 'Balance-Esser', 'Heute so, morgen anders. Beides ist in Ordnung.'],
+    ['gewohnheit', 'Gewohnheits-Esser', 'Rituale dürfen bleiben. Manchmal reicht eine kleine Änderung.'],
+    ['belohnung', 'Belohnungs-Esser', 'Genuss musst du dir nicht verdienen.'],
+    ['kontrolle', 'Kontroll-Esser', 'Ein Rezept ist ein Vorschlag, keine Vorschrift.'],
+    ['trost', 'Trost-Esser', 'Essen darf trösten. Schön, wenn es nicht der einzige Trost ist.'],
+    ['stress', 'Stress-Esser', 'Es muss nicht perfekt sein. Satt und versorgt reicht.']
+  ];
+  function gedanke(k, text) {
+    var t; for (var i = 0; i < TYPEN.length; i++) if (TYPEN[i][0] === k) t = TYPEN[i];
+    return '<figure class="gedanke">' + mo(k) + '<blockquote>' + esc(text || t[2]) + '</blockquote><figcaption>Der ' + t[1] + '</figcaption></figure>';
+  }
+  function mo(n) { return '<img class="m" src="' + MO[n] + '" alt="">'; }
+  function ic(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + IC[n] + '</svg>'; }
+
+  var FORMEN = [
+    { k: 'ausgewogen', n: 'Ausgewogen', kurz: 'Gemüse, Sättigungsbeilage und Eiweiß auf einem Teller', schreib: 'Der Teller für jeden Tag',
+      was: 'Gemüse oder Obst, eine Sättigungsbeilage und eine Eiweißquelle kommen zusammen auf den Teller. Das orientiert sich an den Empfehlungen der Deutschen Gesellschaft für Ernährung.',
+      wer: 'Für alle, die ohne besonderen Schwerpunkt abwechslungsreich essen möchten.',
+      regel: 'Hauptgerichte mit mindestens 200 g Gemüse und Obst, einer Sättigungsbeilage und 20 g Eiweiß pro Portion.' },
+    { k: 'mittelmeer', n: 'Mittelmeerkost', nk: 'Mittelmeer&shy;kost', kurz: 'Olivenöl, Gemüse, Hülsenfrüchte und Fisch', schreib: 'Wie im Urlaub am Meer',
+      was: 'Viel Gemüse, Hülsenfrüchte, Vollkorn, Kräuter und Olivenöl, dazu regelmäßig Fisch und wenig rotes Fleisch. Sie gehört zu den am besten untersuchten Ernährungsweisen.',
+      wer: 'Für alle, die gern mediterran kochen und auf pflanzliche Fette setzen möchten.',
+      regel: 'Mit Olivenöl zubereitet, dazu typisches Gemüse und Hülsenfrüchte oder Fisch, ohne rotes Fleisch.' },
+    { k: 'nordisch', n: 'Nordische Kost', kurz: 'Hafer, Kohl, Wurzelgemüse, Beeren und Fisch', schreib: 'Heimisch und saisonal',
+      was: 'Hafer, Roggen, Kohl, Wurzelgemüse, Beeren, Rapsöl und Fisch: die regionale Schwester der Mittelmeerkost.',
+      wer: 'Für alle, die saisonal und mit heimischen Zutaten kochen möchten.',
+      regel: 'Mindestens drei typische Zutaten aus Vollkorngetreide, Kohl und Wurzelgemüse, heimischem Obst, Fisch oder Sauermilchprodukten.' },
+    { k: 'blutzucker', n: 'Blutzuckerfreundlich', nk: 'Blutzucker&shy;freundlich', kurz: 'Ballaststoffe plus Eiweiß, kaum zugesetzter Zucker', schreib: 'Gleichmäßige Energie',
+      was: 'Ballaststoffe und Eiweiß in jeder Mahlzeit, kaum zugesetzter Zucker und wenig Weißmehl. So steigt der Blutzucker langsamer an.',
+      wer: 'Für alle, die Heißhunger und das Tief am Nachmittag kennen.',
+      regel: 'Hauptgerichte ab 10 g Ballaststoffen und 20 g Eiweiß pro Portion, höchstens 5 g zugesetzter Zucker.' },
+    { k: 'ballast', n: 'Darmfreundlich', nk: 'Darm&shy;freundlich', kurz: 'Besonders viele Ballaststoffe', schreib: 'Futter für dein Mikrobiom',
+      was: 'Hülsenfrüchte, Vollkorn, Gemüse, Nüsse und Samen liefern Ballaststoffe, von denen deine Darmbakterien leben.',
+      wer: 'Für alle, die mehr Ballaststoffe essen möchten. Die DGE empfiehlt mindestens 30 g am Tag.',
+      regel: 'Hauptgerichte ab 18 g, Frühstück ab 11 g, Snacks und Desserts ab 8 g Ballaststoffen pro Portion, Brot ab 6 g pro zwei Scheiben.' },
+    { k: 'eiweiss', n: 'Eiweißbetont', nk: 'Eiweiß&shy;betont', kurz: 'Eine deutliche Portion Eiweiß', schreib: 'Macht lange satt',
+      was: 'Eine deutliche Portion Eiweiß aus Hülsenfrüchten, Milchprodukten, Eiern, Tofu, Fisch oder Fleisch.',
+      wer: 'Für alle, die lange satt bleiben möchten, viel Sport treiben oder Muskeln erhalten wollen.',
+      regel: 'Hauptgerichte ab 30 g, Frühstück ab 25 g, Snacks und Desserts ab 15 g Eiweiß pro Portion, Brot ab 12 g pro zwei Scheiben.' }
+  ];
+  var ALLTAG = [['vegetarisch', 'Vegetarisch'], ['vegan', 'Vegan'], ['familie', 'Familienfreundlich'], ['schnell', 'Schnell, bis 30 Min.'], ['mealprep', 'Meal Prep'], ['wenig', 'Wenige Zutaten']];
+  var MAHL = [['fr', 'Frühstück'], ['ma', 'Mittag & Abend'], ['sn', 'Snack'], ['de', 'Dessert'], ['br', 'Brot & Gebäck']];
+  var TAGE = [['mo', 'Montag'], ['di', 'Dienstag'], ['mi', 'Mittwoch'], ['do', 'Donnerstag'], ['fr', 'Freitag'], ['sa', 'Samstag'], ['so', 'Sonntag']];
+  var GRUPPEN = [['produce', 'Obst & Gemüse'], ['bakery', 'Brot & Backwaren'], ['dairy_chilled', 'Kühlregal'], ['meat_fish', 'Fleisch & Fisch'], ['frozen', 'Tiefkühl'], ['canned', 'Konserven & Gläser'], ['dry_goods', 'Vorrat & Trockenwaren'], ['spices', 'Öle, Essig & Gewürze'], ['other', 'Sonstiges']];
+  var ALLERGEN = { gluten: 'Gluten', milk: 'Milch', fish: 'Fisch', nuts: 'Schalenfrüchte', soy: 'Soja', egg: 'Ei', sesame: 'Sesam', celery: 'Sellerie', crustaceans: 'Krebstiere', peanut: 'Erdnüsse', mustard: 'Senf' };
+  var REITER = [['entdecken', 'Entdecken'], ['rezepte', 'Rezepte'], ['merkliste', 'Merkliste'], ['plan', 'Wochenplan'], ['einkauf', 'Einkauf']];
+  function name(liste, k) { for (var i = 0; i < liste.length; i++) if (liste[i][0] === k || liste[i].k === k) return liste[i][1] || liste[i].n; return k; }
+  function form(k) { for (var i = 0; i < FORMEN.length; i++) if (FORMEN[i].k === k) return FORMEN[i]; }
+
+  // ---- Zustand, wird auf dem Gerät gemerkt
+  var Z = { ansicht: 'entdecken', formen: [], alltag: [], mahl: '', q: '', grenze: 24, fav: [], plan: {}, haken: [], waehlTag: '', offen: null, portionen: 2, tagwahl: false };
+  TAGE.forEach(function (t) { Z.plan[t[0]] = []; });
+  try {
+    var alt = JSON.parse(localStorage.getItem('kk-rezepte-v1') || 'null');
+    if (alt) {
+      Z.fav = (alt.fav || []).filter(function (s) { return NACH[s]; });
+      Z.haken = alt.haken || [];
+      TAGE.forEach(function (t) { Z.plan[t[0]] = ((alt.plan || {})[t[0]] || []).filter(function (e) { return NACH[e.s]; }); });
+    }
+  } catch (e) { /* ohne Speicher läuft die App trotzdem */ }
+  function merken() { try { localStorage.setItem('kk-rezepte-v1', JSON.stringify({ fav: Z.fav, plan: Z.plan, haken: Z.haken })); } catch (e) { /* egal */ } }
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function zahl(x) { return String(x).replace('.', ','); }
+  function aktiv(r) { return r.p + (r.c < 120 ? r.c : 0); }
+  function ruhe(r) { return r.rz || (r.c >= 120 ? r.c : 0); }
+  function stunden(min) { if (min < 120) return min + ' Min.'; var h = Math.round(min / 30) / 2; return zahl(h) + ' Std.'; }
+  function brot(r) { return !!r.eh; }
+  function mengeText(r, n) { return brot(r) ? n + ' ' + (n === 1 ? r.eh[0] : r.eh[1]) : n + (n === 1 ? ' Portion' : ' Portionen'); }
+  function zeitKurz(r) { return aktiv(r) + ' Min.' + (ruhe(r) ? ' + ' + stunden(ruhe(r)) + (brot(r) ? ' Gehzeit' : ' Ruhezeit') : ''); }
+  function menge(m, einheit) {
+    if (einheit === 'g' || einheit === 'ml') {
+      if (m >= 1000) return zahl(Math.round(m / 100) / 10) + (einheit === 'g' ? ' kg' : ' l');
+      var w = m < 10 ? Math.round(m * 2) / 2 : m < 50 ? Math.round(m) : Math.round(m / 5) * 5;
+      return zahl(w || (m > 0 ? 0.5 : 0)) + ' ' + einheit;
+    }
+    var bruch = function (v) {
+      var g = Math.floor(v + 1e-9), rest = v - g, b = rest < 0.13 ? '' : rest < 0.38 ? '¼' : rest < 0.63 ? '½' : rest < 0.88 ? '¾' : '';
+      if (rest >= 0.88) g += 1;
+      return (g ? g : '') + (b ? (g ? ' ' : '') + b : '') || '¼';
+    };
+    if (einheit === 'TL') { if (m >= 3 && Math.abs(m / 3 - Math.round(m / 3 * 2) / 2) < 0.09) return bruch(m / 3) + ' EL'; return bruch(m) + ' TL'; }
+    return bruch(m);
+  }
+  function zutatName(z, m) { var e = I[z[0]]; return (z[2] === 'Stück' && m > 1.01 && e[1]) ? e[1] : e[0]; }
+  function melde(text) { var m = document.getElementById('melder'); m.textContent = text; m.hidden = false; clearTimeout(melde.t); melde.t = setTimeout(function () { m.hidden = true; }, 2600); }
+  function anzahlPlan() { return TAGE.reduce(function (s, t) { return s + Z.plan[t[0]].length; }, 0); }
+
+  // ---- Filtern
+  function passt(r) {
+    for (var i = 0; i < Z.formen.length; i++) if (r.f.indexOf(Z.formen[i]) < 0) return false;
+    for (var j = 0; j < Z.alltag.length; j++) if (r.a.indexOf(Z.alltag[j]) < 0) return false;
+    if (Z.mahl && r.m.indexOf(Z.mahl) < 0) return false;
+    if (Z.q) { var w = Z.q.toLowerCase().split(/\s+/); for (var k = 0; k < w.length; k++) if (w[k] && r.such.indexOf(w[k]) < 0) return false; }
+    return true;
+  }
+  function zaehle(gruppe, k) {
+    return R.filter(function (r) { return gruppe === 'f' ? r.f.indexOf(k) > -1 : gruppe === 'a' ? r.a.indexOf(k) > -1 : r.m.indexOf(k) > -1; }).length;
+  }
+
+  // ---- Bausteine
+  function karte(r) {
+    var marken = r.f.slice(0, 2).map(function (k) { return '<span class="markeF">' + esc(form(k).n) + '</span>'; }).join('');
+    if (r.f.length > 2) marken += '<span class="markeF">+' + (r.f.length - 2) + '</span>';
+    var fav = Z.fav.indexOf(r.s) > -1;
+    var warum = (Z.ansicht === 'rezepte' && Z.formen.length === 1) ? r.w[Z.formen[0]] : '';
+    return '<article class="karte">' +
+      '<button class="herz" type="button" data-herz="' + r.s + '" aria-pressed="' + fav + '" aria-label="' + (fav ? 'Von der Merkliste nehmen' : 'Auf die Merkliste') + '">' + ic('merkliste') + '</button>' +
+      '<button class="oeffnen" type="button" data-rezept="' + r.s + '">' +
+        '<span class="foto">' + ic(brot(r) ? 'brot' : 'teller') + (r.neu ? '<span class="neu">Neu</span>' : '') + (r.im ? '<img loading="lazy" alt="" src="' + esc(r.im.replace('/960px-', '/500px-')) + '">' : '') + '</span>' +
+        '<h3>' + esc(r.t) + '</h3>' +
+        '<span class="meta">' + zeitKurz(r) + ' · ' + r.m.map(function (m) { return name(MAHL, m); }).join(', ') + '</span>' +
+        (warum ? '<span class="warum">' + esc(warum) + '</span>' : '') +
+      '</button>' + (marken ? '<div class="marken">' + marken + '</div>' : '') + '</article>';
+  }
+  function knoepfe(liste, gruppe, gewaehlt, mitZahl) {
+    return liste.map(function (e) {
+      var k = e.k || e[0], n = e.n || e[1], an = Array.isArray(gewaehlt) ? gewaehlt.indexOf(k) > -1 : gewaehlt === k;
+      return '<button class="knopf" type="button" data-filter="' + gruppe + '" data-wert="' + k + '" aria-pressed="' + an + '">' + esc(n) + (mitZahl ? ' <small>' + zaehle(gruppe, k) + '</small>' : '') + '</button>';
+    }).join('');
+  }
+
+  // ---- Ansichten
+  function entdecken() {
+    return '<section class="auftakt"><div class="seite">' +
+        '<img src="{{LOGO}}" alt="KØRPERKOMPASS">' +
+        '<div class="schreib">Verstehen. Fühlen. Verändern.</div>' +
+        '<h1>Deine Rezepte</h1>' +
+        '<p>' + R.length + ' Ideen für jeden Tag. Ohne Verbote und ohne Kalorienzählen.</p>' +
+      '</div></section>' +
+      '<div class="seite ansicht">' +
+        '<section class="block"><div class="titel"><h2>Ernährungsformen</h2><p>Jede setzt einen anderen Schwerpunkt. Tippe auf eine, um zu sehen, was sie ausmacht und welche Rezepte dazu passen.</p></div>' +
+          '<div class="formen">' + FORMEN.map(function (f) {
+            return '<button class="form" type="button" data-form="' + f.k + '"><span class="kreis">' + ic(f.k) + '</span><b>' + (f.nk || esc(f.n)) + '</b><span>' + esc(f.kurz) + '</span><i>– ' + zaehle('f', f.k) + ' Rezepte –</i></button>';
+          }).join('') + '</div></section>' +
+        '<section class="zitat mit">' + mo('balance') + '<p>Du musst dich nicht für eine Ernährungsform entscheiden.</p><small>Mischen ist ausdrücklich erlaubt. Keine ist die einzig richtige, und was dir heute guttut, darf morgen anders aussehen.</small></section>' +
+        '<section class="block"><div class="titel"><h2>Was passt heute?</h2><p>Such nach dem, was dein Alltag gerade braucht.</p></div><div class="wahl">' + knoepfe(ALLTAG, 'a', [], true) + '</div></section>' +
+        '<section class="block"><div class="titel"><h2>Nach Mahlzeit</h2></div><div class="wahl">' + knoepfe(MAHL, 'm', '', true) + '</div></section>' +
+        '<section class="block"><div class="titel"><h2>Ein Gedanke von jedem Monster</h2><p>Du kennst sie aus dem Essenstyp-Test. Hier hat jedes einen Satz für dich.</p></div>' +
+          '<div class="gedanken">' + TYPEN.map(function (t) { return gedanke(t[0]); }).join('') + '</div></section>' +
+        '<footer class="fuss"><p>Fotos: Wikimedia Commons. Urheber und Lizenz stehen beim jeweiligen Rezept.</p><p>Nährwerte berechnet mit dem Bundeslebensmittelschlüssel (BLS 4.0, CC BY 4.0, DOI 10.25826/Data20251217-134202-0).</p><p>Die Rezepte dienen der Anregung und ersetzen keine medizinische oder ernährungstherapeutische Beratung.</p></footer>' +
+      '</div>';
+  }
+  function rezepte() {
+    var treffer = ORDNUNG.filter(passt), sicht = treffer.slice(0, Z.grenze), kopf = '';
+    if (Z.waehlTag) kopf += '<div class="planhinweis"><span>Du planst für <b>' + name(TAGE, Z.waehlTag) + '</b>. Tippe auf ein Rezept, um es einzuplanen.</span><button class="link" type="button" data-waehl-ende>Abbrechen</button></div>';
+    if (Z.formen.length === 1) {
+      var f = form(Z.formen[0]);
+      kopf += '<section class="vorstellung"><div><div class="schreib">' + esc(f.schreib) + '</div><h2>' + esc(f.n) + '</h2></div><dl><div><dt>Was sie ausmacht</dt><dd>' + esc(f.was) + '</dd></div><div><dt>Für wen sie passt</dt><dd>' + esc(f.wer) + '</dd></div><div><dt>So ordnen wir zu</dt><dd>' + esc(f.regel) + '</dd></div></dl></section>';
+    } else if (Z.formen.length > 1) {
+      kopf += '<section class="zitat"><p>' + Z.formen.map(function (k) { return esc(form(k).n); }).join(' + ') + '</p><small>Du siehst Rezepte, die zu allen gewählten Ernährungsformen passen.</small></section>';
+    }
+    var aktivFilter = Z.formen.length || Z.alltag.length || Z.mahl || Z.q;
+    return '<div class="seite ansicht">' + kopf +
+      '<section class="filter">' +
+        '<label class="suche">' + ic('suche') + '<input id="suchfeld" type="search" placeholder="Zutat oder Gericht, z. B. Linsen" value="' + esc(Z.q) + '" aria-label="Rezepte durchsuchen"></label>' +
+        '<div class="reihe"><span>Ernährungsform</span><div class="wahl">' + knoepfe(FORMEN, 'f', Z.formen) + '</div></div>' +
+        '<div class="reihe"><span>Alltag</span><div class="wahl">' + knoepfe(ALLTAG, 'a', Z.alltag) + '</div></div>' +
+        '<div class="reihe"><span>Mahlzeit</span><div class="wahl">' + knoepfe(MAHL, 'm', Z.mahl) + '</div></div>' +
+      '</section>' +
+      '<div class="stand"><b>' + treffer.length + (treffer.length === 1 ? ' Rezept' : ' Rezepte') + '</b>' + (aktivFilter ? '<button class="link" type="button" data-filter-leeren>Filter zurücksetzen</button>' : '') + '</div>' +
+      (treffer.length ? '<div class="karten">' + sicht.map(karte).join('') + '</div>' : '<div class="leer">' + mo('allesnichts') + '<div class="schreib">Nichts gefunden</div><p>Zu dieser Kombination gibt es noch kein Rezept. Nimm einen Filter heraus oder probier einen anderen Suchbegriff.</p></div>') +
+      (treffer.length > sicht.length ? '<button class="gross rand mehr" type="button" data-mehr>Weitere Rezepte anzeigen (' + (treffer.length - sicht.length) + ')</button>' : '') +
+    '</div>';
+  }
+  function merkliste() {
+    var liste = Z.fav.map(function (s) { return NACH[s]; });
+    return '<div class="seite ansicht"><div class="titel"><h2>Merkliste</h2><p>' + (liste.length ? liste.length + (liste.length === 1 ? ' gemerktes Rezept' : ' gemerkte Rezepte') + ', gespeichert auf diesem Gerät.' : 'Hier sammelst du Rezepte, die du ausprobieren möchtest.') + '</p></div>' +
+      (liste.length ? '<div class="karten">' + liste.map(karte).join('') + '</div>' : '<div class="leer">' + mo('balance') + '<div class="schreib">Noch leer</div><p>Tippe bei einem Rezept auf das Herz, dann findest du es hier wieder.</p><button class="gross" type="button" data-geh="rezepte">Rezepte ansehen</button></div>') + '</div>';
+  }
+  function plan() {
+    var n = anzahlPlan();
+    return '<div class="seite ansicht"><div class="titel"><h2>Wochenplan</h2><p>Plane so viel oder so wenig, wie dir guttut.</p></div>' + gedanke('kontrolle', 'Ein Tag ohne Plan ist auch ein Plan.') +
+      '<div class="woche">' + TAGE.map(function (t) {
+        var e = Z.plan[t[0]];
+        return '<section class="tag"><header><h3>' + t[1] + '</h3><button class="rund" type="button" data-tag-plus="' + t[0] + '" aria-label="Rezept für ' + t[1] + ' hinzufügen">' + ic('plus') + '</button></header>' +
+          (e.length ? '<ul>' + e.map(function (x, i) {
+            return '<li><button class="name" type="button" data-rezept="' + x.s + '">' + esc(NACH[x.s].t) + '</button><span class="zeile">' +
+              '<button class="mini" type="button" data-plan-n="' + t[0] + ':' + i + ':-1" aria-label="Eine Portion weniger"' + (x.n <= (NACH[x.s].eh ? NACH[x.s].n : 1) ? ' disabled' : '') + '>' + ic('minus') + '</button><output>' + x.n + (NACH[x.s].eh ? ' St.' : ' P.') + '</output>' +
+              '<button class="mini" type="button" data-plan-n="' + t[0] + ':' + i + ':1" aria-label="Eine Portion mehr">' + ic('plus') + '</button>' +
+              '<button class="mini" type="button" data-plan-weg="' + t[0] + ':' + i + '" aria-label="' + esc(NACH[x.s].t) + ' entfernen">' + ic('zu') + '</button></span></li>';
+          }).join('') + '</ul>' : '<p class="frei">Noch nichts geplant</p>') + '</section>';
+      }).join('') + '</div>' +
+      (n ? '<div class="taten"><button class="gross hell" type="button" data-geh="einkauf">' + ic('einkauf') + 'Zur Einkaufsliste</button><button class="gross rand" type="button" data-woche-leeren>Woche leeren</button></div>' : '') + '</div>';
+  }
+  function einkaufDaten() {
+    var summe = {};
+    TAGE.forEach(function (t) { Z.plan[t[0]].forEach(function (x) {
+      var r = NACH[x.s], faktor = x.n / r.n;
+      r.i.forEach(function (z) { if (z[0] === 'wasser') return; var k = z[0] + '|' + z[2]; summe[k] = (summe[k] || 0) + z[1] * faktor; });
+    }); });
+    return GRUPPEN.map(function (g) {
+      var posten = Object.keys(summe).filter(function (k) { return I[k.split('|')[0]][2] === g[0]; }).map(function (k) {
+        var t = k.split('|'); return { k: k, text: menge(summe[k], t[1]) + ' ' + zutatName([t[0], 0, t[1]], summe[k]) };
+      }).sort(function (a, b) { return I[a.k.split('|')[0]][0].localeCompare(I[b.k.split('|')[0]][0], 'de'); });
+      return { titel: g[1], posten: posten };
+    }).filter(function (g) { return g.posten.length; });
+  }
+  function einkauf() {
+    var gruppen = einkaufDaten(), alle = gruppen.reduce(function (s, g) { return s + g.posten.length; }, 0);
+    var ab = gruppen.reduce(function (s, g) { return s + g.posten.filter(function (p) { return Z.haken.indexOf(p.k) > -1; }).length; }, 0);
+    return '<div class="seite ansicht"><div class="titel"><h2>Einkaufsliste</h2><p>' + (alle ? alle + ' Zutaten aus deinem Wochenplan, ' + ab + ' abgehakt.' : 'Die Liste entsteht automatisch aus deinem Wochenplan.') + '</p></div>' +
+      (alle ? '<div class="liste">' + gruppen.map(function (g) {
+        return '<section class="gruppe"><h3>' + g.titel + '</h3>' + g.posten.map(function (p, i) {
+          return '<label><input type="checkbox" id="h-' + esc(p.k.replace(/[^a-z0-9]/gi, '-')) + '" data-haken="' + esc(p.k) + '"' + (Z.haken.indexOf(p.k) > -1 ? ' checked' : '') + '><span>' + esc(p.text) + '</span></label>';
+        }).join('') + '</section>';
+      }).join('') + '</div><div class="taten"><button class="gross" type="button" data-kopieren>Liste kopieren</button>' + (ab ? '<button class="gross rand" type="button" data-haken-weg>Haken entfernen</button>' : '') + '</div>' + gedanke('reiz', 'Lacht dich im Laden etwas an, darf es mit. Entscheide es einfach bewusst.') + '<p class="klein">Mengen sind auf deine geplanten Portionen umgerechnet. Schau vor dem Einkauf kurz in deinen Vorrat.</p>'
+      : '<div class="leer">' + mo('belohnung') + '<div class="schreib">Noch nichts geplant</div><p>Plane zuerst ein oder mehrere Rezepte im Wochenplan. Die Zutaten erscheinen dann hier, nach Abteilung sortiert.</p><button class="gross" type="button" data-geh="plan">Zum Wochenplan</button></div>') + '</div>';
+  }
+  function einkaufText() {
+    return einkaufDaten().map(function (g) { return g.titel.toUpperCase() + '\n' + g.posten.map(function (p) { return '- ' + p.text; }).join('\n'); }).join('\n\n');
+  }
+
+  // ---- Rezept-Seite
+  function blatt() {
+    var r = Z.offen, b = document.getElementById('blatt');
+    if (!r) { b.hidden = true; b.innerHTML = ''; document.documentElement.style.overflow = ''; return; }
+    var fav = Z.fav.indexOf(r.s) > -1, faktor = Z.portionen / r.n;
+    var passt = r.f.length ? r.f.map(function (k) { return '<div><b>' + esc(form(k).n) + '</b><p>' + esc(r.w[k]) + '</p></div>'; }).join('')
+      : '<div><b>Einfach so</b><p>Dieses Rezept gehört zu keiner besonderen Ernährungsform. Es darf einfach schmecken.</p></div>';
+    var w = r.nu;
+    b.innerHTML = '<div class="innen">' +
+      '<div class="foto' + (r.im ? '' : ' ohne') + '">' + ic(brot(r) ? 'brot' : 'teller') + (r.im ? '<img alt="" src="' + esc(r.im) + '">' : '') + '<button class="zu" type="button" data-zu aria-label="Rezept schließen">' + ic('zu') + '</button></div>' +
+      (r.at ? '<p class="quelle">' + (r.su ? '<a href="' + esc(r.su) + '" target="_blank" rel="noopener">' + esc(r.at) + '</a>' : esc(r.at)) + '</p>' : '') +
+      '<div class="inhalt">' +
+        '<div><div class="schreib">' + r.m.map(function (m) { return name(MAHL, m); }).join(', ') + '</div><h2 id="blatt-titel">' + esc(r.t) + '</h2></div>' +
+        '<p class="kurz">' + esc(r.k) + '</p>' +
+        '<div class="zeiten"><span>' + ic('uhr') + 'Vorbereiten ' + r.p + ' Min.</span>' + (r.c && r.c < 120 ? '<span>' + ic('uhr') + (brot(r) ? 'Backen ' : 'Garen ') + r.c + ' Min.</span>' : '') + (ruhe(r) ? '<span>' + ic('uhr') + (brot(r) ? 'Gehzeit ' : 'Ruhezeit ') + stunden(ruhe(r)) + '</span>' : '') + '</div>' +
+        '<div class="taten"><button class="gross rand" type="button" data-herz="' + r.s + '" aria-pressed="' + fav + '">' + ic('merkliste') + (fav ? 'Gemerkt' : 'Merken') + '</button>' +
+          '<button class="gross hell" type="button" data-tagwahl aria-expanded="' + Z.tagwahl + '">' + ic('plan') + 'In den Wochenplan</button></div>' +
+        (Z.tagwahl ? '<div class="tage"><span>Für welchen Tag? Geplant wird die Menge für ' + mengeText(r, Z.portionen) + '.</span>' + TAGE.map(function (t) { return '<button type="button" data-einplanen="' + t[0] + '" aria-label="' + t[1] + '">' + t[1].slice(0, 2) + '</button>'; }).join('') + '</div>' : '') +
+        '<section class="block"><h3>Passt zu</h3><div class="passt">' + passt + '</div>' + (r.a.length ? '<div class="marken">' + r.a.map(function (k) { return '<span class="markeA">' + esc(name(ALLTAG, k).replace(', bis 30 Min.', '')) + '</span>'; }).join('') + '</div>' : '') + '</section>' +
+        '<section class="block"><div class="portionen"><h3>Zutaten</h3><div class="zaehler"><button type="button" data-portion="-1" aria-label="Weniger"' + (Z.portionen <= (r.eh ? r.n : 1) ? ' disabled' : '') + '>' + ic('minus') + '</button><output aria-live="polite">' + (brot(r) ? mengeText(r, Z.portionen) : Z.portionen + (Z.portionen === 1 ? ' Portion' : ' Port.')) + '</output><button type="button" data-portion="1" aria-label="Mehr"' + (Z.portionen >= (r.eh ? r.n * 3 : 12) ? ' disabled' : '') + '>' + ic('plus') + '</button></div></div>' +
+          '<ul class="zutaten">' + r.i.map(function (z) { var m = z[1] * faktor; return '<li><b>' + menge(m, z[2]) + '</b><span>' + esc(zutatName(z, m)) + (z[3] ? ' <small>' + esc(z[3]) + '</small>' : '') + '</span></li>'; }).join('') + '</ul>' +
+          (r.neu ? '<p class="klein">Neues Rezept, noch nicht probegebacken.</p>' : '') + (r.al.length ? '<p class="klein">Enthält: ' + r.al.map(function (a) { return ALLERGEN[a] || a; }).join(', ') + '.</p>' : '') + '</section>' +
+        '<section class="block"><h3>Zubereitung</h3><ol class="schritte">' + r.st.map(function (s) { return '<li><span>' + esc(s) + '</span></li>'; }).join('') + '</ol></section>' +
+        '<details class="werte"><summary>Nährwerte ' + (r.np || 'pro Portion') + '</summary><table><tbody>' +
+          '<tr><td>Ballaststoffe</td><td>' + zahl(w[4]) + ' g</td></tr><tr><td>Eiweiß</td><td>' + zahl(w[1]) + ' g</td></tr><tr><td>Kohlenhydrate</td><td>' + zahl(w[3]) + ' g</td></tr><tr><td>davon Zucker</td><td>' + zahl(w[5]) + ' g</td></tr><tr><td>Fett</td><td>' + zahl(w[2]) + ' g</td></tr>' +
+          '</tbody></table><p class="klein">Berechnet mit dem Bundeslebensmittelschlüssel (BLS 4.0). Die Werte sind Richtwerte und gelten für die Originalmenge.</p></details>' +
+      '</div></div>';
+    b.hidden = false; document.documentElement.style.overflow = 'hidden';
+    fotos(b);
+  }
+  function oeffne(r) { Z.offen = r; Z.portionen = r.n; Z.tagwahl = false; blatt(); document.getElementById('blatt').scrollTop = 0; var z = document.querySelector('#blatt [data-zu]'); if (z) z.focus(); }
+  function schliesse() { var s = Z.offen && Z.offen.s; Z.offen = null; blatt(); if (s) { var k = document.querySelector('[data-rezept="' + s + '"]'); if (k) k.focus(); } }
+
+  // ---- Zeichnen
+  var ANSICHT = { entdecken: entdecken, rezepte: rezepte, merkliste: merkliste, plan: plan, einkauf: einkauf };
+  function fotos(wurzel) {
+    Array.prototype.forEach.call(wurzel.querySelectorAll('.foto img'), function (img) {
+      img.addEventListener('error', function () { if (img.parentNode) img.parentNode.classList.add('ohne'); img.remove(); });
+    });
+  }
+  function reiter() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-reiter]'), function (box) {
+      box.innerHTML = REITER.map(function (t) {
+        var n = t[0] === 'merkliste' ? Z.fav.length : t[0] === 'plan' ? anzahlPlan() : 0;
+        return '<button type="button" data-geh="' + t[0] + '"' + (Z.ansicht === t[0] ? ' aria-current="page"' : '') + '>' + ic(t[0]) + '<span>' + t[1] + '</span>' + (n ? '<span class="zahl">' + n + '</span>' : '') + '</button>';
+      }).join('');
+    });
+  }
+  function zeichne(behalteFokus) {
+    var haupt = document.getElementById('haupt'), fokus = behalteFokus && document.activeElement && document.activeElement.id === 'suchfeld';
+    haupt.innerHTML = ANSICHT[Z.ansicht]();
+    fotos(haupt); reiter();
+    if (fokus) { var f = document.getElementById('suchfeld'); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
+  }
+  function geh(ansicht, oben) {
+    if (ansicht !== 'rezepte') Z.waehlTag = '';
+    Z.ansicht = ansicht; Z.grenze = 24; zeichne();
+    try { history.replaceState(null, '', '#' + ansicht); } catch (e) { /* egal */ }
+    if (oben !== false) window.scrollTo(0, 0);
+  }
+  function schalte(liste, wert) { var i = liste.indexOf(wert); if (i > -1) liste.splice(i, 1); else liste.push(wert); }
+  function herz(s) {
+    var i = Z.fav.indexOf(s);
+    if (i > -1) { Z.fav.splice(i, 1); melde('Von der Merkliste genommen'); } else { Z.fav.unshift(s); melde('Auf der Merkliste'); }
+    merken(); zeichne(); if (Z.offen) blatt();
+  }
+  function einplanen(tag, r, portionen) {
+    Z.plan[tag].push({ s: r.s, n: portionen }); merken();
+    melde('Für ' + name(TAGE, tag) + ' eingeplant');
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('button, a'); if (!t) { if (e.target.id === 'blatt') schliesse(); return; }
+    var d = t.dataset;
+    if (d.geh) { geh(d.geh); }
+    else if (d.form) { Z.formen = [d.form]; Z.alltag = []; Z.mahl = ''; Z.q = ''; geh('rezepte'); }
+    else if (d.filter) {
+      if (d.filter === 'f') schalte(Z.formen, d.wert); else if (d.filter === 'a') schalte(Z.alltag, d.wert); else Z.mahl = Z.mahl === d.wert ? '' : d.wert;
+      if (Z.ansicht !== 'rezepte') { if (d.filter === 'a') Z.alltag = [d.wert]; if (d.filter === 'm') Z.mahl = d.wert; Z.formen = []; Z.q = ''; geh('rezepte'); } else { Z.grenze = 24; zeichne(); }
+    }
+    else if (t.hasAttribute('data-filter-leeren')) { Z.formen = []; Z.alltag = []; Z.mahl = ''; Z.q = ''; Z.grenze = 24; zeichne(); }
+    else if (t.hasAttribute('data-mehr')) { Z.grenze += 24; zeichne(); }
+    else if (d.herz) { herz(d.herz); }
+    else if (d.rezept) {
+      var r = NACH[d.rezept];
+      if (Z.waehlTag && Z.ansicht === 'rezepte') { var tag = Z.waehlTag; einplanen(tag, r, r.n); Z.waehlTag = ''; geh('plan', false); }
+      else oeffne(r);
+    }
+    else if (t.hasAttribute('data-zu')) { schliesse(); }
+    else if (d.portion) { var ro = Z.offen, sch = ro.eh ? ro.n : 1; Z.portionen = Math.max(sch, Math.min(ro.eh ? ro.n * 3 : 12, Z.portionen + Number(d.portion) * sch)); blatt(); var z = document.querySelector('#blatt [data-portion="' + d.portion + '"]'); if (z && !z.disabled) z.focus(); }
+    else if (t.hasAttribute('data-tagwahl')) { Z.tagwahl = !Z.tagwahl; blatt(); }
+    else if (d.einplanen) { einplanen(d.einplanen, Z.offen, Z.portionen); Z.tagwahl = false; blatt(); zeichne(); }
+    else if (d.tagPlus) { Z.waehlTag = d.tagPlus; Z.formen = []; Z.alltag = []; Z.mahl = ''; Z.q = ''; Z.ansicht = 'rezepte'; Z.grenze = 24; zeichne(); window.scrollTo(0, 0); }
+    else if (t.hasAttribute('data-waehl-ende')) { Z.waehlTag = ''; geh('plan'); }
+    else if (d.planN) { var p = d.planN.split(':'), x = Z.plan[p[0]][Number(p[1])]; var sr = NACH[x.s], st = sr.eh ? sr.n : 1; x.n = Math.max(st, Math.min(sr.eh ? sr.n * 3 : 12, x.n + Number(p[2]) * st)); merken(); zeichne(); }
+    else if (d.planWeg) { var q = d.planWeg.split(':'); Z.plan[q[0]].splice(Number(q[1]), 1); merken(); zeichne(); }
+    else if (t.hasAttribute('data-woche-leeren')) {
+      if (t.dataset.sicher) { TAGE.forEach(function (g) { Z.plan[g[0]] = []; }); Z.haken = []; merken(); zeichne(); melde('Woche geleert'); }
+      else { t.dataset.sicher = '1'; t.textContent = 'Wirklich leeren? Nochmal tippen'; }
+    }
+    else if (t.hasAttribute('data-haken-weg')) { Z.haken = []; merken(); zeichne(); }
+    else if (t.hasAttribute('data-kopieren')) {
+      var text = einkaufText();
+      try { navigator.clipboard.writeText(text).then(function () { melde('Einkaufsliste kopiert'); }, function () { melde('Kopieren ist hier nicht möglich'); }); } catch (err) { melde('Kopieren ist hier nicht möglich'); }
+    }
+  });
+  document.addEventListener('change', function (e) {
+    var k = e.target.dataset && e.target.dataset.haken; if (!k) return;
+    var id = e.target.id; schalte(Z.haken, k); merken(); zeichne();
+    var wieder = document.getElementById(id); if (wieder) wieder.focus();
+  });
+  document.addEventListener('input', function (e) {
+    if (e.target.id !== 'suchfeld') return;
+    Z.q = e.target.value; Z.grenze = 24; zeichne(true);
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && Z.offen) schliesse(); });
+
+  var start = (location.hash || '').slice(1);
+  if (ANSICHT[start]) Z.ansicht = start;
+  zeichne();
+})();
+</script>
