@@ -75,6 +75,8 @@ for r in recs:
     w = reasons(r, n, g, f, x)
     al = sorted({al for row in r['ingredients'] for al in ings[row[0]].get('allergens', [])})
     im = imgs.get(r['slug'], {})
+    if os.path.exists(S + '/app/assets/fotos/' + r['slug'] + '.jpg'):   # eigenes, mit KI erstelltes Bild
+        im = {'url': 'fotos/' + r['slug'] + '.jpg', 'attribution': 'Bild mit KI erstellt, dient als Serviervorschlag'}
     meals = list(dict.fromkeys(MEAL[m] for m in r['mealTypes']))
     for k in FORM_ORDER: cf[k] += f[k]
     for k in ALL_ORDER: ca[k] += a[k]

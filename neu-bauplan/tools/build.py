@@ -10,15 +10,21 @@ logo_png = buf.getvalue()
 MON = ['allesnichts', 'reiz', 'balance', 'gewohnheit', 'belohnung', 'kontrolle', 'trost', 'stress']
 GOOGLE = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kristi&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap">'
 
-def fill(t, fonts, logo, mon):
+def fill(t, fonts, logo, mon, d=None):
     t = t.replace('{{FONTS}}', fonts).replace('{{LOGO}}', logo)
     for m in MON: t = t.replace('{{M_' + m + '}}', mon(m))
     assert '{{' not in t.replace('{{DATA}}', ''), 'offene Platzhalter'
-    return t.replace('{{DATA}}', data)
+    return t.replace('{{DATA}}', d or data)
 
 # 1) Vorschau als eine einzige Datei
 b64 = lambda b: base64.b64encode(b).decode()
-one = fill(tpl, GOOGLE, 'data:image/png;base64,' + b64(logo_png), lambda m: 'data:image/webp;base64,' + b64(open(f'{A}/assets/monster/{m}.webp', 'rb').read()))
+FOTOS = sorted(f for f in os.listdir(A + '/assets/fotos') if f.endswith('.jpg')) if os.path.isdir(A + '/assets/fotos') else []
+_j = json.loads(open(A + '/data/data.json', encoding='utf-8').read())
+for r in _j['R']:
+    if r.get('im', '').startswith('fotos/'):
+        r['im'] = 'data:image/jpeg;base64,' + b64(open(A + '/assets/' + r['im'], 'rb').read())
+data_one = json.dumps(_j, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+one = fill(tpl, GOOGLE, 'data:image/png;base64,' + b64(logo_png), lambda m: 'data:image/webp;base64,' + b64(open(f'{A}/assets/monster/{m}.webp', 'rb').read()), data_one)
 os.makedirs(A + '/dist', exist_ok=True)
 open(A + '/dist/index.html', 'w', encoding='utf-8').write(one)
 
@@ -35,6 +41,9 @@ for fam, w, src, name in faces:
     shutil.copy(src, site + '/fonts/' + name)
     css += f'@font-face{{font-family:"{fam}";font-style:normal;font-weight:{w};font-display:swap;src:url(fonts/{name}) format("woff2")}}\n'
 for m in MON: shutil.copy(f'{A}/assets/monster/{m}.webp', site + '/monster/' + m + '.webp')
+if FOTOS:
+    os.makedirs(site + '/fotos')
+    for f in FOTOS: shutil.copy(A + '/assets/fotos/' + f, site + '/fotos/' + f)
 open(site + '/logo.png', 'wb').write(logo_png)
 body = fill(tpl, '<style>\n' + css + '</style>', 'logo.png', lambda m: 'monster/' + m + '.webp')
 head, rest = body.split('<header class="kopf">', 1)
