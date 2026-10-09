@@ -236,6 +236,43 @@ details.werte td:last-child { text-align: right; }
 .gruppe label { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--linie); font-weight: 400; cursor: pointer; }
 .gruppe input { width: 20px; height: 20px; accent-color: var(--tuerkis); margin: 0; }
 .gruppe input:checked + span { text-decoration: line-through; color: var(--grau); }
+/* Umschalter Übersicht / Swipen */
+.umschalter { display: flex; border: 1px solid var(--schwarz); border-radius: 999px; padding: 3px; max-width: 420px; width: 100%; margin-inline: auto; }
+.umschalter button { flex: 1; border: 0; background: none; border-radius: 999px; padding: 8px 12px; font-weight: 600; font-size: 15px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
+.umschalter button[aria-pressed="true"] { background: var(--schwarz); color: var(--weiss); }
+.umschalter svg.i { width: 19px; height: 19px; }
+.filterzeile { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.swipen { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.swipen .hinweis { font-family: var(--display); letter-spacing: .1em; font-size: 15px; }
+.stapel { position: relative; width: min(100%, 400px); height: 540px; max-height: calc(100vh - 392px); max-height: calc(100dvh - 392px); min-height: 330px; }
+.ansicht.swipeansicht { gap: 14px; padding-top: 18px; }
+body { overflow-x: clip; }
+.swipe { position: absolute; inset: 0; background: var(--weiss); border-radius: 26px; box-shadow: 0 10px 30px rgba(17, 17, 17, .16); overflow: hidden; display: flex; flex-direction: column; }
+.swipe.hinten { transform: scale(.95) translateY(14px); box-shadow: 0 6px 18px rgba(17, 17, 17, .10); }
+.swipe.vorn { touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+.swipe.vorn.zieht { cursor: grabbing; }
+.swipe.fliegt { transition: transform .28s ease-in, opacity .28s ease-in; }
+.swipe.zurueck { transition: transform .2s ease-out; }
+.swipe .foto { border-radius: 0; flex: 1; aspect-ratio: auto; min-height: 0; }
+.swipe .foto img { pointer-events: none; }
+.swipe .text { padding: 14px 18px 16px; display: flex; flex-direction: column; gap: 6px; }
+.swipe h3 { font-family: var(--display); font-weight: 400; font-size: 27px; letter-spacing: .04em; line-height: 1.02; overflow-wrap: anywhere; }
+.swipe .meta { font-size: 13px; font-weight: 400; color: var(--grau); }
+.swipe .kurztext { font-size: 14px; font-weight: 400; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.stempel { position: absolute; top: 18px; font-family: var(--display); font-size: 26px; letter-spacing: .1em; padding: 2px 14px; border-radius: 10px; border: 3px solid var(--schwarz); background: var(--weiss); opacity: 0; z-index: 2; pointer-events: none; }
+.stempel.ja { left: 16px; transform: rotate(-10deg); background: var(--tuerkis); }
+.stempel.nein { right: 16px; transform: rotate(10deg); background: var(--gelb); }
+.swipeknoepfe { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.swipeknoepfe button { border-radius: 50%; border: 1px solid var(--schwarz); background: var(--weiss); display: grid; place-items: center; }
+.swipeknoepfe .k-nein, .swipeknoepfe .k-ja { width: 64px; height: 64px; }
+.swipeknoepfe .k-ja { background: var(--tuerkis); border-color: var(--tuerkis); }
+.swipeknoepfe .k-nein:hover { background: var(--gelb); border-color: var(--gelb); }
+.swipeknoepfe .k-klein { width: 46px; height: 46px; }
+.swipeknoepfe .k-klein:disabled { opacity: .3; cursor: default; }
+.swipeknoepfe svg.i { width: 28px; height: 28px; }
+.swipeknoepfe .k-klein svg.i { width: 20px; height: 20px; }
+.auftakt .taten { justify-content: center; margin-top: 14px; }
+@media (prefers-reduced-motion: reduce) { .swipe.fliegt, .swipe.zurueck { transition: none; } }
 /* Monster */
 img.m { display: block; height: auto; }
 .zitat.mit { margin-top: 46px; padding-top: 92px; }
@@ -283,6 +320,9 @@ a.gross { text-decoration: none; }
   R.forEach(function (r, i) { r.x = i; NACH[r.s] = r; r.such = (r.t + ' ' + r.i.map(function (z) { return I[z[0]][0]; }).join(' ')).toLowerCase(); });
   // Reihenfolge mischen, damit nicht zehn Varianten desselben Gerichts hintereinander stehen
   var ORDNUNG = R.slice().sort(function (a, b) { return (a.x % 10) - (b.x % 10) || a.x - b.x; });
+  // Fürs Swipen bunt gemischt, damit Frühstück, Hauptgericht und Dessert sich abwechseln
+  var GEMISCHT = R.slice();
+  for (var gi = GEMISCHT.length - 1; gi > 0; gi--) { var gj = Math.floor(Math.random() * (gi + 1)), gt = GEMISCHT[gi]; GEMISCHT[gi] = GEMISCHT[gj]; GEMISCHT[gj] = gt; }
 
   var IC = {
     entdecken: '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
@@ -295,6 +335,11 @@ a.gross { text-decoration: none; }
     teller: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/>',
     brot: '<path d="M4 11a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4c0 1.3-.7 2.3-1.5 2.8V18a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-4.2C4.7 13.3 4 12.3 4 11z"/><path d="M9.5 10.5l1.3 2M13.2 10.5l1.3 2"/>',
     zu: '<path d="M6 6l12 12M18 6L6 18"/>',
+    karten: '<rect x="7" y="4" width="11" height="15" rx="2" transform="rotate(8 12.5 11.5)"/><path d="M5.2 7.2l-1 .3a1.6 1.6 0 0 0-1.1 2l2.6 8.8"/>',
+    raster: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
+    undo: '<path d="M9 7L4 12l5 5"/><path d="M4 12h10a5 5 0 0 1 0 10h-2" transform="translate(0 -3)"/>',
+    auge: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/>',
+    filter: '<path d="M4 6h16M7 12h10M10 18h4"/>',
     plus: '<path d="M12 5v14M5 12h14"/>',
     minus: '<path d="M5 12h14"/>',
     ausgewogen: '<circle cx="12" cy="12" r="9"/><path d="M12 12V3M12 12l7.8 4.5M12 12l-7.8 4.5"/>',
@@ -306,14 +351,14 @@ a.gross { text-decoration: none; }
   };
   var MO = { allesnichts: 'monster/allesnichts.webp', reiz: 'monster/reiz.webp', balance: 'monster/balance.webp', gewohnheit: 'monster/gewohnheit.webp', belohnung: 'monster/belohnung.webp', kontrolle: 'monster/kontrolle.webp', trost: 'monster/trost.webp', stress: 'monster/stress.webp' };
   var TYPEN = [
-    ['allesnichts', 'Alles-oder-nichts-Esser', 'Eine Mahlzeit macht keinen Tag gut oder schlecht.'],
-    ['reiz', 'Reiz-Esser', 'Sieht lecker aus? Dann setz dich hin und genieß es.'],
-    ['balance', 'Balance-Esser', 'Heute so, morgen anders. Beides ist in Ordnung.'],
-    ['gewohnheit', 'Gewohnheits-Esser', 'Rituale dürfen bleiben. Manchmal reicht eine kleine Änderung.'],
-    ['belohnung', 'Belohnungs-Esser', 'Genuss musst du dir nicht verdienen.'],
-    ['kontrolle', 'Kontroll-Esser', 'Ein Rezept ist ein Vorschlag, keine Vorschrift.'],
-    ['trost', 'Trost-Esser', 'Essen darf trösten. Schön, wenn es nicht der einzige Trost ist.'],
-    ['stress', 'Stress-Esser', 'Es muss nicht perfekt sein. Satt und versorgt reicht.']
+    ['allesnichts', 'Alles-oder-nichts-Esser', 'Du musst nicht jeden Tag frisch kochen. Ein neues Rezept pro Woche ist auch ein Anfang.'],
+    ['reiz', 'Reiz-Esser', 'Das Foto macht Appetit? Merk dir das Rezept und koch es, wenn du Hunger hast.'],
+    ['balance', 'Balance-Esser', 'Heute Linsensuppe, morgen Bananenbrot. Hier hat beides Platz.'],
+    ['gewohnheit', 'Gewohnheits-Esser', 'Dein Lieblingsgericht darf bleiben. Swipe dir einfach ein neues dazu.'],
+    ['belohnung', 'Belohnungs-Esser', 'Dessert steht hier ganz normal im Wochenplan. Verdienen musst du es dir nicht.'],
+    ['kontrolle', 'Kontroll-Esser', 'Ein Rezept ist ein Vorschlag, keine Vorschrift. Tausch ruhig Zutaten aus.'],
+    ['trost', 'Trost-Esser', 'Suppe, Auflauf, Porridge: Manche Rezepte dürfen einfach guttun.'],
+    ['stress', 'Stress-Esser', 'Keine Zeit? Filter auf Schnell und nimm das Erste, das dich anlacht.']
   ];
   function gedanke(k, text) {
     var t; for (var i = 0; i < TYPEN.length; i++) if (TYPEN[i][0] === k) t = TYPEN[i];
@@ -358,17 +403,18 @@ a.gross { text-decoration: none; }
   function form(k) { for (var i = 0; i < FORMEN.length; i++) if (FORMEN[i].k === k) return FORMEN[i]; }
 
   // ---- Zustand, wird auf dem Gerät gemerkt
-  var Z = { ansicht: 'entdecken', formen: [], alltag: [], mahl: '', q: '', grenze: 24, fav: [], plan: {}, haken: [], waehlTag: '', offen: null, portionen: 2, tagwahl: false };
+  var Z = { ansicht: 'entdecken', formen: [], alltag: [], mahl: '', q: '', grenze: 24, fav: [], plan: {}, haken: [], gesehen: [], modus: 'liste', filterAuf: false, letzter: null, waehlTag: '', offen: null, portionen: 2, tagwahl: false };
   TAGE.forEach(function (t) { Z.plan[t[0]] = []; });
   try {
     var alt = JSON.parse(localStorage.getItem('kk-rezepte-v1') || 'null');
     if (alt) {
       Z.fav = (alt.fav || []).filter(function (s) { return NACH[s]; });
       Z.haken = alt.haken || [];
+      Z.gesehen = (alt.gesehen || []).filter(function (s) { return NACH[s]; });
       TAGE.forEach(function (t) { Z.plan[t[0]] = ((alt.plan || {})[t[0]] || []).filter(function (e) { return NACH[e.s]; }); });
     }
   } catch (e) { /* ohne Speicher läuft die App trotzdem */ }
-  function merken() { try { localStorage.setItem('kk-rezepte-v1', JSON.stringify({ fav: Z.fav, plan: Z.plan, haken: Z.haken })); } catch (e) { /* egal */ } }
+  function merken() { try { localStorage.setItem('kk-rezepte-v1', JSON.stringify({ fav: Z.fav, plan: Z.plan, haken: Z.haken, gesehen: Z.gesehen })); } catch (e) { /* egal */ } }
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function zahl(x) { return String(x).replace('.', ','); }
@@ -437,6 +483,7 @@ a.gross { text-decoration: none; }
         '<div class="schreib">Verstehen. Fühlen. Verändern.</div>' +
         '<h1>Deine Rezepte</h1>' +
         '<p>' + R.length + ' Ideen für jeden Tag. Ohne Verbote und ohne Kalorienzählen.</p>' +
+        '<div class="taten"><button class="gross" type="button" data-start="swipe">' + ic('karten') + 'Rezepte swipen</button><button class="gross rand" type="button" data-start="liste">' + ic('raster') + 'Zur Übersicht</button></div>' +
       '</div></section>' +
       '<div class="seite ansicht">' +
         '<section class="block"><div class="titel"><h2>Ernährungsformen</h2><p>Jede setzt einen anderen Schwerpunkt. Tippe auf eine, um zu sehen, was sie ausmacht und welche Rezepte dazu passen.</p></div>' +
@@ -446,7 +493,7 @@ a.gross { text-decoration: none; }
         '<section class="zitat mit">' + mo('balance') + '<p>Du musst dich nicht für eine Ernährungsform entscheiden.</p><small>Mischen ist ausdrücklich erlaubt. Keine ist die einzig richtige, und was dir heute guttut, darf morgen anders aussehen.</small></section>' +
         '<section class="block"><div class="titel"><h2>Was passt heute?</h2><p>Such nach dem, was dein Alltag gerade braucht.</p></div><div class="wahl">' + knoepfe(ALLTAG, 'a', [], true) + '</div></section>' +
         '<section class="block"><div class="titel"><h2>Nach Mahlzeit</h2></div><div class="wahl">' + knoepfe(MAHL, 'm', '', true) + '</div></section>' +
-        '<section class="block"><div class="titel"><h2>Ein Gedanke von jedem Monster</h2><p>Du kennst sie aus dem Essenstyp-Test. Hier hat jedes einen Satz für dich.</p></div>' +
+        '<section class="block"><div class="titel"><h2>Ein Gedanke von jedem Monster</h2><p>Du kennst sie aus dem Essenstyp-Test. Hier hat jedes einen Satz für deine Küche.</p></div>' +
           '<div class="gedanken">' + TYPEN.map(function (t) { return gedanke(t[0]); }).join('') + '</div></section>' +
         '<footer class="fuss"><p>Fotos: Wikimedia Commons. Urheber und Lizenz stehen beim jeweiligen Rezept.</p><p>Nährwerte berechnet mit dem Bundeslebensmittelschlüssel (BLS 4.0, CC BY 4.0, DOI 10.25826/Data20251217-134202-0).</p><p>Die Rezepte dienen der Anregung und ersetzen keine medizinische oder ernährungstherapeutische Beratung.</p></footer>' +
       '</div>';
@@ -461,22 +508,52 @@ a.gross { text-decoration: none; }
       kopf += '<section class="zitat"><p>' + Z.formen.map(function (k) { return esc(form(k).n); }).join(' + ') + '</p><small>Du siehst Rezepte, die zu allen gewählten Ernährungsformen passen.</small></section>';
     }
     var aktivFilter = Z.formen.length || Z.alltag.length || Z.mahl || Z.q;
-    return '<div class="seite ansicht">' + kopf +
-      '<section class="filter">' +
+    var swipe = Z.modus === 'swipe' && !Z.waehlTag;
+    var anzahlFilter = Z.formen.length + Z.alltag.length + (Z.mahl ? 1 : 0) + (Z.q ? 1 : 0);
+    var umschalter = Z.waehlTag ? '' : '<div class="umschalter"><button type="button" data-modus="liste" aria-pressed="' + !swipe + '">' + ic('raster') + 'Übersicht</button><button type="button" data-modus="swipe" aria-pressed="' + swipe + '">' + ic('karten') + 'Swipen</button></div>';
+    var filter = '<section class="filter">' +
         '<label class="suche">' + ic('suche') + '<input id="suchfeld" type="search" placeholder="Zutat oder Gericht, z. B. Linsen" value="' + esc(Z.q) + '" aria-label="Rezepte durchsuchen"></label>' +
         '<div class="reihe"><span>Ernährungsform</span><div class="wahl">' + knoepfe(FORMEN, 'f', Z.formen) + '</div></div>' +
         '<div class="reihe"><span>Alltag</span><div class="wahl">' + knoepfe(ALLTAG, 'a', Z.alltag) + '</div></div>' +
         '<div class="reihe"><span>Mahlzeit</span><div class="wahl">' + knoepfe(MAHL, 'm', Z.mahl) + '</div></div>' +
-      '</section>' +
+      '</section>';
+    if (swipe) {
+      var offen = GEMISCHT.filter(passt).filter(function (r) { return Z.gesehen.indexOf(r.s) < 0; });
+      var zeile = '<div class="filterzeile"><button class="knopf" type="button" data-filter-auf aria-expanded="' + Z.filterAuf + '">' + ic('filter') + 'Filter' + (anzahlFilter ? ' <small>' + anzahlFilter + ' aktiv</small>' : '') + '</button>' + (aktivFilter ? '<button class="link" type="button" data-filter-leeren>Filter zurücksetzen</button>' : '') + '</div>';
+      var stapel;
+      if (offen.length) {
+        stapel = '<div class="swipen"><p class="hinweis">Rechts = mag ich · Links = weiter</p>' +
+          '<div class="stapel">' + (offen[1] ? swipekarte(offen[1], false) : '') + swipekarte(offen[0], true) + '</div>' +
+          '<div class="swipeknoepfe">' +
+            '<button class="k-klein" type="button" data-swipe-undo aria-label="Letzte Entscheidung zurücknehmen"' + (Z.letzter ? '' : ' disabled') + '>' + ic('undo') + '</button>' +
+            '<button class="k-nein" type="button" data-swipe="nein" aria-label="Weiter, nicht merken">' + ic('zu') + '</button>' +
+            '<button class="k-ja" type="button" data-swipe="ja" aria-label="Mag ich, auf die Merkliste">' + ic('merkliste') + '</button>' +
+            '<button class="k-klein" type="button" data-rezept="' + offen[0].s + '" aria-label="Rezept ansehen">' + ic('auge') + '</button>' +
+          '</div><p class="klein">Noch ' + offen.length + (offen.length === 1 ? ' Rezept' : ' Rezepte') + ' in dieser Auswahl. Was du magst, landet auf der Merkliste.</p></div>';
+      } else {
+        stapel = '<div class="leer">' + mo(treffer.length ? 'belohnung' : 'allesnichts') + '<div class="schreib">' + (treffer.length ? 'Alles gesehen' : 'Nichts gefunden') + '</div><p>' + (treffer.length ? 'Du hast alle Rezepte dieser Auswahl durchgeswipt. Schau auf deine Merkliste oder fang noch einmal an.' : 'Zu dieser Kombination gibt es noch kein Rezept. Nimm einen Filter heraus.') + '</p>' +
+          (treffer.length ? '<div class="taten"><button class="gross" type="button" data-geh="merkliste">Zur Merkliste</button><button class="gross rand" type="button" data-swipe-neu>Nochmal von vorn</button></div>' : '') + '</div>';
+      }
+      return '<div class="seite ansicht swipeansicht">' + umschalter + zeile + (Z.filterAuf ? filter : '') + stapel + '</div>';
+    }
+    return '<div class="seite ansicht">' + umschalter + kopf + filter +
       '<div class="stand"><b>' + treffer.length + (treffer.length === 1 ? ' Rezept' : ' Rezepte') + '</b>' + (aktivFilter ? '<button class="link" type="button" data-filter-leeren>Filter zurücksetzen</button>' : '') + '</div>' +
       (treffer.length ? '<div class="karten">' + sicht.map(karte).join('') + '</div>' : '<div class="leer">' + mo('allesnichts') + '<div class="schreib">Nichts gefunden</div><p>Zu dieser Kombination gibt es noch kein Rezept. Nimm einen Filter heraus oder probier einen anderen Suchbegriff.</p></div>') +
       (treffer.length > sicht.length ? '<button class="gross rand mehr" type="button" data-mehr>Weitere Rezepte anzeigen (' + (treffer.length - sicht.length) + ')</button>' : '') +
     '</div>';
   }
+  function swipekarte(r, vorn) {
+    var marken = r.f.slice(0, 3).map(function (k) { return '<span class="markeF">' + esc(form(k).n) + '</span>'; }).join('') + r.a.filter(function (k) { return k === 'schnell' || k === 'familie' || k === 'mealprep'; }).slice(0, 2).map(function (k) { return '<span class="markeA">' + esc(name(ALLTAG, k).replace(', bis 30 Min.', '')) + '</span>'; }).join('');
+    return '<article class="swipe ' + (vorn ? 'vorn' : 'hinten') + '"' + (vorn ? ' id="swipekarte" data-s="' + r.s + '"' : ' aria-hidden="true"') + '>' +
+      (vorn ? '<span class="stempel ja">Mag ich</span><span class="stempel nein">Weiter</span>' : '') +
+      '<span class="foto">' + ic(brot(r) ? 'brot' : 'teller') + (r.im ? '<img alt="" draggable="false" src="' + esc(r.im.replace('/960px-', '/500px-')) + '">' : '') + '</span>' +
+      '<div class="text"><h3>' + esc(r.t) + '</h3><span class="meta">' + zeitKurz(r) + ' · ' + r.m.map(function (m) { return name(MAHL, m); }).join(', ') + '</span>' +
+      '<span class="kurztext">' + esc(r.k) + '</span>' + (marken ? '<div class="marken">' + marken + '</div>' : '') + '</div></article>';
+  }
   function merkliste() {
     var liste = Z.fav.map(function (s) { return NACH[s]; });
     return '<div class="seite ansicht"><div class="titel"><h2>Merkliste</h2><p>' + (liste.length ? liste.length + (liste.length === 1 ? ' gemerktes Rezept' : ' gemerkte Rezepte') + ', gespeichert auf diesem Gerät.' : 'Hier sammelst du Rezepte, die du ausprobieren möchtest.') + '</p></div>' +
-      (liste.length ? '<div class="karten">' + liste.map(karte).join('') + '</div>' : '<div class="leer">' + mo('balance') + '<div class="schreib">Noch leer</div><p>Tippe bei einem Rezept auf das Herz, dann findest du es hier wieder.</p><button class="gross" type="button" data-geh="rezepte">Rezepte ansehen</button></div>') + '</div>';
+      (liste.length ? '<div class="karten">' + liste.map(karte).join('') + '</div>' : '<div class="leer">' + mo('balance') + '<div class="schreib">Noch leer</div><p>Wische beim Swipen nach rechts oder tippe bei einem Rezept auf das Herz. Dann findest du es hier wieder.</p><button class="gross" type="button" data-geh="rezepte">Rezepte ansehen</button></div>') + '</div>';
   }
   function plan() {
     var n = anzahlPlan();
@@ -572,7 +649,7 @@ a.gross { text-decoration: none; }
   function zeichne(behalteFokus) {
     var haupt = document.getElementById('haupt'), fokus = behalteFokus && document.activeElement && document.activeElement.id === 'suchfeld';
     haupt.innerHTML = ANSICHT[Z.ansicht]();
-    fotos(haupt); reiter();
+    fotos(haupt); reiter(); swipeBinden();
     if (fokus) { var f = document.getElementById('suchfeld'); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
   }
   function geh(ansicht, oben) {
@@ -592,10 +669,60 @@ a.gross { text-decoration: none; }
     melde('Für ' + name(TAGE, tag) + ' eingeplant');
   }
 
+  function swipeFertig(richtung) {
+    var k = document.getElementById('swipekarte'); if (!k) return;
+    var r = NACH[k.dataset.s], warFav = Z.fav.indexOf(r.s) > -1;
+    if (Z.gesehen.indexOf(r.s) < 0) Z.gesehen.push(r.s);
+    if (richtung === 'ja' && !warFav) Z.fav.unshift(r.s);
+    Z.letzter = { s: r.s, richtung: richtung, warFav: warFav };
+    merken();
+    var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var weiter = function () { zeichne(); if (richtung === 'ja') melde('Auf der Merkliste'); };
+    if (ruhig) { weiter(); return; }
+    k.classList.remove('zieht', 'zurueck'); k.classList.add('fliegt');
+    k.style.transform = 'translate(' + (richtung === 'ja' ? 1 : -1) * (window.innerWidth * 0.9 + 200) + 'px, 40px) rotate(' + (richtung === 'ja' ? 22 : -22) + 'deg)';
+    k.style.opacity = '0';
+    setTimeout(weiter, 260);
+  }
+  function swipeBinden() {
+    var k = document.getElementById('swipekarte'); if (!k) return;
+    var ja = k.querySelector('.stempel.ja'), nein = k.querySelector('.stempel.nein'), x0 = 0, y0 = 0, dx = 0, aktivZug = false, bewegt = false;
+    k.addEventListener('pointerdown', function (e) {
+      if (e.button) return;
+      aktivZug = true; bewegt = false; x0 = e.clientX; y0 = e.clientY; dx = 0;
+      k.classList.remove('zurueck');
+      try { k.setPointerCapture(e.pointerId); } catch (err) { /* egal */ }
+    });
+    k.addEventListener('pointermove', function (e) {
+      if (!aktivZug) return;
+      dx = e.clientX - x0; var dy = e.clientY - y0;
+      if (!bewegt && Math.abs(dx) < 8) return;
+      bewegt = true; k.classList.add('zieht');
+      k.style.transform = 'translate(' + dx + 'px, ' + dy * 0.15 + 'px) rotate(' + dx / 20 + 'deg)';
+      ja.style.opacity = Math.max(0, Math.min(1, dx / 90)); nein.style.opacity = Math.max(0, Math.min(1, -dx / 90));
+    });
+    var ende = function (abbruch) {
+      if (!aktivZug) return; aktivZug = false; k.classList.remove('zieht');
+      if (!bewegt) { if (!abbruch) oeffne(NACH[k.dataset.s]); return; }
+      if (!abbruch && Math.abs(dx) > 90) { swipeFertig(dx > 0 ? 'ja' : 'nein'); return; }
+      k.classList.add('zurueck'); k.style.transform = ''; ja.style.opacity = 0; nein.style.opacity = 0;
+    };
+    k.addEventListener('pointerup', function () { ende(false); });
+    k.addEventListener('pointercancel', function () { ende(true); });
+  }
+
   document.addEventListener('click', function (e) {
     var t = e.target.closest('button, a'); if (!t) { if (e.target.id === 'blatt') schliesse(); return; }
     var d = t.dataset;
     if (d.geh) { geh(d.geh); }
+    else if (d.start) { Z.modus = d.start; Z.formen = []; Z.alltag = []; Z.mahl = ''; Z.q = ''; Z.filterAuf = false; geh('rezepte'); }
+    else if (d.modus) { Z.modus = d.modus; Z.filterAuf = false; Z.grenze = 24; zeichne(); }
+    else if (t.hasAttribute('data-filter-auf')) { Z.filterAuf = !Z.filterAuf; zeichne(); }
+    else if (d.swipe) { swipeFertig(d.swipe); }
+    else if (t.hasAttribute('data-swipe-undo')) {
+      var l = Z.letzter; if (l) { Z.gesehen = Z.gesehen.filter(function (x) { return x !== l.s; }); if (l.richtung === 'ja' && !l.warFav) Z.fav = Z.fav.filter(function (x) { return x !== l.s; }); Z.letzter = null; merken(); zeichne(); }
+    }
+    else if (t.hasAttribute('data-swipe-neu')) { Z.gesehen = []; Z.letzter = null; merken(); zeichne(); }
     else if (d.form) { Z.formen = [d.form]; Z.alltag = []; Z.mahl = ''; Z.q = ''; geh('rezepte'); }
     else if (d.filter) {
       if (d.filter === 'f') schalte(Z.formen, d.wert); else if (d.filter === 'a') schalte(Z.alltag, d.wert); else Z.mahl = Z.mahl === d.wert ? '' : d.wert;
@@ -636,7 +763,11 @@ a.gross { text-decoration: none; }
     if (e.target.id !== 'suchfeld') return;
     Z.q = e.target.value; Z.grenze = 24; zeichne(true);
   });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && Z.offen) schliesse(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && Z.offen) { schliesse(); return; }
+    if (Z.offen || Z.ansicht !== 'rezepte' || Z.modus !== 'swipe' || /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+    if (e.key === 'ArrowRight') swipeFertig('ja'); else if (e.key === 'ArrowLeft') swipeFertig('nein');
+  });
 
   var start = (location.hash || '').slice(1);
   if (ANSICHT[start]) Z.ansicht = start;
