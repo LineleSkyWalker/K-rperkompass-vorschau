@@ -275,16 +275,16 @@ body { overflow-x: clip; }
 @media (prefers-reduced-motion: reduce) { .swipe.fliegt, .swipe.zurueck { transition: none; } }
 /* Monster */
 img.m { display: block; height: auto; }
-.zitat.mit { margin-top: 46px; padding-top: 92px; }
-.zitat.mit img.m { position: absolute; top: -52px; left: 50%; transform: translateX(-50%); width: 104px; }
+.zitat.mit { margin-top: 56px; padding-top: 86px; }
+.zitat.mit img.m { position: absolute; top: -66px; left: 50%; transform: translateX(-50%); width: 140px; }
 .zitat.mit::before { top: 40px; }
-.leer img.m { width: 118px; }
+.leer img.m { width: 160px; margin-block: -12px -4px; }
 .gedanken { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
 @media (min-width: 640px) { .gedanken { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } }
-.gedanke { margin: 0; background: var(--creme); border-radius: 30px 40px 34px 44px; padding: 16px 20px 16px 14px; display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 2px 14px; align-items: center; max-width: 560px; }
+.gedanke { margin: 0; background: var(--creme); border-radius: 30px 40px 34px 44px; padding: 12px 20px 12px 8px; display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 2px 8px; align-items: center; max-width: 560px; }
 .gedanken .gedanke { max-width: none; }
 .gedanken .gedanke:nth-child(4n+2), .gedanken .gedanke:nth-child(4n+3) { background: var(--tuerkis-hell); }
-.gedanke img.m { width: 78px; grid-row: span 2; }
+.gedanke img.m { width: 104px; grid-row: span 2; }
 .gedanke blockquote { margin: 0; font-family: var(--display); font-size: clamp(19px, 4.8vw, 22px); letter-spacing: .04em; line-height: 1.15; align-self: end; text-wrap: balance; }
 .gedanke blockquote::before { content: "\201E"; }
 .gedanke blockquote::after { content: "\201C"; }
