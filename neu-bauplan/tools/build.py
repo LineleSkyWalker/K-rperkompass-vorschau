@@ -22,7 +22,9 @@ FOTOS = sorted(f for f in os.listdir(A + '/assets/fotos') if f.endswith('.jpg'))
 _j = json.loads(open(A + '/data/data.json', encoding='utf-8').read())
 for r in _j['R']:
     if r.get('im', '').startswith('fotos/'):
-        r['im'] = 'data:image/jpeg;base64,' + b64(open(A + '/assets/' + r['im'], 'rb').read())
+        _i = Image.open(A + '/assets/' + r['im']).convert('RGB'); _i.thumbnail((400, 300), Image.LANCZOS)
+        _b = io.BytesIO(); _i.save(_b, 'JPEG', quality=70, optimize=True)
+        r['im'] = 'data:image/jpeg;base64,' + b64(_b.getvalue())
 data_one = json.dumps(_j, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 one = fill(tpl, GOOGLE, 'data:image/png;base64,' + b64(logo_png), lambda m: 'data:image/webp;base64,' + b64(open(f'{A}/assets/monster/{m}.webp', 'rb').read()), data_one)
 os.makedirs(A + '/dist', exist_ok=True)
