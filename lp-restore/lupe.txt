@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dein Essverhalten unter der Lupe · KØRPERKOMPASS</title>
+<meta name="description" content="7-Tage-Ernährungsprotokoll, individuelle Analyse, 60 Minuten Einzelberatung und dein persönliches Workbook mit Rezepten und 4-Wochen-Plan – für 279 €. Wissenschaftlich fundiert, ohne Diät.">
+<link rel="canonical" href="https://www.dein-koerperkompass.de/deine-ernaehrung-unter-der-lupe">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="KØRPERKOMPASS">
+<meta property="og:title" content="Dein Essverhalten unter der Lupe · KØRPERKOMPASS">
+<meta property="og:description" content="Protokoll, Analyse, Einzelberatung und dein persönliches Workbook mit Rezepten und 4-Wochen-Plan – für 279 €. Jetzt anmelden.">
+<meta property="og:url" content="https://www.dein-koerperkompass.de/deine-ernaehrung-unter-der-lupe">
+<meta property="og:image" content="https://static.wixstatic.com/media/fa869f_f436259ec227484aa9a127ccf0bc4376~mv2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1AC7C9">
+<link rel="icon" href="https://static.wixstatic.com/media/fa869f_b1344ad3d21345f2bf3c012de1f50586~mv2.png">
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/fa869f_b1344ad3d21345f2bf3c012de1f50586~mv2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap">
+<link rel="preload" href="https://static.wixstatic.com/media/fa869f_a2ce404df1b34f9887a0471bcb74034c~mv2.webp" as="image">
+<style>
+:root{--tk:#1AC7C9;--gelb:#F4D35E;--hell:#E3FAFA;--ink:#14181A;--weiss:#FFFFFF;--display:"Bebas Neue",Impact,"Arial Narrow",sans-serif;--text:"Avenir Light","Avenir Next","Avenir","Nunito Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--weiss);color:var(--ink);font-family:var(--text);font-weight:300;font-size:1.125rem;line-height:1.55}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--ink)}
+strong,b{font-weight:600}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,5vw,3.75rem);line-height:1}
+h3{font-size:1.85rem;line-height:1}
+p{margin:0}
+.section{padding:clamp(64px,9vw,104px) 0}
+.lead{font-size:1.25rem;max-width:40rem}
+.eyebrow{display:inline-block;background:var(--gelb);padding:6px 14px;border-radius:8px;font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;line-height:1.2}
+.stack>*+*{margin-top:16px}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;background:var(--ink);color:#fff;border:2px solid var(--ink);font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s}
+.btn:hover{background:var(--tk);color:var(--ink)}
+.btn:focus-visible,.btn2:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn2{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:999px;border:2px solid var(--ink);color:var(--ink);background:transparent;font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;text-decoration:none;transition:background-color .2s,color .2s}
+.btn2:hover{background:var(--ink);color:#fff}
+.btn svg{flex:none}
+/* Kopf */
+.hero{background:var(--tk);overflow:hidden}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-size:1.6rem;letter-spacing:.06em}
+.brand img{width:73px;height:80px}
+@media (max-width:640px){.brand img{width:60px;height:66px}}
+.top .btn2{min-height:44px;font-size:1.2rem;padding:0 18px}
+.hero-grid{display:flex;flex-wrap:wrap;align-items:center;gap:24px;padding-top:24px;padding-bottom:56px}
+.hero-text{flex:1 1 440px;min-width:0}
+.hero-img{flex:1 1 360px;min-width:0;display:flex;justify-content:center}
+.hero-img img{width:100%;max-width:560px}
+.hero .kicker{font-family:var(--display);font-size:1.35rem;letter-spacing:.08em;margin-bottom:12px}
+.hero h1{font-size:clamp(3.4rem,8vw,6.5rem);line-height:.92}
+.hero .line{width:220px;height:6px;border-radius:6px;background:var(--gelb);margin:20px 0 24px}
+.hero .lead{margin-bottom:28px;font-size:1.3rem}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.price-note{margin-top:18px}
+/* Karten */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:40px}
+.card{background:var(--hell);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.card--weiss{background:var(--weiss)}
+.card img{width:100%;height:190px;object-fit:contain}
+.step img{height:150px}
+.steps5{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.steps5>li{flex:0 1 calc((100% - 80px)/5);min-width:0}
+@media (max-width:1099px){.steps5>li{flex-basis:calc((100% - 40px)/3)}}
+@media (max-width:760px){.steps5>li{flex-basis:calc((100% - 20px)/2)}}
+@media (max-width:520px){.steps5>li{flex-basis:100%}}
+.steps5 .card{padding:24px}
+.steps5 h3{font-size:1.65rem;hyphens:manual}
+.steps5 .card{gap:12px}
+.steps5 .step img{height:130px}
+.steps5 p{font-size:1.02rem;line-height:1.5}
+.num{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--gelb);font-family:var(--display);font-size:1.6rem}
+.tint{background:var(--hell)}
+.split{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.split>*{flex:1 1 380px;min-width:0}
+.center-img{display:flex;justify-content:center}
+/* Preis */
+.preis{background:var(--tk)}
+.check{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:14px;font-size:1.25rem;line-height:1.4}
+.check li{display:flex;gap:12px;align-items:flex-start}
+.check svg{flex:none;margin-top:2px}
+.badge{background:var(--gelb);border-radius:40px;padding:44px 36px;text-align:center;max-width:400px;margin:0 auto;width:100%}
+.badge .nur,.badge .ges{font-family:var(--display);font-size:1.7rem;letter-spacing:.06em}
+.badge .betrag{font-family:var(--display);font-size:clamp(5.5rem,12vw,7.5rem);line-height:.95}
+.badge .btn{margin-top:24px}
+/* Über mich */
+.portrait{border-radius:32px;max-width:380px;width:100%;aspect-ratio:4/5;object-fit:cover;margin:0 auto}
+.quals{font-size:1.05rem}
+/* Formular */
+.form-wrap{max-width:720px;margin:0 auto;text-align:center}
+.form-wrap .monster{width:150px;height:150px;object-fit:contain;margin:0 auto 12px}
+form.anm{background:var(--weiss);border-radius:32px;padding:clamp(24px,5vw,40px);display:grid;gap:18px;text-align:left;margin-top:32px}
+.field{display:grid;gap:6px;font-family:var(--display);font-size:1.3rem;letter-spacing:.04em}
+.field input{min-height:52px;padding:0 16px;border:2px solid var(--ink);border-radius:14px;font:inherit;font-family:var(--text);font-size:1.1rem;letter-spacing:0;color:var(--ink);background:#fff;width:100%}
+.field select{min-height:52px;padding:0 14px;border:2px solid var(--ink);border-radius:14px;font-family:var(--text);font-size:1.1rem;letter-spacing:0;color:var(--ink);background:#fff;width:100%}
+.kennen{margin-top:28px;display:grid;justify-items:center;gap:14px;text-align:center}
+.field select:focus,.field input:focus,.consent input:focus{outline:3px solid var(--tk);outline-offset:2px}
+.field input[aria-invalid=true]{border-color:#B3261E}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:1rem;line-height:1.5}
+.consent input{width:24px;height:24px;margin:2px 0 0;flex:none;accent-color:var(--ink)}
+.form-msg{background:#FDECEA;color:#7A1A14;border-radius:12px;padding:12px 16px;font-size:1rem}
+.form-ok{background:var(--weiss);border-radius:32px;padding:40px;margin-top:32px}
+.form-ok b{display:block;font-family:var(--display);font-weight:400;font-size:2.4rem;margin-bottom:8px}
+.small{font-size:.95rem}
+.btn--block{width:100%}
+.btn[aria-busy=true]{opacity:.7;cursor:progress}
+/* FAQ */
+.faq{max-width:900px;margin:0 auto}
+.faq details{background:var(--hell);border-radius:20px;padding:0 24px;margin-top:12px}
+.faq summary{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;font-family:var(--display);font-size:1.6rem;letter-spacing:.02em;line-height:1.1;padding:12px 0}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--text);font-size:1.6rem}
+.faq details[open] summary::after{content:"–"}
+.faq-a{padding-bottom:24px;font-size:1.06rem;line-height:1.6}
+.faq-a ol{margin:0;padding-left:1.3em;display:grid;gap:8px}
+.faq-a a{text-decoration:underline;text-decoration-color:var(--tk);text-decoration-thickness:2px;text-underline-offset:3px}
+/* Fuß – wie auf der Homepage */
+.ftr{background:#F6FDFD;color:var(--ink);padding:64px 0 32px}
+.ftr a{color:var(--ink);text-decoration:none}
+.ftr a:hover{text-decoration:underline;text-decoration-color:var(--tk);text-decoration-thickness:2px;text-underline-offset:4px}
+.ftr-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+.ftr-logo{display:inline-block;margin-bottom:24px}
+.ftr-logo img{width:110px;height:121px}
+.ftr-claim{font-family:var(--display);font-size:2.1rem;line-height:1;letter-spacing:.01em}
+.ftr h2{font-family:var(--text);font-weight:600;font-size:.9rem;letter-spacing:.22em;text-transform:uppercase;margin:0 0 18px;line-height:1.3}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:1.08rem;line-height:1.4}
+.ftr ul a{color:rgba(20,24,26,.8)}
+.ftr-nl{margin-top:48px;background:var(--hell);border-radius:24px;padding:24px 32px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
+.ftr-nl b{font-family:var(--display);font-weight:400;font-size:1.9rem;line-height:1;letter-spacing:.01em}
+.ftr-nl p{flex:1 1 220px;font-size:1.15rem;color:rgba(20,24,26,.8)}
+.ftr .btn-gelb{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 28px;border-radius:999px;background:var(--gelb);color:var(--ink);font-family:var(--text);font-weight:600;font-size:1.1rem;text-decoration:none;transition:background-color .2s}
+.ftr .btn-gelb:hover{background:var(--tk);text-decoration:none}
+.ftr-bottom{margin-top:48px;padding-top:24px;border-top:1px solid rgba(20,24,26,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-size:1rem;color:rgba(20,24,26,.8)}
+@media (max-width:900px){.ftr-top{grid-template-columns:1fr 1fr}.ftr-top>div:first-child{grid-column:1/-1}}
+@media (max-width:520px){.ftr-top{grid-template-columns:1fr}.ftr-nl{padding:22px}.ftr .btn-gelb{width:100%;justify-content:center}}
+.wb-fan{padding:0;border:0;background:none;cursor:zoom-in;max-width:640px;width:100%;border-radius:12px}
+.wb-fan:focus-visible,.wb-thumbs button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wb-book{max-width:430px;width:100%;margin:0 auto;text-align:center}
+.wb-page{display:block;width:100%;padding:0;border:0;background:#fff;border-radius:10px;cursor:zoom-in;box-shadow:8px 8px 0 -1px #fff,8px 8px 0 0 rgba(20,24,26,.12),16px 16px 0 -1px #fff,16px 16px 0 0 rgba(20,24,26,.08),0 18px 40px rgba(20,24,26,.18);transition:transform .2s}
+.wb-page:hover{transform:translateY(-3px)}
+.wb-page img{width:100%;height:auto;border-radius:10px;display:block}
+.wb-page:focus-visible,.wb-arrow:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.wb-ctrl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:28px}
+.wb-arrow{width:48px;height:48px;border-radius:50%;border:0;background:var(--gelb);color:var(--ink);font-size:1.8rem;line-height:1;cursor:pointer;transition:background-color .2s}
+.wb-arrow:hover{background:var(--tk)}
+.wb-info{font-family:var(--display);font-size:1.35rem;letter-spacing:.06em;min-width:7.5em}
+.wb-capi{margin-top:8px;font-weight:600;min-height:3em}
+.wb-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.wb-facts div{background:var(--hell);border-radius:16px;padding:14px 16px;display:grid;gap:2px}
+.wb-facts b{font-family:var(--display);font-weight:400;font-size:1.9rem;line-height:1;letter-spacing:.01em}
+.wb-facts span{font-size:.98rem;line-height:1.4}
+@media (max-width:420px){.wb-facts{grid-template-columns:1fr}}
+.wb-thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.wb-thumbs button{padding:0;width:76px;border:2px solid var(--hell);border-radius:8px;background:#fff;overflow:hidden;cursor:zoom-in;box-shadow:0 2px 8px rgba(20,24,26,.12);transition:transform .15s,border-color .15s}
+.wb-thumbs button:hover{border-color:var(--ink);transform:translateY(-2px)}
+.wbv{border:0;padding:0;margin:0;position:fixed;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;box-sizing:border-box;background:rgba(20,24,26,.96);color:#fff;overflow:hidden}
+.wbv::backdrop{background:rgba(20,24,26,.96)}
+.wbv[open]{display:flex;flex-direction:column}
+.wbv-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+.wbv-count{font-family:var(--display);font-size:1.4rem;letter-spacing:.06em}
+.wbv-tools{display:flex;gap:10px}
+.wbv-bar button{min-height:44px;min-width:44px;padding:0 16px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font-family:var(--display);font-size:1.25rem;letter-spacing:.04em;cursor:pointer}
+.wbv-bar button:hover{background:#fff;color:var(--ink)}
+.wbv-stage{flex:1;min-height:0;overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:4px 72px 12px;-webkit-overflow-scrolling:touch}
+.wbv-stage img{display:block;max-height:calc(100vh - 140px);max-height:calc(100dvh - 140px);max-width:100%;width:auto;height:auto;background:#fff;border-radius:6px;cursor:zoom-in;margin:0 auto}
+.wbv.zoom .wbv-stage{align-items:flex-start;justify-content:flex-start}
+.wbv.zoom .wbv-stage img{max-height:none;max-width:none;width:min(1300px,200vw);cursor:zoom-out}
+.wbv-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:var(--gelb);color:var(--ink);font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.wbv-nav:focus-visible,.wbv-bar button:focus-visible{outline:3px solid var(--gelb);outline-offset:3px}
+.wbv-prev{left:12px}.wbv-next{right:12px}
+.wbv-cap{text-align:center;padding:0 16px 14px;font-size:1rem}
+@media (max-width:640px){.wbv-stage{padding:4px 8px 8px}.wbv-nav{top:auto;bottom:14px;transform:none;width:48px;height:48px}.wbv-cap{padding:0 70px 22px}.wb-thumbs button{width:58px}}
+.top-right{display:flex;align-items:center;gap:12px}
+.wa-float{display:inline-flex;align-items:center;gap:10px;padding:5px 16px 5px 5px;border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem;box-shadow:0 6px 18px rgba(20,24,26,.18);animation:waIn .8s cubic-bezier(.22,.61,.36,1) .7s both}
+.wa-float:hover{box-shadow:0 8px 22px rgba(20,24,26,.26)}
+.wa-float:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wa-ic{width:40px;height:40px;border-radius:50%;background:#25D366;display:grid;place-items:center;flex:none}
+.wa-ic svg{width:24px;height:24px}
+@keyframes waIn{from{opacity:0;transform:translateY(-24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.wa-float{animation:none}}
+@media (max-width:640px){.wa-float{font-size:.9rem;padding:4px 12px 4px 4px}.wa-ic{width:34px;height:34px}.wa-ic svg{width:20px;height:20px}}
+@media (max-width:380px){.wa-txt-lang{display:none}}
+.sticky-cta{display:none}
+@media (max-width:640px){
+  body{font-size:1.06rem}
+  .top .btn2{display:none}
+  .hero-grid{padding-bottom:40px}
+  .hero-img{order:-1}
+  .hero-img img{max-width:340px}
+  .actions .btn,.actions .btn2{width:100%}
+  .sticky-cta{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:5;box-shadow:0 8px 24px rgba(20,24,26,.25);transition:transform .25s}
+  .sticky-cta.hide{transform:translateY(160%)}
+  .ftr{padding-bottom:110px}
+}
+</style>
+
+<script id="wix-site-script" src="https://manage.wix.com/_api/headless-business-setup/v1/headless-business/site-script.js" data-client-id="28a339c4-aadb-42e2-8a4f-aff09cb47b15" async></script></head>
+<body>
+<a class="skip" href="#start">Zum Inhalt springen</a>
+
+<header class="hero">
+  <div class="wrap top">
+    <a class="brand" href="../" aria-label="KØRPERKOMPASS – zur Startseite"><img src="https://static.wixstatic.com/media/fa869f_5c287ac82eaa4765b4816f51ce3da5d1~mv2.png" alt="KØRPERKOMPASS" width="73" height="80"></a>
+    <div class="top-right">
+      <a class="wa-float" href="https://chat.whatsapp.com/DDG0MPoc1vkKq2TLpJga47" target="_blank" rel="noopener" aria-label="Zur kostenlosen WhatsApp-Gruppe"><span class="wa-ic"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L2.8 21.2l4.6-1.2A9.2 9.2 0 1 0 12 2.8z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.1 7.6c-.2-.5-.4-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.6 2.6 1 3.2.8 3.7.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.6-.4-2-1c-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-.9-2.4z" fill="#fff"/></svg></span><span class="wa-txt"><span class="wa-txt-lang">Kostenlose </span>WhatsApp-Gruppe</span></a>
+      <a class="btn2" href="#vormerken">Jetzt anmelden</a>
+    </div>
+  </div>
+  <div class="wrap hero-grid" id="start">
+    <div class="hero-text">
+      <p class="kicker">Ernährungsanalyse + Einzelberatung + persönliches Workbook</p>
+      <h1>Dein Essverhalten<br>unter der Lupe.</h1>
+      <div class="line" aria-hidden="true"></div>
+      <p class="lead">Finde heraus, was du noch verbessern kannst und welche Ziele wirklich zu dir passen – wissenschaftlich fundiert, ohne Diät und ohne Verbote.</p>
+      <div class="actions">
+        <a class="btn" href="#vormerken">Jetzt anmelden <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a class="btn2" href="#ablauf">So funktioniert’s</a>
+      </div>
+      <p class="price-note">Gesamtpreis <b>279 €</b> · inklusive umfangreichem, persönlichem Workbook und Essenstyp-Test</p>
+    </div>
+    <div class="hero-img">
+      <img src="https://static.wixstatic.com/media/fa869f_a2ce404df1b34f9887a0471bcb74034c~mv2.webp" width="1100" height="817" alt="Oranges KØRPERKOMPASS-Monster schaut mit der Lupe auf eine Ernährungsauswertung" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="wrap">
+    <h2>Kennst du das?</h2>
+    <p class="lead" style="margin-top:12px">Du willst dich gut ernähren – aber irgendwie bleibt es bei guten Vorsätzen.</p>
+    <div class="grid">
+      <div class="card"><img src="https://static.wixstatic.com/media/fa869f_92bc9a1fe2c14faab21dfca55a960343~mv2.webp" width="600" height="564" alt="" loading="lazy"><p>Du weißt eigentlich, was „gesund“ ist – und trotzdem passt dein Essen nicht so richtig zu deinem Alltag.</p></div>
+      <div class="card"><img src="https://static.wixstatic.com/media/fa869f_c52ac57d86244a47a7be0e838c786596~mv2.webp" width="600" height="595" alt="" loading="lazy"><p>Du möchtest etwas verändern, weißt aber nicht, wo du anfangen sollst.</p></div>
+      <div class="card"><img src="https://static.wixstatic.com/media/fa869f_c49342b60a4448beaa136aad88f82519~mv2.webp" width="600" height="600" alt="" loading="lazy"><p>Du hast genug von Diäten und Regeln – du willst verstehen, warum du isst, wie du isst.</p></div>
+    </div>
+    <p class="lead" style="margin-top:40px">Dann schauen wir gemeinsam genau hin: auf deine Ernährung, deine Gewohnheiten und deine Möglichkeiten. <b>Keine Diät. Sondern echte Veränderung, die zu dir passt.</b></p>
+  </div>
+</section>
+
+<section class="section tint" id="ablauf">
+  <div class="wrap">
+    <h2>So läuft’s ab – in 5 Schritten</h2>
+    <p class="lead" style="margin-top:12px">Alles ist auf dich abgestimmt – vom Essenstyp-Test bis zu deinem persönlichen Workbook.</p>
+    <ol class="grid steps5" style="list-style:none;padding:0">
+      <li class="card card--weiss step"><span class="num" aria-hidden="true">01</span><img src="https://static.wixstatic.com/media/fa869f_b38da64e57164513b8f34181183da2a5~mv2.webp" width="484" height="500" alt="" loading="lazy"><h3>Essenstyp-Test</h3><p>Du findest heraus, welche Muster beim Essen bei dir mitwirken.</p></li>
+      <li class="card card--weiss step"><span class="num" aria-hidden="true">02</span><img src="https://static.wixstatic.com/media/fa869f_65228266c1204399a511a17ee6e881e3~mv2.webp" width="500" height="477" alt="" loading="lazy"><h3>7-Tage-Protokoll</h3><p>Eine Woche lang ganz einfach per App festhalten, was du isst.</p></li>
+      <li class="card card--weiss step"><span class="num" aria-hidden="true">03</span><img src="https://static.wixstatic.com/media/fa869f_e27ca096ab1a4c6e8d2d84f5f5a4b0b1~mv2.webp" width="500" height="465" alt="" loading="lazy"><h3>Ernährungs­analyse</h3><p>Ich werte dein Protokoll aus und schaue auf deine Gewohnheiten.</p></li>
+      <li class="card card--weiss step"><span class="num" aria-hidden="true">04</span><img src="https://static.wixstatic.com/media/fa869f_796d22dbdaf444f4b78fcd4b4dad52b9~mv2.webp" width="500" height="490" alt="" loading="lazy"><h3>Einzelberatung</h3><p>60 Minuten nur für dich – fundiert und alltagstauglich.</p></li>
+      <li class="card card--weiss step"><span class="num" aria-hidden="true">05</span><img src="https://static.wixstatic.com/media/fa869f_8b423950d9ae439bbc71617853e7a1ac~mv2.webp" width="500" height="483" alt="" loading="lazy"><h3>Dein Workbook</h3><p>Rezepte, Übungen und 4-Wochen-Plan – passend zu dir.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="stack">
+      <span class="eyebrow">Das Herzstück</span>
+      <h2>Dein persönliches Workbook – umfangreich und nur für dich</h2>
+      <p class="lead">Dein Workbook passt genau zu dir: zu deinem Essenstyp, zu deinem ausgewerteten Ernährungsprotokoll und zu den Inhalten aus unserem Coaching. Kein Standard-Heft, sondern eine ausführliche Ausarbeitung, mit der du die Themen nach der Beratung Schritt für Schritt umsetzt.</p>
+      <p class="lead">Die Rezepte bauen auf dem auf, was du ohnehin gern isst – nur ein bisschen „gepimpt“: Sie sättigen dich länger und helfen dir, ein Stück gesünder zu leben, ohne auf deine Lieblingsessen zu verzichten.</p>
+      <div class="wb-facts">
+        <div><b>Für dich gemacht</b><span>Essenstyp, Protokoll-Analyse und Coaching in einem</span></div>
+        <div><b>2 Bereiche</b><span>Ernährungswissen und Ernährungspsychologie</span></div>
+        <div><b>Umfangreiche Rezepte</b><span>auf deinen Gewohnheiten aufgebaut – nur satter</span></div>
+        <div><b>4-Wochen-Plan</b><span>zum Abhaken, Ausprobieren und Dranbleiben</span></div>
+      </div>
+    </div>
+    <div class="center-img"><div class="wb-book" role="group" aria-roledescription="Karussell" aria-label="Blick ins Workbook">
+        <button class="wb-page" type="button" id="wbPage" aria-label="Seite groß ansehen"><img id="wbPageImg" src="https://static.wixstatic.com/media/fa869f_70e0318f752d4cb0a9bada5b0d4c0761~mv2.webp" width="1300" height="1839" alt="Workbook-Seite 1: Titelseite – jedes Workbook wird für dich persönlich erstellt" loading="lazy"></button>
+        <div class="wb-ctrl"><button type="button" class="wb-arrow" id="wbPrevI" aria-label="Vorherige Seite">‹</button><span class="wb-info" id="wbInfo" aria-live="polite">Seite 1 / 9</span><button type="button" class="wb-arrow" id="wbNextI" aria-label="Nächste Seite">›</button></div>
+        <p class="wb-capi" id="wbCapI">Titelseite – jedes Workbook wird für dich persönlich erstellt</p>
+        <p class="small">Blättere mit den Pfeilen durch – tippe auf die Seite, um sie groß anzusehen.</p>
+      </div></div>
+  </div>
+</section>
+
+<section class="section tint">
+  <div class="wrap split">
+    <div class="center-img"><img src="https://static.wixstatic.com/media/fa869f_63c44f4543b14f679b07294c6619cf85~mv2.webp" width="762" height="800" alt="Oranges KØRPERKOMPASS-Monster hält einen Kompass" loading="lazy" style="max-width:360px;width:100%"></div>
+    <div class="stack">
+      <span class="eyebrow">Teil des Programms</span>
+      <h2>Dein Essenstyp</h2>
+      <p class="lead">Zu Beginn machst du unseren Essenstyp-Test. Er zeigt, welche Muster bei dir beim Essen mitwirken – zum Beispiel Stress, Trost, Belohnung oder Gewohnheit. Dein Ergebnis fließt direkt in die Analyse, in unser Gespräch und in dein Workbook ein.</p>
+      <p class="lead">Unsere acht Essenstypen geben häufigen Mustern ein Gesicht: Stress-Esser, Trost-Esser, Belohnungs-Esser, Reiz-Esser, Gewohnheits-Esser, Kontroll-Esser, Alles-oder-Nichts-Esser und Balance-Esser. Die meisten Menschen erkennen sich in mehreren wieder.</p>
+      <p class="lead">Denn wie wir essen, hat oft weniger mit Wissen zu tun als mit Gewohnheiten, Gefühlen und Mustern.</p>
+      <div class="actions">
+        <a class="btn" href="https://app.dein-koerperkompass.de" target="_blank" rel="noopener">Zum Essenstyp-Test <span aria-hidden="true">↗</span></a>
+        <a class="btn2" href="../#essenstypen">Was sind Essenstypen?</a>
+      </div>
+      <p class="small">Der Essenstyp-Test ist eine Hilfe zur Selbstreflexion, keine Diagnose.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section preis" id="preis">
+  <div class="wrap split">
+    <div>
+      <h2>Alles drin. Ein Preis.</h2>
+      <ul class="check">
+        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>7-Tage-Ernährungsprotokoll</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Individuelle Ernährungsanalyse</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>60 Minuten persönliche Einzelberatung</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Dein persönliches Workbook mit Rezepten und 4-Wochen-Plan</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Essenstyp-Test und Auswertung deines Essenstyps</li>
+      </ul>
+    </div>
+    <div>
+      <div class="badge">
+        <p class="nur">Nur</p>
+        <p class="betrag">279 €</p>
+        <p class="ges">Gesamtpreis</p>
+        <a class="btn" href="#vormerken">Jetzt anmelden</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="center-img"><img class="portrait" src="https://static.wixstatic.com/media/fa869f_4cb84072229c4996856045e31604bee1~mv2.webp" width="752" height="941" alt="Porträt von Alina Walker" loading="lazy"></div>
+    <div class="stack">
+      <h2>Hallo, ich bin Alina</h2>
+      <p class="quals">Bachelor Ernährungswissenschaften · Master Biologie · Heilpraktikerin in Ausbildung</p>
+      <p class="lead">Mit KØRPERKOMPASS verbinde ich Ernährungswissenschaft mit dem Blick darauf, warum wir essen, wie wir essen. Ich schaue nicht nur auf Nährstoffe, sondern auf dich – deinen Alltag, deine Gewohnheiten, deine Gefühle.</p>
+      <p class="lead">Mein Ziel: dass du dein Essverhalten verstehst und Schritte findest, die wirklich zu dir passen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tint" id="vormerken">
+  <div class="wrap form-wrap">
+    <img class="monster" src="https://static.wixstatic.com/media/fa869f_f2e2497b083747fdbb41e5f68584b471~mv2.webp" width="500" height="499" alt="" loading="lazy">
+    <h2>Jetzt anmelden</h2>
+    <p class="lead" style="margin:12px auto 0">Melde dich an – ich melde mich persönlich bei dir mit allen Infos, dem Link zu deinem Ernährungsprotokoll und einem Termin für deine Beratung.</p>
+    <form class="anm" id="anm" novalidate aria-label="Anmeldung für Dein Essverhalten unter der Lupe">
+      <label class="field" for="f-name">Vorname<input id="f-name" name="vorname" type="text" autocomplete="given-name" required></label>
+      <label class="field" for="f-mail">E-Mail-Adresse<input id="f-mail" name="email" type="email" autocomplete="email" inputmode="email" required></label>
+      <label class="field" for="f-tel">Telefon (optional)<input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel"></label>
+      <label class="field" for="f-start">Wann möchtest du starten? (optional)<select id="f-start" name="start"><option value="">Bitte wählen</option><option>So bald wie möglich</option><option>In den nächsten 4 Wochen</option><option>Später – erst einmal Infos</option></select></label>
+      <label class="consent" for="f-ok"><input id="f-ok" name="ok" type="checkbox" required><span>Ich möchte zu diesem Angebot per E-Mail kontaktiert werden und habe die <a href="../datenschutz.html#formulare" target="_blank">Datenschutzerklärung</a> gelesen.</span></label>
+      <p class="form-msg" id="f-msg" role="alert" hidden></p>
+      <button class="btn btn--block" type="submit">Jetzt anmelden</button>
+      <p class="small" style="text-align:center">Die Anmeldung ist noch keine Zahlung: Du bekommst erst alle Infos und entscheidest dann.</p>
+    </form>
+    <div class="form-ok" id="f-done" role="status" tabindex="-1" hidden>
+      <b>Danke dir!</b>
+      <p id="f-done-text">Du bist angemeldet. Ich melde mich in den nächsten Tagen persönlich bei dir.</p>
+    </div>
+    <div class="kennen">
+      <p><b>Noch unsicher?</b> Lerne mich erst in einem kostenlosen Kennenlerngespräch (15 Min.) kennen.</p>
+      <a class="btn2" href="https://u5391635911.wixsite.com/meinewebsite/booking-calendar/kennenlerngespr%C3%A4ch-bei-k%C3%B8rperkompass" target="_blank" rel="noopener">Kostenloses Kennenlernen buchen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap faq">
+    <h2>Häufige Fragen</h2>
+    <details><summary>Für wen ist das Angebot?</summary><div class="faq-a"><p>Für alle, die ihre Ernährung besser verstehen und im Alltag Schritt für Schritt verbessern möchten – ob du länger satt sein, gesünder essen oder einfach wissen willst, wo du gerade stehst. Du brauchst kein Vorwissen.</p></div></details>
+    <details><summary>Ist das eine Diät?</summary><div class="faq-a"><p>Nein. Es geht nicht um Verbote, Kalorienzählen oder „gute“ und „schlechte“ Lebensmittel. Wir schauen, was du heute isst, was dir gut tut und was du mit kleinen Veränderungen verbessern kannst – so, dass es in deinen Alltag passt.</p></div></details>
+    <details><summary>Wie läuft das Ganze ab?</summary><div class="faq-a"><ol><li><b>Anmeldung:</b> Du meldest dich über das Formular an.</li><li><b>Start:</b> Ich melde mich bei dir mit allen Infos, dem Link zum Essenstyp-Test und zur Protokoll-App.</li><li><b>Protokoll:</b> Du hältst 7 Tage lang fest, was du isst und trinkst.</li><li><b>Analyse:</b> Ich werte dein Protokoll und deinen Essenstyp aus.</li><li><b>Beratung:</b> Wir sprechen 60 Minuten über deine Ergebnisse und deine Ziele.</li><li><b>Workbook:</b> Danach bekommst du dein persönliches Workbook zum Umsetzen.</li></ol></div></details>
+    <details><summary>Wie aufwendig ist das Ernährungsprotokoll?</summary><div class="faq-a"><p>Du trägst 7 Tage lang ein, was du isst und trinkst – ganz einfach per App auf dem Handy, das dauert nur ein paar Minuten am Tag. Iss einfach wie immer und verändere vorher nichts. Ehrlich ist wichtiger als perfekt: Je echter dein Protokoll, desto besser passen die Empfehlungen zu dir.</p></div></details>
+    <details><summary>Was sind Essenstypen?</summary><div class="faq-a"><p>Essenstypen sind Muster, die beim Essen mitwirken – etwa wenn wir aus Stress, zum Trost oder als Belohnung essen. Wir unterscheiden acht Essenstypen, und die meisten Menschen erkennen sich in mehreren wieder. Der Test ist eine Hilfe zur Selbstreflexion, keine Diagnose. <a href="../#essenstypen">Mehr über die acht Essenstypen</a> oder direkt <a href="https://app.dein-koerperkompass.de" target="_blank" rel="noopener">zum Essenstyp-Test</a>.</p></div></details>
+    <details><summary>Was steht in meinem Workbook?</summary><div class="faq-a"><p>Dein Workbook wird nach unserem Gespräch für dich geschrieben. Es enthält deine Auswertung, Ernährungswissen, das zu deinem Alltag passt, Übungen zur Ernährungspsychologie, umfangreiche Rezepte, die auf deinen bisherigen Essgewohnheiten aufbauen, und einen 4-Wochen-Plan zum Abhaken. So kannst du die Themen auch nach der Beratung in Ruhe umsetzen.</p></div></details>
+    <details><summary>Wo findet die Beratung statt?</summary><div class="faq-a"><p>Online per Video oder vor Ort – ganz so, wie es für dich am besten passt. Auf Wunsch auch als Walk &amp; Talk an der frischen Luft.</p></div></details>
+    <details><summary>Was kostet das Angebot?</summary><div class="faq-a"><p>Der Gesamtpreis beträgt <b>279 €</b>. Darin enthalten sind der Essenstyp-Test, das 7-Tage-Ernährungsprotokoll, die Analyse, die 60-minütige Beratung und dein persönliches Workbook. Es gibt keine versteckten Kosten und kein Abo.</p></div></details>
+    <details><summary>Kann ich meinen Termin absagen oder verschieben?</summary><div class="faq-a"><p>Ja. Bis <b>24 Stunden vor dem Termin</b> kannst du ihn kostenlos verschieben oder absagen – eine kurze E-Mail an <a href="mailto:hallo@dein-koerperkompass.de">hallo@dein-koerperkompass.de</a> genügt. Bei einer späteren Absage oder wenn du ohne Nachricht nicht erscheinst, gilt der Termin als wahrgenommen. Wenn etwas Unvorhergesehenes passiert, sprich mich einfach an – wir finden eine Lösung.</p></div></details>
+    <details><summary>Ist die Anmeldung verbindlich?</summary><div class="faq-a"><p>Nein. Nach deiner Anmeldung melde ich mich mit allen Infos bei dir. Erst wenn du zusagst, geht es los. Wenn du vorher Fragen hast, kannst du auch ein <a href="https://u5391635911.wixsite.com/meinewebsite/booking-calendar/kennenlerngespr%C3%A4ch-bei-k%C3%B8rperkompass" target="_blank" rel="noopener">kostenloses Kennenlerngespräch</a> (15 Min.) buchen.</p></div></details>
+    <details><summary>Was passiert mit meinen Daten?</summary><div class="faq-a"><p>Dein Protokoll und alles, was du mir erzählst, behandle ich vertraulich und nutze es nur für deine Auswertung und dein Workbook. Mehr dazu findest du in der <a href="../datenschutz.html">Datenschutzerklärung</a>.</p></div></details>
+    <details><summary>Ersetzt das eine ärztliche Beratung?</summary><div class="faq-a"><p>Nein. Das Angebot dient der Gesundheitsförderung und der Selbstreflexion. Es ersetzt keine ärztliche, psychotherapeutische oder ernährungstherapeutische Diagnose oder Behandlung. Wenn du eine Erkrankung hast oder merkst, dass Essen deinen Alltag stark bestimmt, hol dir bitte zusätzlich ärztliche oder therapeutische Unterstützung.</p></div></details>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <a class="ftr-logo" href="../" aria-label="KØRPERKOMPASS – zur Startseite"><img src="https://static.wixstatic.com/media/fa869f_5c287ac82eaa4765b4816f51ce3da5d1~mv2.png" alt="" width="110" height="121"></a>
+        <p class="ftr-claim">Verstehen. Fühlen.<br>Verändern. Dranbleiben.</p>
+      </div>
+      <div><h2>Angebote</h2><ul>
+        <li><a href="https://protokoll.dein-koerperkompass.de">Ernährungsprotokoll</a></li>
+        <li><a href="../#dein-weg">Kompass-Programm (12 Wochen)</a></li>
+        <li><a href="../#kurs">Kompass-Start (7 Tage)</a></li>
+        <li><a href="../#emotionales-essen">Emotionales Essen</a></li>
+        <li><a href="../#gratis">Gratis für dich</a></li>
+        <li><a href="../#kontakt">Kontakt</a></li>
+      </ul></div>
+      <div><h2>Mehr entdecken</h2><ul>
+        <li><a href="../#essenstypen">Die acht Essenstypen</a></li>
+        <li><a href="../#buecher">Bücher &amp; Workbooks</a></li>
+        <li><a href="../#ueber-uns">Über uns</a></li>
+        <li><a href="../#blog">Blog</a></li>
+      </ul></div>
+      <div><h2>Folge uns</h2><ul>
+        <li><a href="https://www.instagram.com/dein_koerperkompass/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@dein-K%C3%98RPERKOMPASS" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://chat.whatsapp.com/DDG0MPoc1vkKq2TLpJga47" target="_blank" rel="noopener">WhatsApp-Gruppe</a></li>
+      </ul></div>
+    </div>
+    <div class="ftr-nl">
+      <b>Mini-Workbook &amp; Newsletter</b>
+      <p>8 Tage Impulse, kostenlos per E-Mail.</p>
+      <a class="btn-gelb" href="../#newsletter">Jetzt anfordern <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 KØRPERKOMPASS · Alina Walker</span>
+      <span><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="wbv" id="wbv" aria-label="Beispielseiten aus dem Workbook">
+  <div class="wbv-bar"><span class="wbv-count" id="wbvCount" aria-live="polite">1 / 5</span><span class="wbv-tools"><button type="button" id="wbvZoom" aria-pressed="false">Vergrößern +</button><button type="button" id="wbvClose" aria-label="Ansicht schließen">×</button></span></div>
+  <div class="wbv-stage" id="wbvStage"><img id="wbvImg" src="" alt=""></div>
+  <p class="wbv-cap" id="wbvCap"></p>
+  <button type="button" class="wbv-nav wbv-prev" id="wbvPrev" aria-label="Vorherige Seite">‹</button>
+  <button type="button" class="wbv-nav wbv-next" id="wbvNext" aria-label="Nächste Seite">›</button>
+</dialog>
+
+
+
+<a class="btn sticky-cta" id="sticky" href="#vormerken">Jetzt anmelden · 279 €</a>
+
+<script>
+(function(){
+  /* Formular -> Wix Forms „Warteliste“ (Angebot: Einzelcoaching mit Protokoll-Analyse) */
+  var CLIENT='7d92891c-b4e2-4714-9e90-3b96704388df',FORM='5f143581-d307-4951-a2f0-3076e071bf4d',API='https://www.wixapis.com',TK='kk-wix-visitor';
+  function load(){try{return JSON.parse(localStorage.getItem(TK)||'null')}catch(e){return null}}
+  function save(t){try{localStorage.setItem(TK,JSON.stringify(t))}catch(e){}}
+  function tok(body){return fetch(API+'/oauth2/token',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).then(function(r){if(!r.ok)throw new Error('token');return r.json()}).then(function(d){save({a:d.access_token,r:d.refresh_token,x:Date.now()+(d.expires_in||14400)*1000-60000});return d.access_token})}
+  function token(){var t=load();if(t&&t.a&&t.x>Date.now())return Promise.resolve(t.a);if(t&&t.r)return tok({clientId:CLIENT,grantType:'refresh_token',refreshToken:t.r}).catch(function(){return tok({clientId:CLIENT,grantType:'anonymous'})});return tok({clientId:CLIENT,grantType:'anonymous'})}
+  function submit(values){return token().then(function(a){return fetch(API+'/form-submission-service/v4/submissions',{method:'POST',headers:{'Content-Type':'application/json',Authorization:a},body:JSON.stringify({submission:{formId:FORM,submissions:values}})})}).then(function(r){if(!r.ok)throw new Error('wix '+r.status);return r.json().catch(function(){return {}})})}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  var f=document.getElementById('anm'),msg=document.getElementById('f-msg'),done=document.getElementById('f-done');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();msg.hidden=true;
+    [f.vorname,f.email].forEach(function(el){el.removeAttribute('aria-invalid')});
+    function no(t,el){msg.textContent=t;msg.hidden=false;el.setAttribute('aria-invalid','true');el.focus()}
+    var v=f.vorname.value.trim(),m=f.email.value.trim();
+    if(!v)return no('Bitte gib deinen Vornamen ein.',f.vorname);
+    if(!m||!f.email.checkValidity())return no('Bitte gib eine gültige E-Mail-Adresse ein.',f.email);
+    if(!f.ok.checked)return no('Bitte bestätige kurz das Häkchen.',f.ok);
+    var b=f.querySelector('button[type=submit]');b.disabled=true;b.setAttribute('aria-busy','true');b.textContent='Einen Moment …';
+    var vals={vorname:v,email:m,angebot:'Ernährung unter der Lupe (Anmeldung)',einwilligung_warteliste:true};var tel=f.telefon.value.replace(/[^\d+]/g,'');if(tel){if(tel.indexOf('00')===0)tel='+'+tel.slice(2);else if(tel.charAt(0)==='0')tel='+49'+tel.slice(1);else if(tel.charAt(0)!=='+')tel='+49'+tel;vals.telefon=tel}if(f.start.value)vals.start=f.start.value;
+    submit(vals).then(function(){
+      f.hidden=true;document.getElementById('f-done-text').innerHTML='Schön, dass du dabei bist, '+esc(v)+'! Deine Anmeldung ist angekommen. Ich melde mich in den nächsten Tagen persönlich bei dir – mit allen Infos und einem Termin für deine Beratung.';
+      done.hidden=false;done.focus();
+    }).catch(function(){
+      msg.textContent='Das hat leider nicht geklappt. Deine Angaben wurden nicht gespeichert. Bitte versuch es gleich noch einmal oder schreib mir an hallo@dein-koerperkompass.de.';msg.hidden=false;
+    }).then(function(){b.disabled=false;b.removeAttribute('aria-busy');b.textContent='Jetzt anmelden'});
+  });
+
+  /* Workbook-Seiten: durchklicken und vergrößern */
+  var WB=[{"s":"https://static.wixstatic.com/media/fa869f_70e0318f752d4cb0a9bada5b0d4c0761~mv2.webp","c":"Titelseite – jedes Workbook wird für dich persönlich erstellt"},{"s":"https://static.wixstatic.com/media/fa869f_90982ac3bc7c416f9a541c559e167f08~mv2.webp","c":"So arbeitest du mit deinem Workbook"},{"s":"https://static.wixstatic.com/media/fa869f_918265f311dd472db5a0ad3addd5440a~mv2.webp","c":"Ernährungswissen: die vier Sattmacher"},{"s":"https://static.wixstatic.com/media/fa869f_6ce66a1542ce49aeafa9b6470a5a8ff1~mv2.webp","c":"Deine Rezepte im Überblick – aufgebaut auf dem, was du gern isst"},{"s":"https://static.wixstatic.com/media/fa869f_7e8169aded154d5b92e71a83214cb044~mv2.webp","c":"Rezept: dein bisheriges Frühstück – nur satter"},{"s":"https://static.wixstatic.com/media/fa869f_bb638f460205424c8de4c317224fa9bd~mv2.webp","c":"Rezept: passend zu deinem Alltag, gut zum Mitnehmen"},{"s":"https://static.wixstatic.com/media/fa869f_b1a4b99c99ec48d98a8cd3174b80c940~mv2.webp","c":"Übung: die Freundinnen-Perspektive und die Selbstmitgefühls-Pause"},{"s":"https://static.wixstatic.com/media/fa869f_ba6288fd288e4a8e9605d76bcc59f6d0~mv2.webp","c":"Der HALT-Check – wenn plötzlich der Wunsch nach Essen kommt"},{"s":"https://static.wixstatic.com/media/fa869f_7b43667acab849a3b091858c03e01f5a~mv2.webp","c":"Dein 4-Wochen-Plan zum Abhaken und Dranbleiben"}];
+  var wbv=document.getElementById('wbv'),wImg=document.getElementById('wbvImg'),wCap=document.getElementById('wbvCap'),wCnt=document.getElementById('wbvCount'),wZoom=document.getElementById('wbvZoom'),wStage=document.getElementById('wbvStage'),wCur=0,wLast=null;
+  function wSet(z){wbv.classList.toggle('zoom',z);wZoom.setAttribute('aria-pressed',z?'true':'false');wZoom.textContent=z?'Verkleinern −':'Vergrößern +';if(!z){wStage.scrollTop=0;wStage.scrollLeft=0}}
+  function wGo(i){wCur=(i+WB.length)%WB.length;wSet(false);wImg.src=WB[wCur].s;wImg.alt='Workbook-Seite '+(wCur+1)+': '+WB[wCur].c;wCap.textContent=WB[wCur].c;wCnt.textContent=(wCur+1)+' / '+WB.length;var n=new Image();n.src=WB[(wCur+1)%WB.length].s}
+  function wOpen(i){wLast=document.activeElement;wGo(i);if(wbv.showModal){wbv.showModal();document.documentElement.style.overflow='hidden';document.getElementById('wbvNext').focus()}else{window.open(WB[wCur].s,'_blank')}}
+  function wDone(){document.documentElement.style.overflow='';pGo(wCur);if(wLast&&wLast.focus)wLast.focus()}
+  function wClose(){if(wbv.open)wbv.close();wDone()}
+  wbv.addEventListener('cancel',function(e){e.preventDefault();wClose()});
+  wbv.addEventListener('close',function(){document.documentElement.style.overflow=''});
+  document.querySelectorAll('[data-wb]').forEach(function(b){b.addEventListener('click',function(){wOpen(+b.getAttribute('data-wb'))})});
+  document.getElementById('wbvPrev').addEventListener('click',function(){wGo(wCur-1)});
+  document.getElementById('wbvNext').addEventListener('click',function(){wGo(wCur+1)});
+  document.getElementById('wbvClose').addEventListener('click',wClose);
+  wZoom.addEventListener('click',function(){wSet(!wbv.classList.contains('zoom'))});
+  wImg.addEventListener('click',function(e){var z=!wbv.classList.contains('zoom');var r=wImg.getBoundingClientRect(),fx=(e.clientX-r.left)/r.width,fy=(e.clientY-r.top)/r.height;wSet(z);if(z){requestAnimationFrame(function(){wStage.scrollLeft=fx*wImg.offsetWidth-wStage.clientWidth/2;wStage.scrollTop=fy*wImg.offsetHeight-wStage.clientHeight/2})}});
+  wbv.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();wGo(wCur+1)}else if(e.key==='ArrowLeft'){e.preventDefault();wGo(wCur-1)}});
+  var tx=null,ty=0;wStage.addEventListener('touchstart',function(e){if(e.touches.length===1&&!wbv.classList.contains('zoom')){tx=e.touches[0].clientX;ty=e.touches[0].clientY}else{tx=null}},{passive:true});
+  wStage.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){wGo(wCur+(dx<0?1:-1))}tx=null},{passive:true});
+
+  /* Workbook direkt auf der Seite durchblättern */
+  var wI=0,pImg=document.getElementById('wbPageImg'),pInfo=document.getElementById('wbInfo'),pCap=document.getElementById('wbCapI');
+  function pGo(i){wI=(i+WB.length)%WB.length;pImg.src=WB[wI].s;pImg.alt='Workbook-Seite '+(wI+1)+': '+WB[wI].c;pInfo.textContent='Seite '+(wI+1)+' / '+WB.length;pCap.textContent=WB[wI].c;var n=new Image();n.src=WB[(wI+1)%WB.length].s}
+  document.getElementById('wbPrevI').addEventListener('click',function(){pGo(wI-1)});
+  document.getElementById('wbNextI').addEventListener('click',function(){pGo(wI+1)});
+  document.getElementById('wbPage').addEventListener('click',function(){wOpen(wI)});
+  var px=null,py=0,pg=document.getElementById('wbPage');
+  pg.addEventListener('touchstart',function(e){if(e.touches.length===1){px=e.touches[0].clientX;py=e.touches[0].clientY}},{passive:true});
+  pg.addEventListener('touchend',function(e){if(px===null)return;var dx=e.changedTouches[0].clientX-px,dy=e.changedTouches[0].clientY-py;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){e.preventDefault();pGo(wI+(dx<0?1:-1))}px=null});
+
+  /* Handy: fester Button blendet sich am Formular aus */
+  var st=document.getElementById('sticky'),watch=[document.querySelector('.hero .actions'),document.getElementById('vormerken')],vis={};
+  st.classList.add('hide');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){vis[x.target.id||'hero']=x.isIntersecting});st.classList.toggle('hide',vis.hero||vis.vormerken)},{threshold:0.05});watch.forEach(function(el){io.observe(el)})}else{st.classList.remove('hide')}
+})();
+</script>
+</body>
+</html>
